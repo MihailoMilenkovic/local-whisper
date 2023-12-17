@@ -160,5 +160,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # TODO: check what config was used to generate lora weights here https://huggingface.co/alvanlii/whisper-largev2-cantonese-peft-lora
     parser = argparse.ArgumentParser()
     main()
