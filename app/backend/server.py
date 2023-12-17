@@ -6,7 +6,7 @@ from fastapi.responses import StreamingResponse
 app = FastAPI()
 
 
-def fake_data_streamer(audio_segment):
+def get_transcription(audio_segment):
     for i in range(10):
         yield i
 

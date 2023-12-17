@@ -1,3 +1,7 @@
 transformers
 datasets
 fastapi
+torch
+peft
+soundfile
+librosa
