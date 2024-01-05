@@ -41,8 +41,9 @@ def create_dataset():
     dataset_list = []
     for config in dataset_configs_to_use:
         for language in config["languages"]:
+            print(f"loading {language} for dataset {config['dataset_name']}")
             data = datasets.load_dataset(
-                config["dataset_name"], language, split="train+validation+test"
+                config["dataset_name"], language, split="train+validation+test",trust_remote_code=True
             )
             data = datasets.Dataset.from_dict(
                 {
