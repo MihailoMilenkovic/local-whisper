@@ -29,7 +29,7 @@ dataset_configs_to_use = [
     # },
 ]
 processor = WhisperProcessor.from_pretrained(
-    "openai/whisper-small", language="sinhalese", task="transcribe"
+    "openai/whisper-small", language="serbian", task="transcribe"
 )
 
 
