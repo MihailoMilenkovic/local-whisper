@@ -4,7 +4,7 @@ from transformers import WhisperProcessor
 import datasets
 from datasets import Audio
 
-from utils import transliterate_cir2lat
+from utils import transliterate_cir2lat, transliterate_lat2cir
 
 MAX_INPUT_LENGTH = 30.0
 # include serbian, bosnian and croatian
@@ -37,10 +37,18 @@ def is_audio_in_length_range(length):
     return length < MAX_INPUT_LENGTH
 
 
+def convert_to_cyrlic(example):
+    example["sentence"] = transliterate_lat2cir(example)
+    return example
+
+
+def convert_to_latin(example):
+    example["sentence"] = transliterate_cir2lat(example)
+    return example
+
+
 def prepare_dataset(example):
     audio = example["audio"]
-
-    example["sentence"] = transliterate_cir2lat(example["sentence"])
 
     example = processor(
         audio=audio["array"],
@@ -54,7 +62,7 @@ def prepare_dataset(example):
     return example
 
 
-def create_dataset():
+def create_dataset(use_cyrilic: bool = True):
     dataset_list = []
     for config in dataset_configs_to_use:
         for language in config["languages"]:
@@ -78,6 +86,9 @@ def create_dataset():
                 "audio", Audio(sampling_rate=sampling_rate)
             )
             curr_dataset = curr_dataset.map(
+                convert_to_cyrlic if use_cyrilic else convert_to_latin, num_proc=1
+            )
+            curr_dataset = curr_dataset.map(
                 prepare_dataset,
                 num_proc=1,
             )
@@ -96,7 +107,8 @@ def create_dataset():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset_save_location", type=str, required=True)
+    parser.add_argument("--use_cyrilic", type=bool, default=True)
     args = parser.parse_args()
 
-    dataset = create_dataset()
+    dataset = create_dataset(use_cyrilic=args.use_cyrilic)
     dataset.save_to_disk(args.dataset_save_location)

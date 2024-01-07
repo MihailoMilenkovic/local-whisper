@@ -4,4 +4,6 @@
 #SBATCH --time=24:00:00
 #SBATCH --mem=50G
 
-python create_dataset.py --dataset_save_location=datasets/audio_data_combined
+python create_dataset.py \
+  --dataset_save_location=datasets/common-voice-serbian-cyrilic \
+  --use_cyrilic=True

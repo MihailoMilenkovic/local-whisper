@@ -12,14 +12,11 @@ from torch.utils.data import Dataset
 from functools import partial
 
 import datasets
-import transformers
 from transformers import (
     HfArgumentParser,
-    Trainer,
     TrainingArguments,
     Seq2SeqTrainer,
     Seq2SeqTrainingArguments,
-    BitsAndBytesConfig,
     WhisperProcessor,
     WhisperForConditionalGeneration,
 )
@@ -30,11 +27,7 @@ import evaluate
 from peft import (
     get_peft_model,
     LoraConfig,
-    PrefixTuningConfig,
-    PromptEncoderConfig,
-    PromptTuningConfig,
     TaskType,
-    PeftModel,
 )
 
 
@@ -43,55 +36,14 @@ class FinetuneArguments:
     dataset_path: str = field()
     model_path: str = field()
     model_size: str = field()
+    use_peft: bool = field()
 
 
 @dataclass
 class PEFTArguments:
     peft_mode: str = field(default="lora")
     lora_rank: int = field(default=8)
-    num_virtual_tokens: int = field(
-        default=32
-    )  # Used for prompt tuning, prefix tuning and p-tuning
     mapping_hidden_dim: int = field(default=1024)
-
-
-@dataclass
-class CustomArguments:
-    lora_ckpt_path: str = field(default=None)
-    num_bits_for_training: int = field(default=8)
-
-
-def get_peft_config(peft_args: PEFTArguments):
-    if peft_args.peft_mode == "lora":
-        peft_config = LoraConfig(
-            task_type=TaskType.CAUSAL_LM,
-            inference_mode=False,
-            r=peft_args.lora_rank,
-            lora_alpha=32,
-            lora_dropout=0.1,
-            target_modules=["q_proj", "v_proj"],
-        )
-    elif peft_args.peft_mode == "prefix":
-        peft_config = PrefixTuningConfig(
-            task_type=TaskType.CAUSAL_LM,
-            num_virtual_tokens=peft_args.num_virtual_tokens,
-            encoder_hidden_size=peft_args.mapping_hidden_dim,
-            prefix_projection=True,
-        )
-    elif peft_args.peft_mode == "ptuning":
-        peft_config = PromptEncoderConfig(
-            task_type=TaskType.CAUSAL_LM,
-            num_virtual_tokens=peft_args.num_virtual_tokens,
-            encoder_hidden_size=peft_args.mapping_hidden_dim,
-        )
-    elif peft_args.peft_mode == "prompt":
-        peft_config = PromptTuningConfig(
-            task_type=TaskType.CAUSAL_LM,
-            num_virtual_tokens=peft_args.num_virtual_tokens,
-        )
-    else:
-        raise KeyError(peft_args.peft_mode)
-    return peft_config
 
 
 class CastOutputToFloat(nn.Sequential):
@@ -177,9 +129,24 @@ def compute_metrics(pred):
     return {"wer_ortho": wer_ortho, "wer": wer}
 
 
+def get_peft_config(peft_args: PEFTArguments):
+    assert peft_args.peft_mode == "lora"
+    peft_config = LoraConfig(
+        task_type=TaskType.TaskType.SEQ_2_SEQ_LM,
+        inference_mode=False,
+        r=peft_args.lora_rank,
+        lora_alpha=32,
+        lora_dropout=0.1,
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+    )
+    return peft_config
+
+
 # TODO: check model size should change here or if this shouldn't be global...
 processor = WhisperProcessor.from_pretrained(
-    "openai/whisper-small", language="serbian", task="transcribe"
+    "openai/whisper-small",
+    language="serbian",
+    task="transcribe",
 )
 metric = evaluate.load("wer")
 data_collator = DataCollatorSpeechSeq2SeqWithPadding(processor=processor)
@@ -187,12 +154,11 @@ normalizer = BasicTextNormalizer()
 
 
 def main():
-    finetune_args, peft_args, training_args, custom_args = HfArgumentParser(
+    finetune_args, peft_args, training_args = HfArgumentParser(
         (
             FinetuneArguments,
             PEFTArguments,
             TrainingArguments,
-            CustomArguments,
         )
     ).parse_args_into_dataclasses()
 
@@ -200,8 +166,16 @@ def main():
     dataset = datasets.load_from_disk(finetune_args.dataset_path)
     # dataset = dataset.train_test_split(0.04)
 
-    print("Setup Model")
-    model = WhisperForConditionalGeneration.from_pretrained(finetune_args.model_path)
+    print("Load model")
+    model = WhisperForConditionalGeneration.from_pretrained(
+        finetune_args.model_path, load_in_8_bit=True, device_map="auto"
+    )
+    if finetune_args.use_peft:
+        print("Setup peft")
+        peft_config = get_peft_config(peft_args=peft_args)
+        model = get_peft_model(model, peft_config)
+
+    print("Setup model for training")
     # disable cache during training since it's incompatible with gradient checkpointing
     model.config.use_cache = False
 
@@ -230,7 +204,7 @@ def main():
         save_steps=500,
         eval_steps=500,
         logging_steps=25,
-        report_to=["tensorboard"],
+        report_to=["wandb"],  # ["tensorboard"],
         load_best_model_at_end=True,
         metric_for_best_model="wer",
         greater_is_better=False,

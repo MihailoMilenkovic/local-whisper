@@ -1,7 +1,9 @@
 transformers
 datasets
+evaluate
 fastapi
 torch
 peft
 soundfile
 librosa
+black
