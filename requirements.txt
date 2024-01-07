@@ -1,6 +1,7 @@
 transformers
 datasets
 evaluate
+jiwer
 fastapi
 torch
 peft

@@ -2,17 +2,17 @@
 #SBATCH --job-name=train-whisper-serbian
 #SBATCH --ntasks=1
 #SBATCH --time=24:00:00
-#SBATCH --mem=50G
-#SBATCH --nodelist=n16
+#SBATCH --mem=10G
 #SBATCH --partition=cuda
+#SBATCH --nodelist=n17
 
 
 # model_size="large-v3"
 model_size="tiny"
 
-python finetune_lora.py \
+python train.py \
     --model_path openai/whisper-$model_size \
-    --dataset_path ./data \
+    --dataset_path ./datasets/common-voice-serbian-cyrilic \
     --use_peft true \
     --peft_mode lora \
     --lora_rank 16   \
@@ -23,7 +23,9 @@ python finetune_lora.py \
     --save_strategy "no"  \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
-    --num_train_epochs 2  \
+    --num_train_epochs 0.02  \
     --evaluation_strategy "steps" \
     --per_device_eval_batch_size 1 \
     --eval_steps 100
+
+    # --num_train_epochs 2  \
