@@ -13,7 +13,7 @@ python finetune_lora.py \
     --save_strategy "no"  \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
-    --num_train_epochs 1  \
+    --num_train_epochs 2  \
     --evaluation_strategy "steps" \
-    --per_device_eval_batch_size=1 \
+    --per_device_eval_batch_size 1 \
     --eval_steps 100

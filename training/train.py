@@ -43,7 +43,6 @@ class FinetuneArguments:
 class PEFTArguments:
     peft_mode: str = field(default="lora")
     lora_rank: int = field(default=8)
-    mapping_hidden_dim: int = field(default=1024)
 
 
 class CastOutputToFloat(nn.Sequential):
@@ -137,7 +136,7 @@ def get_peft_config(peft_args: PEFTArguments):
         r=peft_args.lora_rank,
         lora_alpha=32,
         lora_dropout=0.1,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "fc1", "fc2"],
     )
     return peft_config
 

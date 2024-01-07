@@ -38,12 +38,12 @@ def is_audio_in_length_range(length):
 
 
 def convert_to_cyrlic(example):
-    example["sentence"] = transliterate_lat2cir(example)
+    example["sentence"] = transliterate_lat2cir(example["sentence"])
     return example
 
 
 def convert_to_latin(example):
-    example["sentence"] = transliterate_cir2lat(example)
+    example["sentence"] = transliterate_cir2lat(example["sentence"])
     return example
 
 
