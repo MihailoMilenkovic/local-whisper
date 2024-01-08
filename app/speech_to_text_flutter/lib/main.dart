@@ -40,7 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
     wordStreamController = StreamController<String>();
 
     // Replace the URL with your API endpoint that provides streaming data
-    http.get(Uri.parse(AppConfig.whisperURL)).then((http.Response response) {
+    http
+        .get(Uri.parse('${AppConfig.whisperURL}/${AppConfig.whisperEndpoint}'))
+        .then((http.Response response) {
       if (response.statusCode == 200) {
         // Handle the streaming response here
         StreamController<List<int>> streamController =
