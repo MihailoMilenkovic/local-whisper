@@ -12,7 +12,8 @@ model_size="tiny"
 
 python train.py \
     --model_path openai/whisper-$model_size \
-    --dataset_path ./datasets/common-voice-serbian-cyrilic \
+    --train_dataset_path ./datasets/common-voice-serbian-cyrilic/train \
+    --eval_dataset_path ./datasets/common-voice-serbian-cyrilic/validation \
     --use_peft true \
     --peft_mode lora \
     --lora_rank 16   \

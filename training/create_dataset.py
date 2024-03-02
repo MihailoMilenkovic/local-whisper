@@ -1,3 +1,4 @@
+import os
 import argparse
 
 from transformers import WhisperProcessor
@@ -62,15 +63,17 @@ def prepare_dataset(example):
     return example
 
 
-def create_dataset(use_cyrilic: bool = True):
+def create_dataset(use_cyrilic: bool = True, split: str = "train"):
     dataset_list = []
     for config in dataset_configs_to_use:
         for language in config["languages"]:
-            print(f"loading {language} for dataset {config['dataset_name']}")
+            print(
+                f"loading {language} for split {split} dataset {config['dataset_name']}"
+            )
             curr_dataset = datasets.load_dataset(
                 config["dataset_name"],
                 language,
-                split="train+validation+test",
+                split=split,
                 trust_remote_code=True,
             )
             print("initial dataset:", curr_dataset)
@@ -97,6 +100,7 @@ def create_dataset(use_cyrilic: bool = True):
                 is_audio_in_length_range, input_columns=["input_length"]
             )
             print("length filtered dataset:", curr_dataset)
+
             dataset_list.append(curr_dataset)
 
     new_dataset = datasets.concatenate_datasets(dataset_list)
@@ -110,5 +114,8 @@ if __name__ == "__main__":
     parser.add_argument("--use_cyrilic", type=bool, default=True)
     args = parser.parse_args()
 
-    dataset = create_dataset(use_cyrilic=args.use_cyrilic)
-    dataset.save_to_disk(args.dataset_save_location)
+    splits = ["train", "validation"]
+    for split in splits:
+        dataset = create_dataset(use_cyrilic=args.use_cyrilic, split=split)
+        split_save_location = os.path.join(args.dataset_save_location, split)
+        dataset.save_to_disk(split_save_location)

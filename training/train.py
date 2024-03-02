@@ -1,18 +1,13 @@
 from typing import Any, Dict, List, Union
-import argparse
-import os
-import math
 from dataclasses import dataclass, field
-import tqdm.auto as tqdm
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from torch.utils.data import Dataset
 from functools import partial
 
 import datasets
 from transformers import (
+    BitsAndBytesConfig,
     HfArgumentParser,
     TrainingArguments,
     Seq2SeqTrainer,
@@ -33,16 +28,19 @@ from peft import (
 
 @dataclass
 class FinetuneArguments:
-    dataset_path: str = field()
+    train_dataset_path: str = field()
+    eval_dataset_path: str = field()
     model_path: str = field()
-    model_size: str = field()
     use_peft: bool = field()
+    training_quantization_num_bits: int = field(default=4)
 
 
 @dataclass
 class PEFTArguments:
     peft_mode: str = field(default="lora")
     lora_rank: int = field(default=8)
+    lora_alpha: float = field(default=32)
+    lora_dropout: float = field(default=0.1)
 
 
 class CastOutputToFloat(nn.Sequential):
@@ -65,6 +63,7 @@ class DataCollatorSpeechSeq2SeqWithPadding:
     def __call__(
         self, features: List[Dict[str, Union[List[int], torch.Tensor]]]
     ) -> Dict[str, torch.Tensor]:
+        print("COLLATOR CALLED!!!!!!!!")
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
         input_features = [
@@ -131,7 +130,7 @@ def compute_metrics(pred):
 def get_peft_config(peft_args: PEFTArguments):
     assert peft_args.peft_mode == "lora"
     peft_config = LoraConfig(
-        task_type=TaskType.TaskType.SEQ_2_SEQ_LM,
+        task_type=TaskType.SEQ_2_SEQ_LM,
         inference_mode=False,
         r=peft_args.lora_rank,
         lora_alpha=32,
@@ -139,6 +138,22 @@ def get_peft_config(peft_args: PEFTArguments):
         target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "fc1", "fc2"],
     )
     return peft_config
+
+
+def get_model_quantization_config(training_quantization_num_bits: int):
+    assert training_quantization_num_bits in [16, 8, 4]
+    if training_quantization_num_bits == 16:
+        quant_config = None
+    elif training_quantization_num_bits == 8:
+        quant_config = BitsAndBytesConfig(load_in_8bit=True)
+    else:
+        quant_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+        )
+    return quant_config
 
 
 # TODO: check model size should change here or if this shouldn't be global...
@@ -162,12 +177,19 @@ def main():
     ).parse_args_into_dataclasses()
 
     print("Setup Data")
-    dataset = datasets.load_from_disk(finetune_args.dataset_path)
-    # dataset = dataset.train_test_split(0.04)
+    train_dataset = datasets.load_from_disk(finetune_args.train_dataset_path)
+    print(f"Train dataset: {train_dataset}")
+    if finetune_args.eval_dataset_path is not None:
+        eval_dataset = datasets.load_from_disk(finetune_args.eval_dataset_path)
 
+    quantization_config = get_model_quantization_config(
+        finetune_args.training_quantization_num_bits
+    )
     print("Load model")
     model = WhisperForConditionalGeneration.from_pretrained(
-        finetune_args.model_path, load_in_8_bit=True, device_map="auto"
+        finetune_args.model_path,
+        quantization_config=quantization_config,
+        device_map="auto",
     )
     if finetune_args.use_peft:
         print("Setup peft")
@@ -186,7 +208,7 @@ def main():
 
     print("Setup training args")
     training_args = Seq2SeqTrainingArguments(
-        output_dir=f"whisper-{finetune_args.model_size}-serbian",  # name on the HF Hub (TODO: rename)
+        output_dir=training_args.output_dir,
         per_device_train_batch_size=16,
         gradient_accumulation_steps=1,  # increase by 2x for every 2x decrease in batch size
         learning_rate=1e-5,
@@ -203,7 +225,7 @@ def main():
         save_steps=500,
         eval_steps=500,
         logging_steps=25,
-        report_to=["wandb"],  # ["tensorboard"],
+        # report_to=["wandb"],  # ["tensorboard"],
         load_best_model_at_end=True,
         metric_for_best_model="wer",
         greater_is_better=False,
@@ -213,8 +235,8 @@ def main():
     trainer = Seq2SeqTrainer(
         args=training_args,
         model=model,
-        train_dataset=dataset["train"],
-        eval_dataset=dataset["test"],
+        train_dataset=train_dataset,
+        eval_dataset=eval_dataset,
         data_collator=data_collator,
         compute_metrics=compute_metrics,
         tokenizer=processor,

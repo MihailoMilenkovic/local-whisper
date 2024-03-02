@@ -1,10 +1,12 @@
+torch
 transformers
 datasets
 evaluate
+peft
+bitsandbytes
+wandb
 jiwer
 fastapi
-torch
-peft
 soundfile
 librosa
 black
