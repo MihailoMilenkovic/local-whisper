@@ -1,7 +1,7 @@
 import os
 import argparse
 
-from transformers import WhisperProcessor
+from transformers import WhisperProcessor, WhisperTokenizer, WhisperFeatureExtractor
 import datasets
 from datasets import Audio
 
@@ -29,6 +29,12 @@ dataset_configs_to_use = [
     #     "text_column": "sentence",
     # },
 ]
+tokenizer = WhisperTokenizer.from_pretrained(
+    "openai/whisper-small", language="serbian", task="transcribe"
+)
+
+feature_extractor = WhisperFeatureExtractor.from_pretrained("openai/whisper-small")
+
 processor = WhisperProcessor.from_pretrained(
     "openai/whisper-small", language="serbian", task="transcribe"
 )
@@ -48,19 +54,18 @@ def convert_to_latin(example):
     return example
 
 
-def prepare_dataset(example):
-    audio = example["audio"]
+def prepare_dataset(batch):
+    # load and resample audio data from 48 to 16kHz
+    audio = batch["audio"]
 
-    example = processor(
-        audio=audio["array"],
-        sampling_rate=audio["sampling_rate"],
-        text=example["sentence"],
-    )
+    # compute log-Mel input features from input audio array
+    batch["input_features"] = feature_extractor(
+        audio["array"], sampling_rate=audio["sampling_rate"]
+    ).input_features[0]
 
-    # compute input length of audio sample in seconds
-    example["input_length"] = len(audio["array"]) / audio["sampling_rate"]
-
-    return example
+    # encode target text to label ids
+    batch["labels"] = tokenizer(batch["sentence"]).input_ids
+    return batch
 
 
 def create_dataset(use_cyrilic: bool = True, split: str = "train"):
@@ -85,6 +90,7 @@ def create_dataset(use_cyrilic: bool = True, split: str = "train"):
             )
             print("dataset with filtered cols:", curr_dataset)
             sampling_rate = processor.feature_extractor.sampling_rate
+            print("new sampling rate for audio is", sampling_rate)
             curr_dataset = curr_dataset.cast_column(
                 "audio", Audio(sampling_rate=sampling_rate)
             )
@@ -93,13 +99,14 @@ def create_dataset(use_cyrilic: bool = True, split: str = "train"):
             )
             curr_dataset = curr_dataset.map(
                 prepare_dataset,
-                num_proc=1,
+                remove_columns=curr_dataset.column_names,
+                num_proc=4,
             )
             print("prepared dataset:", curr_dataset)
-            curr_dataset = curr_dataset.filter(
-                is_audio_in_length_range, input_columns=["input_length"]
-            )
-            print("length filtered dataset:", curr_dataset)
+            # curr_dataset = curr_dataset.filter(
+            #     is_audio_in_length_range, input_columns=["input_length"]
+            # )
+            # print("length filtered dataset:", curr_dataset)
 
             dataset_list.append(curr_dataset)
 

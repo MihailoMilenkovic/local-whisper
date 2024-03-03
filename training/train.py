@@ -31,8 +31,8 @@ class FinetuneArguments:
     train_dataset_path: str = field()
     eval_dataset_path: str = field()
     model_path: str = field()
-    use_peft: bool = field()
-    training_quantization_num_bits: int = field(default=4)
+    use_peft: bool = field(default=False)
+    training_quantization_num_bits: int = field(default=16)
 
 
 @dataclass
@@ -63,11 +63,10 @@ class DataCollatorSpeechSeq2SeqWithPadding:
     def __call__(
         self, features: List[Dict[str, Union[List[int], torch.Tensor]]]
     ) -> Dict[str, torch.Tensor]:
-        print("COLLATOR CALLED!!!!!!!!")
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
         input_features = [
-            {"input_features": feature["input_features"][0]} for feature in features
+            {"input_features": feature["input_features"]} for feature in features
         ]
         batch = self.processor.feature_extractor.pad(
             input_features, return_tensors="pt"
@@ -130,8 +129,6 @@ def compute_metrics(pred):
 def get_peft_config(peft_args: PEFTArguments):
     assert peft_args.peft_mode == "lora"
     peft_config = LoraConfig(
-        task_type=TaskType.SEQ_2_SEQ_LM,
-        inference_mode=False,
         r=peft_args.lora_rank,
         lora_alpha=32,
         lora_dropout=0.1,
@@ -189,12 +186,14 @@ def main():
     model = WhisperForConditionalGeneration.from_pretrained(
         finetune_args.model_path,
         quantization_config=quantization_config,
-        device_map="auto",
     )
     if finetune_args.use_peft:
+        # TODO: fix peft training bugs
+        # see https://github.com/huggingface/peft/blob/main/examples/int8_training/peft_bnb_whisper_large_v2_training.ipynb
         print("Setup peft")
         peft_config = get_peft_config(peft_args=peft_args)
         model = get_peft_model(model, peft_config)
+        model.print_trainable_parameters()
 
     print("Setup model for training")
     # disable cache during training since it's incompatible with gradient checkpointing
@@ -214,9 +213,8 @@ def main():
         learning_rate=1e-5,
         lr_scheduler_type="constant_with_warmup",
         warmup_steps=50,
-        max_steps=500,  # increase to 4000 if you have your own GPU or a Colab paid plan
         gradient_checkpointing=True,
-        fp16=True,  # TODO: change to  8/4 bit training later
+        fp16=True,
         fp16_full_eval=True,
         evaluation_strategy="steps",
         per_device_eval_batch_size=16,
@@ -225,6 +223,7 @@ def main():
         save_steps=500,
         eval_steps=500,
         logging_steps=25,
+        remove_unused_columns=False,  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
         # report_to=["wandb"],  # ["tensorboard"],
         load_best_model_at_end=True,
         metric_for_best_model="wer",
