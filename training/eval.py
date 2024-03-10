@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+from typing import Any, Dict, Union, List
+
 import argparse
 
 import datasets
@@ -10,27 +13,28 @@ import torch
 
 
 def map_to_pred(batch):
-    audio = batch["audio"]
-    input_features = processor(
-        audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
-    ).input_features
-    batch["reference"] = processor.tokenizer._normalize(batch["text"])
-
+    input_features = batch["test_input_features"]
     with torch.no_grad():
         predicted_ids = glob_model.generate(input_features.to("cuda"))[0]
-    transcription = processor.decode(predicted_ids)
-    batch["prediction"] = processor.tokenizer._normalize(transcription)
+    transcription = glob_processor.decode(predicted_ids)
+    batch["prediction"] = glob_processor.tokenizer._normalize(transcription)
     return batch
 
 
-def get_eval_info(model, dataset):
+def get_eval_info(model, processor, dataset):
     global glob_model
+    global glob_processor
     glob_model = model
+    glob_processor = processor
     # TODO: run model on dataset and get error rate
     result = dataset.map(map_to_pred)
     wer = load("wer")
+    # if i % 100 == 0:
+    #     print(
+    #         f"PREDICTION:{result['prediction']}, REFERENCE:{result['test_reference']}"
+    #     )
     return 100 * wer.compute(
-        references=result["reference"], predictions=result["prediction"]
+        references=result["test_reference"], predictions=result["prediction"]
     )
 
 
@@ -56,12 +60,16 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     model = WhisperForConditionalGeneration.from_pretrained(
-        args.model_ckpt_location, load_in_8bit=True, device_map="auto"
+        args.model_ckpt_location, device_map="auto"
     )
     processor = WhisperProcessor.from_pretrained(args.model_ckpt_location)
+    model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
+        language="sr", task="transcribe"
+    )
+    model = model.to("cuda")
     if args.lora_ckpt_location:
-        model = PeftModel.from_pretrained(model, args.lora_ckpt_path)
-    dataset = datasets.load_from_disk(args.dataset_location, split="test")
-
-    res = get_eval_info(model, dataset)
+        model = PeftModel.from_pretrained(model, args.lora_ckpt_location)
+    dataset = datasets.load_from_disk(args.dataset_location)
+    dataset.set_format(type="torch", columns=["input_features"])
+    res = get_eval_info(model, processor, dataset)
     print(res)

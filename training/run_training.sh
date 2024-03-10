@@ -2,6 +2,7 @@
 
 # model_size="large-v3"
 model_size="tiny"
+# use_lora="false"
 use_lora="true"
 save_path="models/$model_size"
 if [ "$use_lora" = "true" ]; then

@@ -3,3 +3,4 @@ __pycache__/
 *.err
 datasets/
 wandb
+models

@@ -1,9 +1,9 @@
 from typing import Any, Dict, List, Union
 from dataclasses import dataclass, field
 
+import os
 import torch
 import torch.nn as nn
-from functools import partial
 
 import datasets
 from transformers import (
@@ -15,15 +15,20 @@ from transformers import (
     WhisperProcessor,
     WhisperForConditionalGeneration,
 )
+from transformers import (
+    Seq2SeqTrainer,
+    TrainerCallback,
+    TrainingArguments,
+    TrainerState,
+    TrainerControl,
+)
+from transformers.trainer_utils import PREFIX_CHECKPOINT_DIR
+
 from transformers.models.whisper.english_normalizer import BasicTextNormalizer
 
 import evaluate
 
-from peft import (
-    get_peft_model,
-    LoraConfig,
-    TaskType,
-)
+from peft import get_peft_model, LoraConfig, prepare_model_for_kbit_training
 
 
 @dataclass
@@ -156,12 +161,33 @@ def get_model_quantization_config(training_quantization_num_bits: int):
 # TODO: check model size should change here or if this shouldn't be global...
 processor = WhisperProcessor.from_pretrained(
     "openai/whisper-small",
-    language="serbian",
+    language="sr",
     task="transcribe",
 )
 metric = evaluate.load("wer")
 data_collator = DataCollatorSpeechSeq2SeqWithPadding(processor=processor)
 normalizer = BasicTextNormalizer()
+
+
+class SavePeftModelCallback(TrainerCallback):
+    def on_save(
+        self,
+        args: TrainingArguments,
+        state: TrainerState,
+        control: TrainerControl,
+        **kwargs,
+    ):
+        checkpoint_folder = os.path.join(
+            args.output_dir, f"{PREFIX_CHECKPOINT_DIR}-{state.global_step}"
+        )
+
+        peft_model_path = os.path.join(checkpoint_folder, "adapter_model")
+        kwargs["model"].save_pretrained(peft_model_path)
+
+        pytorch_model_path = os.path.join(checkpoint_folder, "pytorch_model.bin")
+        if os.path.exists(pytorch_model_path):
+            os.remove(pytorch_model_path)
+        return control
 
 
 def main():
@@ -187,48 +213,40 @@ def main():
         finetune_args.model_path,
         quantization_config=quantization_config,
     )
+    callbacks = []
     if finetune_args.use_peft:
         # TODO: fix peft training bugs
         # see https://github.com/huggingface/peft/blob/main/examples/int8_training/peft_bnb_whisper_large_v2_training.ipynb
+        model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
+            language="sr", task="transcribe"
+        )
+        model.config.suppress_tokens = []
         print("Setup peft")
+        model = prepare_model_for_kbit_training(model)
         peft_config = get_peft_config(peft_args=peft_args)
         model = get_peft_model(model, peft_config)
-        model.print_trainable_parameters()
+        callbacks.append(SavePeftModelCallback)
+    else:
+        print("Training full model")
 
     print("Setup model for training")
     # disable cache during training since it's incompatible with gradient checkpointing
-    model.config.use_cache = False
-
-    # set language and task for generation and re-enable cache
-    model.generate = partial(
-        model.generate, language="serbian", task="transcribe", use_cache=True
-    )
-    # TODO: add lora correction option to training here
 
     print("Setup training args")
     training_args = Seq2SeqTrainingArguments(
         output_dir=training_args.output_dir,
-        per_device_train_batch_size=16,
+        per_device_train_batch_size=8,
         gradient_accumulation_steps=1,  # increase by 2x for every 2x decrease in batch size
-        learning_rate=1e-5,
-        lr_scheduler_type="constant_with_warmup",
+        learning_rate=1e-3,
         warmup_steps=50,
-        gradient_checkpointing=True,
+        num_train_epochs=3,
+        evaluation_strategy="epoch",
         fp16=True,
-        fp16_full_eval=True,
-        evaluation_strategy="steps",
-        per_device_eval_batch_size=16,
-        predict_with_generate=True,
-        generation_max_length=225,
-        save_steps=500,
-        eval_steps=500,
+        per_device_eval_batch_size=8,
+        generation_max_length=128,
         logging_steps=25,
         remove_unused_columns=False,  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
-        # report_to=["wandb"],  # ["tensorboard"],
-        load_best_model_at_end=True,
-        metric_for_best_model="wer",
-        greater_is_better=False,
-        push_to_hub=False,
+        label_names=["labels"],  # same reason as above
     )
 
     trainer = Seq2SeqTrainer(
@@ -237,12 +255,15 @@ def main():
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
         data_collator=data_collator,
-        compute_metrics=compute_metrics,
-        tokenizer=processor,
+        # compute_metrics=compute_metrics,
+        tokenizer=processor.feature_extractor,
+        callbacks=callbacks,
     )
+    model.config.use_cache = False
 
     # train model
     trainer.train()
+    trainer.save_model(output_dir=training_args.output_dir)
 
 
 if __name__ == "__main__":

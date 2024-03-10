@@ -65,6 +65,10 @@ def prepare_dataset(batch):
 
     # encode target text to label ids
     batch["labels"] = tokenizer(batch["sentence"]).input_ids
+    batch["test_input_features"] = processor(
+        audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
+    ).input_features
+    batch["test_reference"] = processor.tokenizer._normalize(batch["sentence"])
     return batch
 
 
