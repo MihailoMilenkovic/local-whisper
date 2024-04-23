@@ -4,3 +4,4 @@ __pycache__/
 datasets/
 wandb
 models
+eval_results.txt
