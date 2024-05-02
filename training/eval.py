@@ -105,7 +105,7 @@ if __name__ == "__main__":
     dataset = datasets.load_from_disk(args.dataset_location)
     dataset.set_format(
         type="torch",
-        columns=["input_features", "test_input_features"],
+        columns=["input_features"],
         output_all_columns=True,
     )
     res = get_eval_info(model, processor, dataset)
