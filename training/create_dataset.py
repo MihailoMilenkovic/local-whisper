@@ -65,9 +65,10 @@ def prepare_dataset(batch):
 
     # encode target text to label ids
     batch["labels"] = tokenizer(batch["sentence"]).input_ids
-    batch["test_input_features"] = processor(
-        audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
-    ).input_features
+    # NOTE: alternative way to create input features here
+    # batch["test_input_features"] = processor(
+    #     audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
+    # ).input_features
     batch["test_reference"] = processor.tokenizer._normalize(batch["sentence"])
     return batch
 
@@ -92,7 +93,6 @@ def create_dataset(use_cyrilic: bool = True, split: str = "train"):
                     "audio": curr_dataset[config["audio_column"]],
                 }
             )
-            print("dataset with filtered cols:", curr_dataset)
             sampling_rate = processor.feature_extractor.sampling_rate
             print("new sampling rate for audio is", sampling_rate)
             curr_dataset = curr_dataset.cast_column(

@@ -1,3 +1,11 @@
 #!/bin/bash
+use_gpu="$1"
 
-srun --pty -w n17 -p cuda --gres=gpu:2 bash
+if [[ $use_gpu == "True" ]]
+then
+  echo "Using gpus"
+  srun --pty -w n17 -p cuda --gres=gpu:2 bash
+else
+  echo "Not using gpus"
+  srun --pty -w n17 -p cuda bash
+fi
