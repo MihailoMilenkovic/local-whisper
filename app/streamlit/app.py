@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple
 import os
 import sys
 import datetime
@@ -8,52 +8,41 @@ import torch
 import torchaudio
 import streamlit as st
 from audio_recorder_streamlit import audio_recorder
-from transformers import WhisperProcessor, WhisperForConditionalGeneration, PeftModel
+from transformers import (
+    WhisperProcessor,
+    WhisperForConditionalGeneration,
+    WhisperFeatureExtractor,
+)
+from datasets import Audio, Dataset
+from peft import PeftModel
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-
-
-def load_and_resample(
-    audio,
-    sample_rate: Optional[int] = None,
-    required_sample_rate: Optional[int] = 16000,
-):
-    if isinstance(audio, torch.Tensor):
-        waveform = audio
-        assert sample_rate is not None
-    else:
-        waveform, sample_rate = torchaudio.load(audio)
-
-    # Select the first channel if the audio has multiple channels
-    # TODO: change to averaging samples across channels
-    if waveform.shape[0] > 1:
-        waveform = waveform[[0]]
-
-    # Resample the audio if required
-    if sample_rate != required_sample_rate:
-        waveform = torchaudio.functional.resample(
-            waveform, orig_freq=sample_rate, new_freq=required_sample_rate
-        )
-
-    return waveform
+WHISPER_SAMPLE_RATE = 16000
 
 
 def transcribe(
-    audio,
-    whisper_processor: WhisperProcessor,
+    audio_file: str,
     whisper_model: WhisperForConditionalGeneration,
+    feature_extractor: WhisperFeatureExtractor,
+    processor: WhisperProcessor,
 ):
-    audio_tensor, audio_sampling_rate = load_and_resample(audio)
-    input_features = whisper_processor(
-        audio_tensor, sampling_rate=audio_sampling_rate, return_tensors="pt"
+    audio_dataset = Dataset.from_dict({"audio": [audio_file]}).cast_column(
+        "audio", Audio(sampling_rate=WHISPER_SAMPLE_RATE)
+    )
+    audio = audio_dataset[0]["audio"]
+    print("AUDIO:", audio)
+    input_features = feature_extractor(
+        audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
     ).input_features
     with torch.no_grad():
         predicted_ids = whisper_model.generate(input_features.to(device))[0]
-    transcription = whisper_processor.decode(predicted_ids)
-    return transcription
+    transcription = processor.decode(predicted_ids)
+    normalized_transcription = processor.tokenizer._normalize(transcription)
+    print("TRANSCRIPTION:", normalized_transcription)
+    return normalized_transcription
 
 
-def save_audio_file(audio_bytes, file_extension):
+def save_audio_file(audio_bytes, file_extension, audio_output_dir):
     """
     Save audio bytes to a file with the specified extension.
 
@@ -62,7 +51,8 @@ def save_audio_file(audio_bytes, file_extension):
     :return: The name of the saved audio file
     """
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    file_name = f"audio_{timestamp}.{file_extension}"
+
+    file_name = os.path.join(audio_output_dir, f"audio_{timestamp}.{file_extension}")
 
     with open(file_name, "wb") as f:
         f.write(audio_bytes)
@@ -71,7 +61,10 @@ def save_audio_file(audio_bytes, file_extension):
 
 
 def transcribe_audio(
-    file_path: str, model: WhisperForConditionalGeneration, processor: WhisperProcessor
+    file_path: str,
+    model: WhisperForConditionalGeneration,
+    processor: WhisperProcessor,
+    feature_extractor: WhisperFeatureExtractor,
 ):
     """
     Transcribe the audio file at the specified path.
@@ -79,16 +72,21 @@ def transcribe_audio(
     :param file_path: The path of the audio file to transcribe
     :return: The transcribed text
     """
-    with open(file_path, "rb") as audio_file:
-        transcript = transcribe(
-            audio_file, whisper_model=model, whisper_processor=processor
-        )
+    transcript = transcribe(
+        audio_file=file_path,
+        whisper_model=model,
+        feature_extractor=feature_extractor,
+        processor=processor,
+    )
 
-    return transcript["text"]
+    return transcript
 
 
 def set_up_streamlit_app(
-    model: WhisperForConditionalGeneration, processor: WhisperProcessor
+    model: WhisperForConditionalGeneration,
+    processor: WhisperProcessor,
+    feature_extractor: WhisperFeatureExtractor,
+    audio_output_dir: str,
 ):
     """
     Main function to run the Whisper Transcription app.
@@ -102,26 +100,35 @@ def set_up_streamlit_app(
         audio_bytes = audio_recorder()
         if audio_bytes:
             st.audio(audio_bytes, format="audio/wav")
-            save_audio_file(audio_bytes, "mp3")
+            save_audio_file(audio_bytes, "mp3", audio_output_dir=audio_output_dir)
 
     # Upload Audio tab
     with tab2:
         audio_file = st.file_uploader("Upload Audio", type=["mp3", "mp4", "wav", "m4a"])
         if audio_file:
             file_extension = audio_file.type.split("/")[1]
-            save_audio_file(audio_file.read(), file_extension)
+            save_audio_file(
+                audio_file.read(), file_extension, audio_output_dir=audio_output_dir
+            )
 
     # Transcribe button action
     if st.button("Transcribe"):
         # Find the newest audio file
         audio_file_path = max(
-            [f for f in os.listdir(".") if f.startswith("audio")],
+            [
+                os.path.join(audio_output_dir, f)
+                for f in os.listdir(audio_output_dir)
+                if f.startswith("audio")
+            ],
             key=os.path.getctime,
         )
 
         # Transcribe the audio file
         transcript_text = transcribe_audio(
-            audio_file_path, model=model, processor=processor
+            audio_file_path,
+            model=model,
+            processor=processor,
+            feature_extractor=feature_extractor,
         )
 
         # Display the transcript
@@ -136,19 +143,22 @@ def set_up_streamlit_app(
         st.download_button("Download Transcript", transcript_text)
 
 
-def set_up_whisper(ckpt_location: str, lora_ckpt_location: Optional[str] = None):
-    args = parser.parse_args()
-    model = WhisperForConditionalGeneration.from_pretrained(
-        args.model_ckpt_location, device_map="auto"
-    )
-    if args.lora_ckpt_location:
-        model = PeftModel.from_pretrained(model, args.lora_ckpt_location)
+def set_up_whisper(
+    model_ckpt_location: str, lora_ckpt_location: Optional[str] = None
+) -> Tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperFeatureExtractor]:
+    print("LOADING WHISPER MODEL FROM", model_ckpt_location)
+    model = WhisperForConditionalGeneration.from_pretrained(model_ckpt_location)
+    if lora_ckpt_location:
+        print("LOADING WHISPER LORA CKPT FROM", lora_ckpt_location)
+        model = PeftModel.from_pretrained(model, lora_ckpt_location)
 
-    processor = WhisperProcessor.from_pretrained(args.model_ckpt_location)
+    processor = WhisperProcessor.from_pretrained(model_ckpt_location)
+    feature_extractor = WhisperFeatureExtractor.from_pretrained(model_ckpt_location)
     model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
         language="sr", task="transcribe"
     )
     model = model.to(device)
+    return model, processor, feature_extractor
 
 
 if __name__ == "__main__":
@@ -166,11 +176,18 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    model, processor = set_up_whisper(
-        model_ckpt=args.model_ckpt_location, lora_ckpt=args.lora_ckpt_location
+    model, processor, feature_extractor = set_up_whisper(
+        model_ckpt_location=args.model_ckpt_location,
+        lora_ckpt_location=args.lora_ckpt_location,
     )
-
     working_dir = os.path.dirname(os.path.abspath(__file__))
-    sys.path.append(working_dir)
+    audio_output_dir = os.path.join(working_dir, "audio_files")
+    if not os.path.exists(audio_output_dir):
+        os.makedirs(audio_output_dir)
 
-    set_up_streamlit_app()
+    set_up_streamlit_app(
+        model=model,
+        processor=processor,
+        feature_extractor=feature_extractor,
+        audio_output_dir=audio_output_dir,
+    )

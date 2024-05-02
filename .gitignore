@@ -5,3 +5,5 @@ datasets/
 wandb
 models
 eval_results.txt
+audio_files
+typescript
