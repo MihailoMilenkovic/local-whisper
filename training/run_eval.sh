@@ -46,6 +46,9 @@ save_path="./models/$model_size"
 base_model_location=openai/whisper-$model_size
 dataset_location="./datasets/common-voice-serbian-cyrilic/validation"
 
+#NOTE: hack to only use device 1 to not get cuda errors
+export CUDA_VISIBLE_DEVICES=0
+
 if [ "$base_model" = "true" ]; then
     python eval.py \
         --model_ckpt_location $base_model_location \

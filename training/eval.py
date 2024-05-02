@@ -11,11 +11,13 @@ import torch
 
 # code mostly copied from https://huggingface.co/openai/whisper-medium
 
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
 def map_to_pred(batch):
     input_features = batch["test_input_features"]
     with torch.no_grad():
-        predicted_ids = glob_model.generate(input_features.to("cuda"))[0]
+        predicted_ids = glob_model.generate(input_features.to(device))[0]
     transcription = glob_processor.decode(predicted_ids)
     batch["prediction"] = glob_processor.tokenizer._normalize(transcription)
     return batch
@@ -66,7 +68,7 @@ if __name__ == "__main__":
     model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
         language="sr", task="transcribe"
     )
-    model = model.to("cuda")
+    model = model.to(device)
     if args.lora_ckpt_location:
         model = PeftModel.from_pretrained(model, args.lora_ckpt_location)
     dataset = datasets.load_from_disk(args.dataset_location)

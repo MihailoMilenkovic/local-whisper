@@ -2,7 +2,7 @@
 # Make script exit if a command fails
 set -Eeuo pipefail
 
-model_sizes=("tiny" "small" "medium" "large")
+model_sizes=("tiny" "small") #"medium" "large")
 use_lora=("true" "false")
 eval_results="eval_results.txt"
 for size in "${model_sizes[@]}"; do
