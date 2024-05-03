@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 model_sizes=("tiny" "small" "medium" "large")
-use_lora=("false" "true") 
+use_lora=("true" "false") 
 for size in "${model_sizes[@]}"; do
     ./run_eval.sh --model-size "$size" --base-model true --use-lora false
     for lora in "${use_lora[@]}"; do

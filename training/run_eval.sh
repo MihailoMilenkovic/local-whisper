@@ -38,11 +38,12 @@ while true; do
 done
 
 # Output the values of keyword arguments
+echo "Running eval:"
 echo "model_size: $model_size"
 echo "base_model: $base_model"
 echo "use_lora: $use_lora"
 
-save_path="./models/$model_size"
+save_path="$(dirname "$(realpath "$0")")/models"
 base_model_location=openai/whisper-$model_size
 dataset_location="./datasets/common-voice-serbian-cyrilic/validation"
 
@@ -69,12 +70,12 @@ else
             --model_ckpt_location $base_model_location \
             --lora_ckpt_location $lora_ckpt_location \
             --dataset_location $dataset_location \
-            --eval_save_path $eval_res_dir/$model_size-lora.json
+            --eval_save_path $eval_res_dir/$model_size-trained_lora.json
     else
         finetuned_model_ckpt_location="${save_path}_full"
         python eval.py \
             --model_ckpt_location $finetuned_model_ckpt_location \
             --dataset_location $dataset_location \
-            --eval_save_path $eval_res_dir/$model_size-full-finetune.json
+            --eval_save_path $eval_res_dir/$model_size-trained_full.json
     fi
 fi

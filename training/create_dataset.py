@@ -1,6 +1,6 @@
 import os
 import argparse
-
+from typing import Optional
 from transformers import WhisperProcessor, WhisperTokenizer, WhisperFeatureExtractor
 import datasets
 from datasets import Audio
@@ -44,14 +44,15 @@ def is_audio_in_length_range(length):
     return length < MAX_INPUT_LENGTH
 
 
-def convert_to_cyrlic(example):
-    example["sentence"] = transliterate_lat2cir(example["sentence"])
-    return example
+def prepare_text(batch, use_cyrilic: Optional[bool] = False):
 
+    batch["sentence"] = (
+        transliterate_cir2lat(batch["sentence"])
+        if use_cyrilic
+        else transliterate_cir2lat(batch["sentence"])
+    )
 
-def convert_to_latin(example):
-    example["sentence"] = transliterate_cir2lat(example["sentence"])
-    return example
+    return batch
 
 
 def prepare_dataset(batch):
@@ -62,7 +63,6 @@ def prepare_dataset(batch):
     batch["input_features"] = feature_extractor(
         audio["array"], sampling_rate=audio["sampling_rate"]
     ).input_features[0]
-
     # encode target text to label ids
     batch["labels"] = tokenizer(batch["sentence"]).input_ids
     # NOTE: alternative way to create input features here
@@ -73,7 +73,7 @@ def prepare_dataset(batch):
     return batch
 
 
-def create_dataset(use_cyrilic: bool = True, split: str = "train"):
+def create_dataset(use_cyrilic: Optional[bool] = True, split: str = "train"):
     dataset_list = []
     for config in dataset_configs_to_use:
         for language in config["languages"]:
@@ -93,13 +93,14 @@ def create_dataset(use_cyrilic: bool = True, split: str = "train"):
                     "audio": curr_dataset[config["audio_column"]],
                 }
             )
+            curr_dataset = curr_dataset.select(range(10))
             sampling_rate = processor.feature_extractor.sampling_rate
             print("new sampling rate for audio is", sampling_rate)
             curr_dataset = curr_dataset.cast_column(
                 "audio", Audio(sampling_rate=sampling_rate)
             )
             curr_dataset = curr_dataset.map(
-                convert_to_cyrlic if use_cyrilic else convert_to_latin, num_proc=1
+                prepare_text, fn_kwargs={"use_cyrilic": use_cyrilic}
             )
             curr_dataset = curr_dataset.map(
                 prepare_dataset,
@@ -122,7 +123,7 @@ def create_dataset(use_cyrilic: bool = True, split: str = "train"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset_save_location", type=str, required=True)
-    parser.add_argument("--use_cyrilic", type=bool, default=True)
+    parser.add_argument("--use_cyrilic", action="store_true")
     args = parser.parse_args()
 
     splits = ["train", "validation"]

@@ -109,5 +109,5 @@ if __name__ == "__main__":
         output_all_columns=True,
     )
     res = get_eval_info(model, processor, dataset)
-    print(res)
+    print("Model WER:", res.word_error_rate)
     res.to_json(args.eval_save_path)

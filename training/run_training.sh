@@ -29,10 +29,12 @@ done
 echo "model_size: $model_size"
 echo "use_lora: $use_lora"
 
+model_save_folder=$(dirname "$(realpath "$0")")/models
+
 if [ "$use_lora" = "true" ]; then
-    save_path="${save_path}_lora"
+    save_path="$model_save_folder/$model_size-trained_lora"
 else
-    save_path="${save_path}_full"
+    save_path="$model_save_folder/$model_size-trained_full"
 fi
 
 python train.py \
