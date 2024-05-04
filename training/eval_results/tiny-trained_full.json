@@ -1,5 +1,5 @@
 {
-  "word_error_rate": 80.04484304932735,
+  "word_error_rate": 80.02615844544096,
   "samples": [
     {
       "prediction": "9 meter do bok prosi kurecno menano su kocent sela",
@@ -1878,7 +1878,7 @@
       "reference": "i ja tebi"
     },
     {
-      "prediction": "iudniaga",
+      "prediction": "judniega",
       "reference": "i od njega"
     },
     {
@@ -3222,7 +3222,7 @@
       "reference": "a da je tako"
     },
     {
-      "prediction": "onea maja",
+      "prediction": "ona maja",
       "reference": "0 nama je"
     },
     {
@@ -4634,7 +4634,7 @@
       "reference": "da me pitas"
     },
     {
-      "prediction": "0 nemoje",
+      "prediction": "onemo je",
       "reference": "u njemu je"
     },
     {

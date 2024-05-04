@@ -226,6 +226,8 @@ def main():
         peft_config = get_peft_config(peft_args=peft_args)
         model = get_peft_model(model, peft_config)
         callbacks.append(SavePeftModelCallback)
+        print("Training lora model")
+        model.print_trainable_parameters()
     else:
         print("Training full model")
 
@@ -233,21 +235,25 @@ def main():
     # disable cache during training since it's incompatible with gradient checkpointing
 
     print("Setup training args")
-    training_args = Seq2SeqTrainingArguments(
-        output_dir=training_args.output_dir,
-        per_device_train_batch_size=8,
-        gradient_accumulation_steps=1,  # increase by 2x for every 2x decrease in batch size
-        learning_rate=1e-3,
-        warmup_steps=50,
-        num_train_epochs=3,
-        evaluation_strategy="epoch",
-        fp16=True,
-        per_device_eval_batch_size=8,
-        generation_max_length=128,
-        logging_steps=25,
-        remove_unused_columns=False,  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
-        label_names=["labels"],  # same reason as above
-    )
+    training_args.label_names = [
+        "labels"
+    ]  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
+    training_args.remove_unused_columns = False  # same reason as above
+    # training_args = Seq2SeqTrainingArguments(
+    #     output_dir=training_args.output_dir,
+    #     per_device_train_batch_size=8,
+    #     gradient_accumulation_steps=1,  # increase by 2x for every 2x decrease in batch size
+    #     learning_rate=1e-3,
+    #     warmup_steps=50,
+    #     num_train_epochs=3,
+    #     evaluation_strategy=,
+    #     fp16=True,
+    #     per_device_eval_batch_size=8,
+    #     generation_max_length=128,
+    #     logging_steps=25,
+    #     remove_unused_columns=False,  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
+    #     label_names=["labels"],  # same reason as above
+    # )
 
     trainer = Seq2SeqTrainer(
         args=training_args,
@@ -263,7 +269,14 @@ def main():
 
     # train model
     trainer.train()
-    trainer.save_model(output_dir=training_args.output_dir)
+    if not finetune_args.use_peft:
+        # save model to output dir normally
+        print(f"Saving fully trained model to {training_args.output_dir}")
+        trainer.save_model(output_dir=training_args.output_dir)
+    else:
+        merged_model = model.merge_and_unload()
+        print(f"Saving merged loras model to {training_args.output_dir}")
+        merged_model.save_pretrained(save_directory=training_args.output_dir)
 
 
 if __name__ == "__main__":

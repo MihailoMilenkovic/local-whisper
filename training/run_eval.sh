@@ -7,6 +7,7 @@ model_size="tiny"
 base_model="false"
 use_lora="true"
 
+model_save_folder=$(dirname "$(realpath "$0")")/models
 # Parse long command-line arguments
 TEMP=$(getopt -o s:b:l: --long model-size:,base-model:,use-lora: -n 'script.sh' -- "$@")
 eval set -- "$TEMP"
@@ -62,20 +63,20 @@ if [ "$base_model" = "true" ]; then
     python eval.py \
         --model_ckpt_location $base_model_location \
         --dataset_location $dataset_location \
-        --eval_save_path $eval_res_dir/$model_size-base.json
+        --eval_save_path $eval_res_dir/$model_size-base.json \
+        --base_model_location $base_model_location
 else
     if [ "$use_lora" = "true" ]; then
-        lora_ckpt_location="${save_path}_lora"
-        python eval.py \
-            --model_ckpt_location $base_model_location \
-            --lora_ckpt_location $lora_ckpt_location \
-            --dataset_location $dataset_location \
-            --eval_save_path $eval_res_dir/$model_size-trained_lora.json
+        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_lora"
+        eval_save_path=$eval_res_dir/$model_size-trained_lora.json
     else
-        finetuned_model_ckpt_location="${save_path}_full"
-        python eval.py \
-            --model_ckpt_location $finetuned_model_ckpt_location \
-            --dataset_location $dataset_location \
-            --eval_save_path $eval_res_dir/$model_size-trained_full.json
+        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_full"
+        eval_save_path=$eval_res_dir/$model_size-trained_full.json
     fi
+    python eval.py \
+        --model_ckpt_location $finetuned_model_ckpt_location \
+        --dataset_location $dataset_location \
+        --eval_save_path $eval_save_path \
+        --base_model_location $base_model_location
+        # --lora_ckpt_location $lora_ckpt_location \
 fi

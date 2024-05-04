@@ -93,7 +93,7 @@ def create_dataset(use_cyrilic: Optional[bool] = True, split: str = "train"):
                     "audio": curr_dataset[config["audio_column"]],
                 }
             )
-            curr_dataset = curr_dataset.select(range(10))
+            # curr_dataset = curr_dataset.select(range(10))
             sampling_rate = processor.feature_extractor.sampling_rate
             print("new sampling rate for audio is", sampling_rate)
             curr_dataset = curr_dataset.cast_column(
