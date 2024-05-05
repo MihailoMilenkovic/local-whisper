@@ -9,7 +9,7 @@ use_lora="true"
 
 model_save_folder=$(dirname "$(realpath "$0")")/models
 # Parse long command-line arguments
-TEMP=$(getopt -o s:b:l: --long model-size:,base-model:,use-lora: -n 'script.sh' -- "$@")
+TEMP=$(getopt -o s:b:l:c: --long model-size:,base-model:,use-lora:,use-cyrilic: -n 'script.sh' -- "$@")
 eval set -- "$TEMP"
 
 # Process command-line arguments
@@ -25,6 +25,10 @@ while true; do
       ;;
     -l|--use-lora)
       use_lora="$2"
+      shift 2
+      ;;
+    -c|--use-cyrilic)
+      use_cyrilic="$2"
       shift 2
       ;;
     --)
@@ -55,6 +59,28 @@ if [ ! -d $eval_res_dir ]; then
   # Create the directory if it doesn't exist
   mkdir "$eval_res_dir"
 fi
+
+dataset="common-voice"
+language="serbian"
+if [ "$use_cyrilic" = "true" ]; then
+    script_suffix="cyrilic"
+    cyrilic_tag="--use_cyrilic"
+else
+    script_suffix="latin"
+fi
+dataset_name="$dataset-$language-$script_suffix"
+
+if [ "$use_lora" = "true" ]; then
+    save_path="$model_save_folder/$model_size-trained_lora-$dataset_name"
+else
+    save_path="$model_save_folder/$model_size-trained_full-$dataset_name"
+fi
+
+echo "language:$language"
+echo "dataset:$dataset"
+echo "script:$script_suffix"
+echo "dataset name:$dataset_name"
+echo "model save path:$save_path"
 
 #NOTE: hack to only use device 1 to not get cuda errors
 export CUDA_VISIBLE_DEVICES=0

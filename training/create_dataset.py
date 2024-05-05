@@ -125,7 +125,8 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_save_location", type=str, required=True)
     parser.add_argument("--use_cyrilic", action="store_true")
     args = parser.parse_args()
-
+    print("Dataset save location:", args.dataset_save_location)
+    print("Cyrilic:", args.use_cyrilic)
     splits = ["train", "validation"]
     for split in splits:
         dataset = create_dataset(use_cyrilic=args.use_cyrilic, split=split)

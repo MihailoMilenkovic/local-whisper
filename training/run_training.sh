@@ -18,6 +18,10 @@ while [[ $# -gt 0 ]]; do
         use_lora="$2"
         shift 2
         ;;
+        -c|--use-cyrilic)
+        use_cyrilic="$2"
+        shift 2
+        ;;
         *)
         echo "Unknown option: $1"
         exit 1
@@ -30,12 +34,6 @@ echo "model_size: $model_size"
 echo "use_lora: $use_lora"
 
 model_save_folder=$(dirname "$(realpath "$0")")/models
-
-if [ "$use_lora" = "true" ]; then
-    save_path="$model_save_folder/$model_size-trained_lora"
-else
-    save_path="$model_save_folder/$model_size-trained_full"
-fi
 
 effective_batch_size=16
 
@@ -53,10 +51,32 @@ echo "Model size: $model_size"
 echo "Gradient accumulation steps: $gradient_accumulation_steps"
 echo "Per device batch size: $per_device_batch_size"
 
+dataset="common-voice"
+language="serbian"
+if [ "$use_cyrilic" = "true" ]; then
+    script_suffix="cyrilic"
+    cyrilic_tag="--use_cyrilic"
+else
+    script_suffix="latin"
+fi
+dataset_name="$dataset-$language-$script_suffix"
+
+if [ "$use_lora" = "true" ]; then
+    save_path="$model_save_folder/$model_size-trained_lora-$dataset_name"
+else
+    save_path="$model_save_folder/$model_size-trained_full-$dataset_name"
+fi
+
+echo "language:$language"
+echo "dataset:$dataset"
+echo "script:$script_suffix"
+echo "dataset name:$dataset_name"
+echo "model save path:$save_path"
+
 python train.py \
     --model_path openai/whisper-$model_size \
-    --train_dataset_path ./datasets/common-voice-serbian-cyrilic/train \
-    --eval_dataset_path ./datasets/common-voice-serbian-cyrilic/validation \
+    --train_dataset_path ./datasets/$dataset_name/train \
+    --eval_dataset_path ./datasets/$dataset_name/validation \
     --use_peft $use_lora \
     --peft_mode lora \
     --lora_rank 16   \
