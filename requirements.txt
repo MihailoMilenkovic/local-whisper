@@ -12,3 +12,4 @@ soundfile
 librosa
 black
 audio_recorder_streamlit
+matplotlib

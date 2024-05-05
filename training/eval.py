@@ -26,6 +26,18 @@ class EvalResults:
     word_error_rate: float
     samples: List[TextComparison]
 
+    @classmethod
+    def from_json(cls, load_path: str):
+        with open(load_path, "r") as f:
+            data = json.load(f)
+            wer_data = data["word_error_rate"]
+            sample_data = data["samples"]
+            samples = [
+                TextComparison(prediction=s["prediction"], reference=s["reference"])
+                for s in sample_data
+            ]
+            return cls(word_error_rate=wer_data, samples=samples)
+
     def to_json(self, save_path: str):
         with open(save_path, "w") as f:
             res_obj = {"word_error_rate": self.word_error_rate, "samples": self.samples}
