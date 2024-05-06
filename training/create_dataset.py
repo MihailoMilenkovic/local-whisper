@@ -47,7 +47,7 @@ def is_audio_in_length_range(length):
 def prepare_text(batch, use_cyrilic: Optional[bool] = False):
 
     batch["sentence"] = (
-        transliterate_cir2lat(batch["sentence"])
+        transliterate_lat2cir(batch["sentence"])
         if use_cyrilic
         else transliterate_cir2lat(batch["sentence"])
     )

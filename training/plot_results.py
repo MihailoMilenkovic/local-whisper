@@ -21,7 +21,9 @@ for model_size in model_sizes:
                     )
                     try:
                         curr_info_path = os.path.join(
-                            os.path.dirname(__file__), "eval_results", curr_config
+                            os.path.dirname(__file__),
+                            "eval_results",
+                            f"{curr_config}.json",
                         )
                         curr_info = EvalResults.from_json(curr_info_path)
                     except:
@@ -30,15 +32,16 @@ for model_size in model_sizes:
                     curr_wer = curr_info.word_error_rate
                     configs.append(curr_config)
                     wers.append(curr_wer)
+# Sort the configurations and WERs in descending order
+sorted_configs = [x for _, x in sorted(zip(wers, configs), reverse=True)]
+sorted_wers = sorted(wers, reverse=True)
 
-for config, wer in zip(configs, wers):
-    print("Config:", config)
-    print("WER:", wer)
-plt.bar(configs, wers)
+plt.figure(figsize=(10, 6))  # Increase the figure size
+plt.bar(sorted_configs, sorted_wers)
 plt.xlabel("Configuration")
 plt.ylabel("Word Error Rate")
 plt.title("Comparison of Word Error Rates across Configurations")
 plt.xticks(rotation=90)  # Rotate the x-axis labels for better readability
 plt.tight_layout()  # Ensure the labels fit within the figure area
-# Save the plot to a file
+plt.ylim(top=max(sorted_wers) * 1.2)  # Increase the y-axis limit for better visibility
 plt.savefig("word_error_rates.png", dpi=300)

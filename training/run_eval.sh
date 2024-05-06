@@ -6,6 +6,7 @@ model_size="tiny"
 # base_model="true"
 base_model="false"
 use_lora="true"
+use_cyrilic="true"
 
 model_save_folder=$(dirname "$(realpath "$0")")/models
 # Parse long command-line arguments
@@ -50,7 +51,6 @@ echo "use_lora: $use_lora"
 
 save_path="$(dirname "$(realpath "$0")")/models"
 base_model_location=openai/whisper-$model_size
-dataset_location="./datasets/common-voice-serbian-cyrilic/validation"
 
 script_dir=$(dirname "$(realpath "$0")")
 eval_res_dir="$script_dir/eval_results"
@@ -68,6 +68,7 @@ if [ "$use_cyrilic" = "true" ]; then
 else
     script_suffix="latin"
 fi
+dataset_location="./datasets/common-voice-serbian-$script_suffix/validation"
 dataset_name="$dataset-$language-$script_suffix"
 
 if [ "$use_lora" = "true" ]; then
@@ -86,23 +87,24 @@ echo "model save path:$save_path"
 export CUDA_VISIBLE_DEVICES=0
 
 if [ "$base_model" = "true" ]; then
-    python eval.py \
-        --model_ckpt_location $base_model_location \
-        --dataset_location $dataset_location \
-        --eval_save_path $eval_res_dir/$model_size-base.json \
-        --base_model_location $base_model_location
+    eval_save_path=$eval_res_dir/$model_size-base-$dataset_name.json
+    model_ckpt_location=$base_model_location
 else
     if [ "$use_lora" = "true" ]; then
-        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_lora"
-        eval_save_path=$eval_res_dir/$model_size-trained_lora.json
+        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_lora-$dataset_name"
+        eval_save_path=$eval_res_dir/$model_size-trained_lora-$dataset_name.json
     else
-        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_full"
-        eval_save_path=$eval_res_dir/$model_size-trained_full.json
+        finetuned_model_ckpt_location="$model_save_folder/$model_size-trained_full-$dataset_name"
+        eval_save_path=$eval_res_dir/$model_size-trained_full-$dataset_name.json
     fi
-    python eval.py \
-        --model_ckpt_location $finetuned_model_ckpt_location \
-        --dataset_location $dataset_location \
-        --eval_save_path $eval_save_path \
-        --base_model_location $base_model_location
+    model_ckpt_location=$finetuned_model_ckpt_location
         # --lora_ckpt_location $lora_ckpt_location \
 fi
+echo "Eval save path:$eval_save_path"
+echo "Model ckpt location:$model_ckpt_location"
+
+python eval.py \
+    --model_ckpt_location $model_ckpt_location \
+    --dataset_location $dataset_location \
+    --eval_save_path $eval_save_path \
+    --base_model_location $base_model_location

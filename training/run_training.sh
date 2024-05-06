@@ -39,8 +39,8 @@ effective_batch_size=16
 
 case $model_size in
   "tiny") per_device_batch_size=16 ;;
-  "small") per_device_batch_size=4 ;;
-  "medium") per_device_batch_size=2 ;;
+  "small") per_device_batch_size=1 ;;
+  "medium") per_device_batch_size=1 ;;
   "large") per_device_batch_size=1 ;;
   *) echo "Invalid model size: $model_size"; exit 1 ;;
 esac

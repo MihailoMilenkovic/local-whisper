@@ -156,6 +156,7 @@ if __name__ == "__main__":
     )
     print("Model location:", args.model_ckpt_location)
     print("Model original location:", args.base_model_location)
+    print("Dataset first entry:", dataset[0])
     res = get_eval_info(model, processor, dataset, args.per_device_batch_size)
     print("Model WER:", res.word_error_rate)
     print("Saving results to:", args.eval_save_path)

@@ -202,6 +202,12 @@ def main():
     print("Setup Data")
     train_dataset = datasets.load_from_disk(finetune_args.train_dataset_path)
     print(f"Train dataset: {train_dataset}")
+    print("Dataset first entry text:", train_dataset[0]["test_reference"])
+    print("Dataset first entry labels:", train_dataset[0]["labels"])
+    print(
+        "Dataset first entry ids decoded:",
+        processor.batch_decode(train_dataset[0]["labels"]),
+    )
     if finetune_args.eval_dataset_path is not None:
         eval_dataset = datasets.load_from_disk(finetune_args.eval_dataset_path)
 
@@ -213,14 +219,15 @@ def main():
         finetune_args.model_path,
         quantization_config=quantization_config,
     )
+    model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
+        language="sr", task="transcribe"
+    )
+    model.config.suppress_tokens = []
     callbacks = []
     if finetune_args.use_peft:
         # TODO: fix peft training bugs
         # see https://github.com/huggingface/peft/blob/main/examples/int8_training/peft_bnb_whisper_large_v2_training.ipynb
-        model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
-            language="sr", task="transcribe"
-        )
-        model.config.suppress_tokens = []
+
         print("Setup peft")
         model = prepare_model_for_kbit_training(model)
         peft_config = get_peft_config(peft_args=peft_args)

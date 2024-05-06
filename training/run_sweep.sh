@@ -2,10 +2,13 @@
 # Make script exit if a command fails
 set -Eeuo pipefail
 
-model_sizes=("tiny" "small" "medium" "large")
-# model_sizes=("tiny")
+# model_sizes=("tiny" "small" "medium" "large")
+model_sizes=("medium" "large")
+# model_sizes=("small")
 use_lora=("false" "true") 
-use_cyrilic=("false" "true")
+# use_lora=("false")
+# use_cyrilic=("true" "false")
+use_cyrilic=("false")
 
 for size in "${model_sizes[@]}"; do
     for script in "${use_cyrilic[@]}"; do

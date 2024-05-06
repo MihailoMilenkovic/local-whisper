@@ -1,0 +1,5721 @@
+{
+  "word_error_rate": 45.23542600896861,
+  "samples": [
+    {
+      "prediction": "9 m dupog prosiku recno me nanosu ko sed zela",
+      "reference": "devet metara dubok prosek u recnome nanosu kod sent asela"
+    },
+    {
+      "prediction": "ko zna gde",
+      "reference": "ko zna gde je"
+    },
+    {
+      "prediction": "na to pitanje tesko odgvorite",
+      "reference": "na to pitanje je tesko odgovoriti"
+    },
+    {
+      "prediction": "je zeles racno",
+      "reference": "jesi li srecna"
+    },
+    {
+      "prediction": "biojeon",
+      "reference": "bio je on"
+    },
+    {
+      "prediction": "sta je vandrednost anja",
+      "reference": "sta je vanredno stanje"
+    },
+    {
+      "prediction": "a zasto ne",
+      "reference": "a zasto ne"
+    },
+    {
+      "prediction": "i ko nije",
+      "reference": "i ko nije"
+    },
+    {
+      "prediction": "i za sebe",
+      "reference": "i za sebe"
+    },
+    {
+      "prediction": "a onesu",
+      "reference": "a one su"
+    },
+    {
+      "prediction": "i ne bi mol ko",
+      "reference": "i ne bi mogao"
+    },
+    {
+      "prediction": "to je pinta",
+      "reference": "to je pita"
+    },
+    {
+      "prediction": "u svakom poklajete",
+      "reference": "u svakom pogledu"
+    },
+    {
+      "prediction": "visso dme ne",
+      "reference": "vise od mene"
+    },
+    {
+      "prediction": "ne jos nis",
+      "reference": "ne jos nisu"
+    },
+    {
+      "prediction": "imali su automatike i obicne puske",
+      "reference": "imali su automatske i obicne puske"
+    },
+    {
+      "prediction": "i ne znas sta je to",
+      "reference": "i ne znas sta je to"
+    },
+    {
+      "prediction": "mejdem",
+      "reference": "ne ide mi"
+    },
+    {
+      "prediction": "ao vi jo staci",
+      "reference": "a ovi ostaci"
+    },
+    {
+      "prediction": "pa reciteno",
+      "reference": "pa recite nam"
+    },
+    {
+      "prediction": "ne bih mozda",
+      "reference": "ne bih mogla"
+    },
+    {
+      "prediction": "majesteli",
+      "reference": "ma jeste li"
+    },
+    {
+      "prediction": "e pa to se desilo",
+      "reference": "e pa to se desilo"
+    },
+    {
+      "prediction": "a i kost",
+      "reference": "a i kosta"
+    },
+    {
+      "prediction": "rat i mir",
+      "reference": "rat i mir"
+    },
+    {
+      "prediction": "onebila",
+      "reference": "ona je bila"
+    },
+    {
+      "prediction": "i treba da bude",
+      "reference": "i treba da bude"
+    },
+    {
+      "prediction": "to i to",
+      "reference": "to i to"
+    },
+    {
+      "prediction": "da i osziv",
+      "reference": "da je jos ziv"
+    },
+    {
+      "prediction": "sto mi odmani kars",
+      "reference": "sto mi odmah ne kazes"
+    },
+    {
+      "prediction": "bolje je dobro slusati nego lose zapovjedati",
+      "reference": "bolje je dobro slusati nego lose zapovedati"
+    },
+    {
+      "prediction": "to je bitanje",
+      "reference": "to je pitanje"
+    },
+    {
+      "prediction": "a teista hriscanin jevrin",
+      "reference": "ateista hriscanin jevrejin"
+    },
+    {
+      "prediction": "doktor ime puno posl",
+      "reference": "doktori imaju puno posla"
+    },
+    {
+      "prediction": "to ime",
+      "reference": "to im je"
+    },
+    {
+      "prediction": "bila me strah",
+      "reference": "bilo me je strah"
+    },
+    {
+      "prediction": "ne mislim da",
+      "reference": "ne mislim da"
+    },
+    {
+      "prediction": "ima samo jedno",
+      "reference": "ima samo jedno"
+    },
+    {
+      "prediction": "samo jedan do",
+      "reference": "samo jedan deo"
+    },
+    {
+      "prediction": "mnogi se ne slazu",
+      "reference": "mnogi se ne slazu"
+    },
+    {
+      "prediction": "sto ne id\u0435\u0448",
+      "reference": "sto ne ides"
+    },
+    {
+      "prediction": "ali temere nisu dovoljne pisu i izveste",
+      "reference": "ali te mere nisu dovoljne pise u izvestaju"
+    },
+    {
+      "prediction": "0 20 grudina",
+      "reference": "0 dvadeset godina"
+    },
+    {
+      "prediction": "sto mi gledate",
+      "reference": "sto me gledate"
+    },
+    {
+      "prediction": "ipak svih kazu da je vrlo realisticna",
+      "reference": "ipak svi kazu da je vrlo realisticna"
+    },
+    {
+      "prediction": "sta je civota",
+      "reference": "sta je zivot"
+    },
+    {
+      "prediction": "0 nen nen",
+      "reference": "0 ne ne"
+    },
+    {
+      "prediction": "oddela na cini clovek",
+      "reference": "odelo ne cini coveka"
+    },
+    {
+      "prediction": "postoji puno ideja u vezi saobrazovanja",
+      "reference": "postoji puno ideja u vezi sa obrazovanjem"
+    },
+    {
+      "prediction": "i ja li te .",
+      "reference": "je li te"
+    },
+    {
+      "prediction": "0 bozene",
+      "reference": "0 boze ne"
+    },
+    {
+      "prediction": "tu su ponov 0 azizki zemlju prednosti",
+      "reference": "tu su ponovo azijske zemlje u prednosti"
+    },
+    {
+      "prediction": "pa ne mozes",
+      "reference": "pa ne mozes"
+    },
+    {
+      "prediction": "svi su povidel",
+      "reference": "svi su to videli"
+    },
+    {
+      "prediction": "imenaj je",
+      "reference": "i mene je"
+    },
+    {
+      "prediction": "0 njeli",
+      "reference": "0 nije li"
+    },
+    {
+      "prediction": "ne jasno",
+      "reference": "ne ja sam"
+    },
+    {
+      "prediction": "hvala vam na iskrenosti",
+      "reference": "hvala vam na iskrenosti"
+    },
+    {
+      "prediction": "pa koa ce mali",
+      "reference": "pa hocemo li"
+    },
+    {
+      "prediction": "mogu da izdrezim",
+      "reference": "mogu da izdrzim"
+    },
+    {
+      "prediction": "ne bi mogli",
+      "reference": "ne bi mogli"
+    },
+    {
+      "prediction": "do alo",
+      "reference": "to je lov"
+    },
+    {
+      "prediction": "0 lepe",
+      "reference": "0 lepo je"
+    },
+    {
+      "prediction": "benzunaru na zajednicu ovdje nema strategiju izlasku",
+      "reference": "medunarodna zajednica ovde nema strategiju izlaska"
+    },
+    {
+      "prediction": "amak de",
+      "reference": "ama gde je"
+    },
+    {
+      "prediction": "ne bi moh gao",
+      "reference": "ne bi mogao"
+    },
+    {
+      "prediction": "ta odluka su ocekuju novembru",
+      "reference": "ta odluka se ocekuje u novembru"
+    },
+    {
+      "prediction": "kto se mora iskoristiti",
+      "reference": "to se mora iskoristiti"
+    },
+    {
+      "prediction": "to je na njem",
+      "reference": "to je na njemu"
+    },
+    {
+      "prediction": "kako vi su bili",
+      "reference": "kakvi su bili"
+    },
+    {
+      "prediction": "0 dobar dan",
+      "reference": "0 dobar dan"
+    },
+    {
+      "prediction": "vrlo smov od lukne",
+      "reference": "vrlo smo odlucni"
+    },
+    {
+      "prediction": "sta ima",
+      "reference": "a sta ima"
+    },
+    {
+      "prediction": "sve same gluposti",
+      "reference": "sve same gluposti"
+    },
+    {
+      "prediction": "taj to",
+      "reference": "ta je to"
+    },
+    {
+      "prediction": "stanica emito je program 6 sati dnevno",
+      "reference": "stanica emituje program sest sati dnevno"
+    },
+    {
+      "prediction": "skjaptika je puno",
+      "reference": "skeptika je puno"
+    },
+    {
+      "prediction": "0 tisi",
+      "reference": "0 ti si"
+    },
+    {
+      "prediction": "sajstele paradite ovom okruzenju",
+      "reference": "zaista je lepo raditi u ovom okruzenju"
+    },
+    {
+      "prediction": "prosto ne mogu",
+      "reference": "prosto ne mogu"
+    },
+    {
+      "prediction": "tako mora biti",
+      "reference": "tako mora biti"
+    },
+    {
+      "prediction": "sam taj zakon medutim nije dovoljano",
+      "reference": "sam taj zakon medutim nije dovoljan"
+    },
+    {
+      "prediction": "koje kaze",
+      "reference": "ko joj kaze"
+    },
+    {
+      "prediction": "zadevojkuje",
+      "reference": "za devojku je"
+    },
+    {
+      "prediction": "a i njen",
+      "reference": "a i njen"
+    },
+    {
+      "prediction": "vasna sve",
+      "reference": "bas na sve"
+    },
+    {
+      "prediction": "domace sta unistvo je naziva samo vjecnica",
+      "reference": "domace stanovnistvo je naziva samo vijecnica"
+    },
+    {
+      "prediction": "svijed je pao",
+      "reference": "zid je pao"
+    },
+    {
+      "prediction": "to je",
+      "reference": "to to je"
+    },
+    {
+      "prediction": "nijadno od nijih",
+      "reference": "ni jedna od njih"
+    },
+    {
+      "prediction": "molimte ne",
+      "reference": "molim te ne"
+    },
+    {
+      "prediction": "sarjanisa",
+      "reference": "zar ja nisam"
+    },
+    {
+      "prediction": "ti mali vraz",
+      "reference": "ti mali vraze"
+    },
+    {
+      "prediction": "on nije pi",
+      "reference": "on nije bio"
+    },
+    {
+      "prediction": "sto vam je",
+      "reference": "sto vam je"
+    },
+    {
+      "prediction": "nije dosada",
+      "reference": "nije do sada"
+    },
+    {
+      "prediction": "po novicu sve je to bilo zbog snijega",
+      "reference": "ponovit cu sve je to bilo zbog snijega"
+    },
+    {
+      "prediction": "kristenja se ne secem dovoljno",
+      "reference": "krstenja se ne secam dovoljno"
+    },
+    {
+      "prediction": "pa to nije",
+      "reference": "pa to nije"
+    },
+    {
+      "prediction": "da ja znam",
+      "reference": "da ja znam"
+    },
+    {
+      "prediction": "i gde je",
+      "reference": "i gde je"
+    },
+    {
+      "prediction": "on je priminov praslo godine",
+      "reference": "on je preminuo prosle godine"
+    },
+    {
+      "prediction": "da dosad",
+      "reference": "da do sad"
+    },
+    {
+      "prediction": "trajbalo je da",
+      "reference": "trebalo je da"
+    },
+    {
+      "prediction": "kaj je on",
+      "reference": "kao i on"
+    },
+    {
+      "prediction": "neka ostane tam",
+      "reference": "neka ostane tamo"
+    },
+    {
+      "prediction": "postoje dva kluba",
+      "reference": "postoje dva kluba"
+    },
+    {
+      "prediction": "to se dosa da nije do godine",
+      "reference": "to se do sada nije dogodilo"
+    },
+    {
+      "prediction": "ti zn\u0430\u0448 ko",
+      "reference": "ti znas ko"
+    },
+    {
+      "prediction": "i to sam",
+      "reference": "i to sam"
+    },
+    {
+      "prediction": "mislim da je",
+      "reference": "mislim da je"
+    },
+    {
+      "prediction": "i strazivacili su pronacili i dijelo vekosti",
+      "reference": "istrazivaci su pronasli i dijelove kosti"
+    },
+    {
+      "prediction": "a sto se ti",
+      "reference": "a sto si ti"
+    },
+    {
+      "prediction": "mamo molim te",
+      "reference": "ma molim te"
+    },
+    {
+      "prediction": "za dana se dosta",
+      "reference": "za danas je dosta"
+    },
+    {
+      "prediction": "i ja to znam",
+      "reference": "i ja to znam"
+    },
+    {
+      "prediction": "jasnije 10",
+      "reference": "jos ni jedan"
+    },
+    {
+      "prediction": "90 odnjemni prek i dravdova izazvalo je protesnima",
+      "reference": "devedesetodnevni prekid radova izazvao je proteste"
+    },
+    {
+      "prediction": "vakuliraku",
+      "reference": "ovako ili onako"
+    },
+    {
+      "prediction": "magnepim",
+      "reference": "ma ne bi"
+    },
+    {
+      "prediction": "znam ja svetu",
+      "reference": "znam ja sve to"
+    },
+    {
+      "prediction": "ne odbijajme",
+      "reference": "ne odbijaj me"
+    },
+    {
+      "prediction": "ba s nerezume",
+      "reference": "vas ne razumem"
+    },
+    {
+      "prediction": "domeci podohvjeti imaju vaznu ulogu u tom pogledu",
+      "reference": "domaci poduhvati imaju vaznu ulogu u tom pogledu"
+    },
+    {
+      "prediction": "i za njih",
+      "reference": "i za njih"
+    },
+    {
+      "prediction": "ne bude nista",
+      "reference": "ne brinite nista"
+    },
+    {
+      "prediction": "zadovoljensim",
+      "reference": "zadovoljan sam"
+    },
+    {
+      "prediction": "i ne mora",
+      "reference": "i ne mora"
+    },
+    {
+      "prediction": "pasta ima",
+      "reference": "pa sta ima"
+    },
+    {
+      "prediction": "nemo su me nje nemo su me",
+      "reference": "nema sumnje nema sumnje"
+    },
+    {
+      "prediction": "jastim jastim",
+      "reference": "ja sam ja sam"
+    },
+    {
+      "prediction": "dobili su ih na legalna nacin",
+      "reference": "dobili su ih na legalan nacin"
+    },
+    {
+      "prediction": "nemoze nemoze",
+      "reference": "ne moze ne moze"
+    },
+    {
+      "prediction": "snap kakve",
+      "reference": "znam kako je"
+    },
+    {
+      "prediction": "deserati",
+      "reference": "da se vrati"
+    },
+    {
+      "prediction": "ne za njih",
+      "reference": "ne za njih"
+    },
+    {
+      "prediction": "nesto vellovazno",
+      "reference": "nesto vrlo vazno"
+    },
+    {
+      "prediction": "a je li",
+      "reference": "a je li"
+    },
+    {
+      "prediction": "moram to uciniti",
+      "reference": "moram to uciniti"
+    },
+    {
+      "prediction": "nedostaj je kampova i hodiljskih kapacitet",
+      "reference": "nedostaje i kampova i hotelskih kapaciteta"
+    },
+    {
+      "prediction": "sta je to",
+      "reference": "sta je to"
+    },
+    {
+      "prediction": "0 cemu razmiste te",
+      "reference": "0 cemu razmisljate"
+    },
+    {
+      "prediction": "ne znam se to",
+      "reference": "ne znam za to"
+    },
+    {
+      "prediction": "koso volije drzava",
+      "reference": "kosovo nije drzava"
+    },
+    {
+      "prediction": "nemogu bestebe",
+      "reference": "ne mogu bez tebe"
+    },
+    {
+      "prediction": "da ti ja kazem",
+      "reference": "da ti ja kazem"
+    },
+    {
+      "prediction": "u svakom pogledu",
+      "reference": "u svakom pogledu"
+    },
+    {
+      "prediction": "pascu oci veliki broj originani slika",
+      "reference": "pasce u oci i veliki broj originalnih slika"
+    },
+    {
+      "prediction": "kako je on",
+      "reference": "kako je on"
+    },
+    {
+      "prediction": "nebi atakava",
+      "reference": "nije bio takav"
+    },
+    {
+      "prediction": "pa ne samo po redunala",
+      "reference": "pa ne samo pored dunava"
+    },
+    {
+      "prediction": "pneva da radimo",
+      "reference": "treba da radimo"
+    },
+    {
+      "prediction": "daliji ti",
+      "reference": "da li i ti"
+    },
+    {
+      "prediction": "eto vam sad",
+      "reference": "eto vam sad"
+    },
+    {
+      "prediction": "nije to tep",
+      "reference": "ni od tebe"
+    },
+    {
+      "prediction": "nije potrebno da prijave svoj borok",
+      "reference": "nije potrebno da prijave svoj boravak"
+    },
+    {
+      "prediction": "klamnije osumnitveni kljucujte sami pocinjece nisu hapsveni",
+      "reference": "glavni osumnjiceni ukljucujuci same pocinioce nisu uhapseni"
+    },
+    {
+      "prediction": "ne bila prijetno",
+      "reference": "nije bilo prijatno"
+    },
+    {
+      "prediction": "to nije ovicen ili slucajan dogade",
+      "reference": "to nije uobicajen ili slucajan dogadaj"
+    },
+    {
+      "prediction": "on je uprav",
+      "reference": "on je u pravu"
+    },
+    {
+      "prediction": "ja sam budu",
+      "reference": "ja sam budan"
+    },
+    {
+      "prediction": "znam kako je to",
+      "reference": "znam kako je to"
+    },
+    {
+      "prediction": "to njista ne znaci",
+      "reference": "to nista ne znaci"
+    },
+    {
+      "prediction": "zrte ne",
+      "reference": "zar ti ne"
+    },
+    {
+      "prediction": "i ta zemlja ceka svoju prvu medali",
+      "reference": "i ta zemlja ceka svoju prvu medalju"
+    },
+    {
+      "prediction": "cak smo se i to komrata poneka da zabavljali",
+      "reference": "cak smo se i tokom rata ponekada zabavljali"
+    },
+    {
+      "prediction": "ne perinte gospodin ne",
+      "reference": "ne brinite gospodine"
+    },
+    {
+      "prediction": "\u043d\u043e\u0432\u043e\u0433\u043e\u0434\u0438\u0448nja noc",
+      "reference": "novogodisnja noc"
+    },
+    {
+      "prediction": "da ali ne",
+      "reference": "da ali ne"
+    },
+    {
+      "prediction": "pa zasto ide",
+      "reference": "pa zasto ide"
+    },
+    {
+      "prediction": "nemo mi je to",
+      "reference": "ne mogu ja to"
+    },
+    {
+      "prediction": "koje dosao",
+      "reference": "ko je dosao"
+    },
+    {
+      "prediction": "0 hajde hajde",
+      "reference": "0 hajde hajde"
+    },
+    {
+      "prediction": "a ti oprostim",
+      "reference": "da ti oprostim"
+    },
+    {
+      "prediction": "kao sto kazem",
+      "reference": "kao sto kazem"
+    },
+    {
+      "prediction": "molim te sto",
+      "reference": "molim te sto"
+    },
+    {
+      "prediction": "nije ni malo vazno",
+      "reference": "nije ni malo vazno"
+    },
+    {
+      "prediction": "rusije zaozalo cetvrto mest",
+      "reference": "rusija je zauzela cetvrto mesto"
+    },
+    {
+      "prediction": "ne bukuvam odbiti",
+      "reference": "ne mogu vam odbiti"
+    },
+    {
+      "prediction": "0 nebio",
+      "reference": "on nije bio"
+    },
+    {
+      "prediction": "pa inna",
+      "reference": "pa i ne"
+    },
+    {
+      "prediction": "ali on je",
+      "reference": "ali on je"
+    },
+    {
+      "prediction": "atensko maratono",
+      "reference": "atinskom maratonu"
+    },
+    {
+      "prediction": "jos kako je",
+      "reference": "jos kako je"
+    },
+    {
+      "prediction": "icecemo kasnije kod babi i dede",
+      "reference": "ici cemo kasnije kod babe i dede"
+    },
+    {
+      "prediction": "nebih mogu",
+      "reference": "ne bih mogao"
+    },
+    {
+      "prediction": "i usnu",
+      "reference": "i u snu"
+    },
+    {
+      "prediction": "asociaciju cine inostrani i bugarski biznismeni",
+      "reference": "asocijaciju cine inostrani i bugarski biznismeni"
+    },
+    {
+      "prediction": "na naucnoj su osnovi kriticki sreden eispitivanje srbije",
+      "reference": "na naucnoj su osnovi i kriticki sredena ispitivanja srbije"
+    },
+    {
+      "prediction": "nikada nisam zelio nista od rugih",
+      "reference": "nikada nisam zeleo nista od drugih ."
+    },
+    {
+      "prediction": "m t m zvacnosti su nepopustljivi",
+      "reference": "medutim zvanicnici su nepopustljivi"
+    },
+    {
+      "prediction": "ne znam sta je",
+      "reference": "ne znam sta je"
+    },
+    {
+      "prediction": "to je tvoj",
+      "reference": "to je tvoj"
+    },
+    {
+      "prediction": "da te pitam",
+      "reference": "da te pitam"
+    },
+    {
+      "prediction": "kako se osje",
+      "reference": "kako se ose"
+    },
+    {
+      "prediction": "sta je tvoj otac",
+      "reference": "sta je tvoj otac"
+    },
+    {
+      "prediction": "koliko mi je potrebno",
+      "reference": "koliko mi je potrebno"
+    },
+    {
+      "prediction": "a u grado",
+      "reference": "a u gradu"
+    },
+    {
+      "prediction": "snam sta je",
+      "reference": "znam sta je"
+    },
+    {
+      "prediction": "i to kako",
+      "reference": "i to kako"
+    },
+    {
+      "prediction": "i ovaj je",
+      "reference": "i ovo je"
+    },
+    {
+      "prediction": "odluka emotivi sa na nepovoljnim drzisnim uslovima",
+      "reference": "odluka je motivisana nepovoljnim trzisnim uslovima"
+    },
+    {
+      "prediction": "a dobra dobra",
+      "reference": "pa dobro dobro"
+    },
+    {
+      "prediction": "zasto bi se",
+      "reference": "zasto bi se"
+    },
+    {
+      "prediction": "e pa dobro",
+      "reference": "e pa dobro"
+    },
+    {
+      "prediction": "sve je dobro",
+      "reference": "sve je dobro"
+    },
+    {
+      "prediction": "bila je vreme",
+      "reference": "bilo je vreme"
+    },
+    {
+      "prediction": "i borili su se",
+      "reference": "i borili su se"
+    },
+    {
+      "prediction": "da ka budi plava",
+      "reference": "neka bude plava"
+    },
+    {
+      "prediction": "za 5 minuta",
+      "reference": "za pet minuta"
+    },
+    {
+      "prediction": "naljuta imse",
+      "reference": "ne ljutim se"
+    },
+    {
+      "prediction": "moglo bi se reci",
+      "reference": "moglo bi se reci"
+    },
+    {
+      "prediction": "a to da",
+      "reference": "a to da"
+    },
+    {
+      "prediction": "me k a bude tako",
+      "reference": "neka bude tako"
+    },
+    {
+      "prediction": "i od vas",
+      "reference": "i od vas"
+    },
+    {
+      "prediction": "bila vran",
+      "reference": "bilo je vreme"
+    },
+    {
+      "prediction": "dale kod mene",
+      "reference": "daleko od mene"
+    },
+    {
+      "prediction": "to je stvorilo izvesne ocekivanje",
+      "reference": "to je stvorilo izvesna ocekivanja"
+    },
+    {
+      "prediction": "svakodnih",
+      "reference": "svaka od njih"
+    },
+    {
+      "prediction": "to je nema uci",
+      "reference": "to je nemoguce"
+    },
+    {
+      "prediction": "i aneznam",
+      "reference": "i ja ne znam"
+    },
+    {
+      "prediction": "znam da mi",
+      "reference": "znam da nije"
+    },
+    {
+      "prediction": "haj desk glanis",
+      "reference": "hajde skloni se"
+    },
+    {
+      "prediction": "i nista vise",
+      "reference": "i nista vise"
+    },
+    {
+      "prediction": "po svoj prilici",
+      "reference": "po svoj prilici"
+    },
+    {
+      "prediction": "to je jednostavno predivno",
+      "reference": "to je jednostavno predivno"
+    },
+    {
+      "prediction": "ibioje",
+      "reference": "i bio je"
+    },
+    {
+      "prediction": "to ne trebi",
+      "reference": "to ne trpim"
+    },
+    {
+      "prediction": "albanci soljudi kavi mi",
+      "reference": "albanci su ljudi kao i mi ."
+    },
+    {
+      "prediction": "pa ne znam",
+      "reference": "pa ne znamo"
+    },
+    {
+      "prediction": "ako je on",
+      "reference": "ako je on"
+    },
+    {
+      "prediction": "ne znam bis",
+      "reference": "ne znam vise"
+    },
+    {
+      "prediction": "i kakvistvo",
+      "reference": "i kakvi su"
+    },
+    {
+      "prediction": "namnogo mesta",
+      "reference": "na mnogo mesta"
+    },
+    {
+      "prediction": "tako to ne ide",
+      "reference": "tako to ne ide"
+    },
+    {
+      "prediction": "to nije malo",
+      "reference": "to nije malo"
+    },
+    {
+      "prediction": "i mogo bi",
+      "reference": "i mogao bi"
+    },
+    {
+      "prediction": "uvah doba",
+      "reference": "u ovo doba"
+    },
+    {
+      "prediction": "ja sam ja",
+      "reference": "ja sam ja"
+    },
+    {
+      "prediction": "a kako to",
+      "reference": "a kako to"
+    },
+    {
+      "prediction": "0 to je",
+      "reference": "0 to je"
+    },
+    {
+      "prediction": "to je ne",
+      "reference": "to je ne"
+    },
+    {
+      "prediction": "nade",
+      "reference": "ne ide mi"
+    },
+    {
+      "prediction": "i zdelovaj",
+      "reference": "iz delova je"
+    },
+    {
+      "prediction": "gotov odpocetka sudi neprate prepreke i zastoj",
+      "reference": "gotovo od pocetka sudenje prate prepreke i zastoji"
+    },
+    {
+      "prediction": "ti pogledajme",
+      "reference": "ti pogledaj me"
+    },
+    {
+      "prediction": "iel igol",
+      "reference": "je li gol"
+    },
+    {
+      "prediction": "nemozus ti",
+      "reference": "ne mozes ti"
+    },
+    {
+      "prediction": "sto vam je",
+      "reference": "sto vam je"
+    },
+    {
+      "prediction": "ne zove",
+      "reference": "ne zovi je"
+    },
+    {
+      "prediction": "sto on rady",
+      "reference": "sto on radi"
+    },
+    {
+      "prediction": "mijutim to je lakse reci ne gureljiti",
+      "reference": "medutim to je lakse reci nego uraditi"
+    },
+    {
+      "prediction": "ne moze biti",
+      "reference": "ne moze biti"
+    },
+    {
+      "prediction": "a da to",
+      "reference": "a da to"
+    },
+    {
+      "prediction": "nije kut guci",
+      "reference": "nije kod kuce"
+    },
+    {
+      "prediction": "cen esirove nafta osti u visoki",
+      "reference": "cene sirove nafte ostaju visoke"
+    },
+    {
+      "prediction": "u to koje priprima finalne verzi",
+      "reference": "u toku je priprema finalne verzije"
+    },
+    {
+      "prediction": "ko je to",
+      "reference": "koji je to"
+    },
+    {
+      "prediction": "sto je u njemu",
+      "reference": "sto je u njemu"
+    },
+    {
+      "prediction": "sta i nema",
+      "reference": "sta je njemu"
+    },
+    {
+      "prediction": "svi smo se mi promijenili sa vremenom",
+      "reference": "svi smo se mi promenili sa vremenom"
+    },
+    {
+      "prediction": "dei dei",
+      "reference": "gde je gde je"
+    },
+    {
+      "prediction": "to je basso",
+      "reference": "to je bas on"
+    },
+    {
+      "prediction": "on radi uopsti",
+      "reference": "on radi u opstini"
+    },
+    {
+      "prediction": "i pomeni",
+      "reference": "i po meni"
+    },
+    {
+      "prediction": "kako da kazem to",
+      "reference": "kako da kazem to"
+    },
+    {
+      "prediction": "i osje",
+      "reference": "i jos je"
+    },
+    {
+      "prediction": "sve te ciljeve mozda moguci ostvariti",
+      "reference": "sve te ciljeve je mozda moguce ostvariti"
+    },
+    {
+      "prediction": "mi cemo pobjediti s jedan premanula",
+      "reference": "mi cemo pobijediti s jedan prema nula"
+    },
+    {
+      "prediction": "i to zasto",
+      "reference": "i to zasto"
+    },
+    {
+      "prediction": "chajde da bude on malo konkretni",
+      "reference": "hajde da budemo malo konkretniji"
+    },
+    {
+      "prediction": "ko je to",
+      "reference": "ko je ta"
+    },
+    {
+      "prediction": "kosovo je na mnogo nacina jos uvijek izoliran",
+      "reference": "kosovo je na mnogo nacina jos uvijek izolirano"
+    },
+    {
+      "prediction": "tako je bilo jucer da nas i zauvijek",
+      "reference": "tako je bilo jucer danas i zauvijek"
+    },
+    {
+      "prediction": "dosao je taj trenutak",
+      "reference": "dosao je taj trenutak"
+    },
+    {
+      "prediction": "isamno",
+      "reference": "i sa mnom"
+    },
+    {
+      "prediction": "a te si",
+      "reference": "a ti si"
+    },
+    {
+      "prediction": "tot je sve",
+      "reference": "to ti je sve"
+    },
+    {
+      "prediction": "to je pravi",
+      "reference": "to je pravi"
+    },
+    {
+      "prediction": "te nekog kog odina",
+      "reference": "pre nekoliko godina"
+    },
+    {
+      "prediction": "anil epp",
+      "reference": "a nije lepo"
+    },
+    {
+      "prediction": "prvo kako ce noviji ustov biti donesen",
+      "reference": "prvo kako ce novi ustav biti donesen"
+    },
+    {
+      "prediction": "vi ne znate",
+      "reference": "vi ne znate"
+    },
+    {
+      "prediction": "a i drugi",
+      "reference": "a i druge"
+    },
+    {
+      "prediction": "acrus prozir",
+      "reference": "a kroz prozor"
+    },
+    {
+      "prediction": "jasmu",
+      "reference": "ja sam u"
+    },
+    {
+      "prediction": "mogu ja to",
+      "reference": "mogu ja to"
+    },
+    {
+      "prediction": "unjako vojime",
+      "reference": "u njegovo ime"
+    },
+    {
+      "prediction": "tct",
+      "reference": "ti si ti"
+    },
+    {
+      "prediction": "ajudi",
+      "reference": "a i ljudi"
+    },
+    {
+      "prediction": "drugi deo je preko granicna sradija",
+      "reference": "drugi deo je prekogranicna saradnja"
+    },
+    {
+      "prediction": "uloga tuzilaca bice potpuno promenjena",
+      "reference": "uloga tuzilaca bice potpuno promenjena"
+    },
+    {
+      "prediction": "ko je i subi ovo",
+      "reference": "koji su bili"
+    },
+    {
+      "prediction": "a znam to",
+      "reference": "a znam to"
+    },
+    {
+      "prediction": "nemo niko koje su u mnije",
+      "reference": "nema nikakve sumnje"
+    },
+    {
+      "prediction": "kako da niste",
+      "reference": "kako da niste"
+    },
+    {
+      "prediction": "anije bilo",
+      "reference": "a nije bilo"
+    },
+    {
+      "prediction": "pontoni osvujek funkcionise",
+      "reference": "ponton jos uvek funkcionise"
+    },
+    {
+      "prediction": "meto je on",
+      "reference": "ma to je on"
+    },
+    {
+      "prediction": "kako ne bih",
+      "reference": "kako ne bih"
+    },
+    {
+      "prediction": "neki smatraju da je to poslojce za stare leopreme",
+      "reference": "neki smatraju da je to posledica zastarele opreme"
+    },
+    {
+      "prediction": "velodobro i",
+      "reference": "vrlo dobro i"
+    },
+    {
+      "prediction": "i v",
+      "reference": "a i vi"
+    },
+    {
+      "prediction": "sta je nemogu",
+      "reference": "sta je ne mogu"
+    },
+    {
+      "prediction": "koji ti je omiljeni predmet u skovi",
+      "reference": "koji ti je omiljni predmet u skoli"
+    },
+    {
+      "prediction": "to ti je se",
+      "reference": "to ti je sve"
+    },
+    {
+      "prediction": "sto se ucinio",
+      "reference": "sto si ucinio"
+    },
+    {
+      "prediction": "to nije uveklako",
+      "reference": "to nije uvek lako"
+    },
+    {
+      "prediction": "ne vero je mutuo",
+      "reference": "ne verujem to"
+    },
+    {
+      "prediction": "\u0442\u0443\u0440\u0441\u043a\u0430 \u0443 \u0448\u043a\u0440\u0438\u043f\u0446\u0443 \u0441 \u0431\u043e\u0433 \u0440\u0430\u043a\u0435\u0442\u043d\u0435 \u043f\u0440\u0438\u0458\u0435\u0442\u043d\u0438",
+      "reference": "turska u skripcu zbog raketne prijetnje"
+    },
+    {
+      "prediction": "ma sta je tebi",
+      "reference": "ma sta je tebi"
+    },
+    {
+      "prediction": "pa jesili",
+      "reference": "pa jesi li"
+    },
+    {
+      "prediction": "i asam",
+      "reference": "i ja sam"
+    },
+    {
+      "prediction": "jos jedan bot",
+      "reference": "jos jedan put"
+    },
+    {
+      "prediction": "bidim kako je",
+      "reference": "vidim kako je"
+    },
+    {
+      "prediction": "kad se setim",
+      "reference": "kad se setim"
+    },
+    {
+      "prediction": "sedi molimte",
+      "reference": "sedi molim te"
+    },
+    {
+      "prediction": "da da je",
+      "reference": "da da je"
+    },
+    {
+      "prediction": "pa on tada",
+      "reference": "pa onda da"
+    },
+    {
+      "prediction": "sta vlada moze da ucini",
+      "reference": "sta vlada moze da ucini"
+    },
+    {
+      "prediction": "ako je tako",
+      "reference": "ako je tako"
+    },
+    {
+      "prediction": "i bojse",
+      "reference": "i boji se"
+    },
+    {
+      "prediction": "da te zamoli",
+      "reference": "da te zamolim"
+    },
+    {
+      "prediction": "da sve ozini",
+      "reference": "da se ozeni"
+    },
+    {
+      "prediction": "imamo veliku odgovornost da promenimo kurs zemlje",
+      "reference": "imamo veliku odgovornost da promenimo kurs zemlje"
+    },
+    {
+      "prediction": "sve tako",
+      "reference": "sve je tako"
+    },
+    {
+      "prediction": "reklubice",
+      "reference": "reklo bi se"
+    },
+    {
+      "prediction": "sta to radis",
+      "reference": "sta to radis"
+    },
+    {
+      "prediction": "nemogu vas",
+      "reference": "ne mogu vas"
+    },
+    {
+      "prediction": "vidi kako je",
+      "reference": "vidi kako je"
+    },
+    {
+      "prediction": "jos jedan put",
+      "reference": "jos jedan put"
+    },
+    {
+      "prediction": "atove",
+      "reference": "a to je"
+    },
+    {
+      "prediction": "koliko godina",
+      "reference": "koliko je godina"
+    },
+    {
+      "prediction": "a sta je to",
+      "reference": "a sta je to"
+    },
+    {
+      "prediction": "ako je",
+      "reference": "a ko je"
+    },
+    {
+      "prediction": "a to je",
+      "reference": "a to je"
+    },
+    {
+      "prediction": "a koto",
+      "reference": "a ko to"
+    },
+    {
+      "prediction": "prosto ne moze",
+      "reference": "prosto ne moze"
+    },
+    {
+      "prediction": "mislim da je dosta",
+      "reference": "mislim da je dosta"
+    },
+    {
+      "prediction": "sve je lepo",
+      "reference": "sve je lepo"
+    },
+    {
+      "prediction": "ovo je ljubav",
+      "reference": "ovo je ljubav"
+    },
+    {
+      "prediction": "poglavja ce biti zatvorena u decembru",
+      "reference": "poglavlja ce biti zatvorena u decembru"
+    },
+    {
+      "prediction": "i abi",
+      "reference": "i ja bi"
+    },
+    {
+      "prediction": "nesa monega",
+      "reference": "ne samo njega"
+    },
+    {
+      "prediction": "nisi na putu da je povrati u svemu nekadanjem obimu",
+      "reference": "nis je na putu da je povrati u svemu nekadanjem obimu"
+    },
+    {
+      "prediction": "peraje dobio stomacni virus i danas nece icu u skolu",
+      "reference": "pera je dobio stomacni virus i danas nece ici u skolu"
+    },
+    {
+      "prediction": "to rades ti",
+      "reference": "to radis ti"
+    },
+    {
+      "prediction": "sta on mislja",
+      "reference": "sta on misli"
+    },
+    {
+      "prediction": "to ce biti testni izbori",
+      "reference": "to ce biti tesni izbori"
+    },
+    {
+      "prediction": "ne znas taj",
+      "reference": "ne znas sta je"
+    },
+    {
+      "prediction": "da ima jos nesto",
+      "reference": "da ima jos nesto"
+    },
+    {
+      "prediction": "izanaz",
+      "reference": "i za nas"
+    },
+    {
+      "prediction": "uredu levo",
+      "reference": "u redu levo"
+    },
+    {
+      "prediction": "sto je najkore",
+      "reference": "sto je najgore"
+    },
+    {
+      "prediction": "veoma realisticni",
+      "reference": "veoma realisticni"
+    },
+    {
+      "prediction": "0 nez .",
+      "reference": "0 ne znam"
+    },
+    {
+      "prediction": "jovo dru",
+      "reference": "i ovu drugu"
+    },
+    {
+      "prediction": "ima jos nesto",
+      "reference": "ima jos nesto"
+    },
+    {
+      "prediction": "onsigursi",
+      "reference": "on se gusi"
+    },
+    {
+      "prediction": "sto ce ti",
+      "reference": "sto ce ti"
+    },
+    {
+      "prediction": "iotap",
+      "reference": "i od tebe"
+    },
+    {
+      "prediction": "mozete to",
+      "reference": "mozda je to"
+    },
+    {
+      "prediction": "a to je",
+      "reference": "a to je"
+    },
+    {
+      "prediction": "ti janodet",
+      "reference": "ti jadno dete"
+    },
+    {
+      "prediction": "ader zgledam .",
+      "reference": "a da razgovaramo"
+    },
+    {
+      "prediction": "pravi korak novom putu je stovste obrazovanje",
+      "reference": "prvi korak na novom putu jeste opste obrazovanje"
+    },
+    {
+      "prediction": "ne zove ja",
+      "reference": "ne zovi je"
+    },
+    {
+      "prediction": "tu je tvoj poslo",
+      "reference": "to je tvoj posao"
+    },
+    {
+      "prediction": "ne samo to",
+      "reference": "ne samo to"
+    },
+    {
+      "prediction": "ja i on",
+      "reference": "ja i on"
+    },
+    {
+      "prediction": "a vol am",
+      "reference": "a u ovom"
+    },
+    {
+      "prediction": "sta ti ne",
+      "reference": "sta ti ne"
+    },
+    {
+      "prediction": "ibi oje",
+      "reference": "i bio je"
+    },
+    {
+      "prediction": "i ne samon",
+      "reference": "i ne samo on"
+    },
+    {
+      "prediction": "sta sam radio",
+      "reference": "sta sam uradio"
+    },
+    {
+      "prediction": "borba se nastavlja",
+      "reference": "borba se nastavlja"
+    },
+    {
+      "prediction": "to je jazgora",
+      "reference": "to je jos gore"
+    },
+    {
+      "prediction": "ja sam prince",
+      "reference": "ja sam princ"
+    },
+    {
+      "prediction": "i na stavu",
+      "reference": "i nestalo je"
+    },
+    {
+      "prediction": "sto da vam kaz",
+      "reference": "sto da vam kazem"
+    },
+    {
+      "prediction": "i nasao sam",
+      "reference": "i nasao sam"
+    },
+    {
+      "prediction": "dalito",
+      "reference": "da li to"
+    },
+    {
+      "prediction": "voljobite znam zasto",
+      "reference": "voleo bih da znam zasto"
+    },
+    {
+      "prediction": "neverovatne ali istini to pojeli",
+      "reference": "neverovatna je ali istinita pojava"
+    },
+    {
+      "prediction": "kao na primer",
+      "reference": "kao na primer"
+    },
+    {
+      "prediction": "i abiz",
+      "reference": "i ja bih"
+    },
+    {
+      "prediction": "nemora biti",
+      "reference": "ne mora biti"
+    },
+    {
+      "prediction": "nikoga nije briga",
+      "reference": "nikoga nije briga"
+    },
+    {
+      "prediction": "i to da",
+      "reference": "i to da"
+    },
+    {
+      "prediction": "ne brinite gospodina",
+      "reference": "ne brinite gospodine"
+    },
+    {
+      "prediction": "postoje idei",
+      "reference": "postoje ideje"
+    },
+    {
+      "prediction": "tct",
+      "reference": "ti si ti"
+    },
+    {
+      "prediction": "da se smije",
+      "reference": "da se smeje"
+    },
+    {
+      "prediction": "a i nas",
+      "reference": "a i nas"
+    },
+    {
+      "prediction": "i to mozemo",
+      "reference": "i to mozemo"
+    },
+    {
+      "prediction": "hako ne bih",
+      "reference": "kako ne bih"
+    },
+    {
+      "prediction": "kazi dej",
+      "reference": "kaze da je"
+    },
+    {
+      "prediction": "sta su bili",
+      "reference": "sta su bili"
+    },
+    {
+      "prediction": "i bis tap",
+      "reference": "i bez tebe"
+    },
+    {
+      "prediction": "la primeria",
+      "reference": "na primer ja"
+    },
+    {
+      "prediction": "cinjenice nam medutim saju veoma oprecne signale",
+      "reference": "cinjenice nam medutim salju veoma oprecne signale"
+    },
+    {
+      "prediction": "sam koji se ispunio",
+      "reference": "san koji se ispunio"
+    },
+    {
+      "prediction": "evo ti na",
+      "reference": "evo ti na"
+    },
+    {
+      "prediction": "isve ozoud",
+      "reference": "i sve uzalud"
+    },
+    {
+      "prediction": "0 slato moje",
+      "reference": "0 zlato moje"
+    },
+    {
+      "prediction": "i u rukama",
+      "reference": "i u rukama"
+    },
+    {
+      "prediction": "koga suovi",
+      "reference": "koga su ovi"
+    },
+    {
+      "prediction": "zasa sta",
+      "reference": "znas li sta"
+    },
+    {
+      "prediction": "i elito",
+      "reference": "je li to"
+    },
+    {
+      "prediction": "bez izbora nema demokratija",
+      "reference": "bez izbora nema demokratije"
+    },
+    {
+      "prediction": "0 da jest",
+      "reference": "0 da jest"
+    },
+    {
+      "prediction": "0 iane",
+      "reference": "0 ja ne"
+    },
+    {
+      "prediction": "sta mu je",
+      "reference": "sta mu je"
+    },
+    {
+      "prediction": "to nije potpuno tatic",
+      "reference": "to nije potpuno tacno"
+    },
+    {
+      "prediction": "amo je dutstvo",
+      "reference": "a moja deca"
+    },
+    {
+      "prediction": "ne moze umreti",
+      "reference": "ne moze umreti"
+    },
+    {
+      "prediction": "pa sto vi radi",
+      "reference": "pa sta da radimo"
+    },
+    {
+      "prediction": "i jos uveki suvise rano reci",
+      "reference": "jos uvek je suvise rano reci"
+    },
+    {
+      "prediction": "srbijec je ubris da videte direktne rezultate veprade",
+      "reference": "srbija ce ubrzo videti direktne rezultate ove prodaje"
+    },
+    {
+      "prediction": "a imoja",
+      "reference": "a i moja"
+    },
+    {
+      "prediction": "nemogu bestaviti",
+      "reference": "ne mogu bez tebe"
+    },
+    {
+      "prediction": "znam sta je",
+      "reference": "znam sta je"
+    },
+    {
+      "prediction": "nakaj igre pocnu",
+      "reference": "neka igre pocnu"
+    },
+    {
+      "prediction": "da jazna",
+      "reference": "da ja znam"
+    },
+    {
+      "prediction": "kobios",
+      "reference": "ko bi jos"
+    },
+    {
+      "prediction": "ja ne znam sto je",
+      "reference": "ja ne znam sta je"
+    },
+    {
+      "prediction": "kuliko eta",
+      "reference": "koliko je ta"
+    },
+    {
+      "prediction": "na svoje mesto",
+      "reference": "na svoje mesto"
+    },
+    {
+      "prediction": "ma vidi se",
+      "reference": "ma vidi se"
+    },
+    {
+      "prediction": "mijerite sinu",
+      "reference": "mir i tisinu"
+    },
+    {
+      "prediction": "ajane",
+      "reference": "a ja ne"
+    },
+    {
+      "prediction": "ali sad vidim",
+      "reference": "ali sad vidim"
+    },
+    {
+      "prediction": "ione",
+      "reference": "i ona je"
+    },
+    {
+      "prediction": "akd",
+      "reference": "a kada je"
+    },
+    {
+      "prediction": "naposledko jos nesto",
+      "reference": "na posletku jos nesto"
+    },
+    {
+      "prediction": "nakijel dnjih",
+      "reference": "neke od njih"
+    },
+    {
+      "prediction": "mine ble fjerem",
+      "reference": "mi ne blefiramo"
+    },
+    {
+      "prediction": "na sta je",
+      "reference": "no sto je"
+    },
+    {
+      "prediction": "ako vas",
+      "reference": "a kod vas"
+    },
+    {
+      "prediction": "to je bela druko",
+      "reference": "to je bilo drugo"
+    },
+    {
+      "prediction": "to sto kaze",
+      "reference": "to sto kaze"
+    },
+    {
+      "prediction": "ovoljnemo je smisla",
+      "reference": "ovo nema smisla"
+    },
+    {
+      "prediction": "koste vi",
+      "reference": "ko ste vi"
+    },
+    {
+      "prediction": "sto manje politike bolje za nas",
+      "reference": "sto manje politike bolje za nas"
+    },
+    {
+      "prediction": "rastemu sve vrem",
+      "reference": "rastemo sve vreme"
+    },
+    {
+      "prediction": "da je okhazem",
+      "reference": "da joj kazem"
+    },
+    {
+      "prediction": "desilo se nesto cemu se nismo nadali",
+      "reference": "desilo se nesto cemu se nismo nadali"
+    },
+    {
+      "prediction": "znam jo sve",
+      "reference": "znam ja sve"
+    },
+    {
+      "prediction": "ja ne znam",
+      "reference": "ja ne znam"
+    },
+    {
+      "prediction": "imam nesto da vam kaze",
+      "reference": "imam nesto da vam kazem"
+    },
+    {
+      "prediction": "doverdan cospogio",
+      "reference": "dobar dan gospodo"
+    },
+    {
+      "prediction": "0 da to",
+      "reference": "0 da to"
+    },
+    {
+      "prediction": "da vam kazem",
+      "reference": "da vam kazem"
+    },
+    {
+      "prediction": "alizovanje",
+      "reference": "ali za ovo ne"
+    },
+    {
+      "prediction": "odmorete se malo",
+      "reference": "odmorite se malo"
+    },
+    {
+      "prediction": "sporozom takode predvijegi zadnjicke policijske patrole u zalivo",
+      "reference": "sporazum takode predvida zajednicke policijske patrole u zalivu"
+    },
+    {
+      "prediction": "ida je tako",
+      "reference": "i da je tako"
+    },
+    {
+      "prediction": "pustito",
+      "reference": "pusti to"
+    },
+    {
+      "prediction": "dejte ce biti nepokretno do kraja zivot",
+      "reference": "dete ce biti nepokretno do kraja zivota"
+    },
+    {
+      "prediction": "u pecinama se na vise mesta naslagao sljunak pesak i mulj",
+      "reference": "u pecinama se na vise mesta naslagao sljunak pesak i mulj"
+    },
+    {
+      "prediction": "rec tovo mije",
+      "reference": "pred tobom je"
+    },
+    {
+      "prediction": "ne samoni",
+      "reference": "ne samo oni"
+    },
+    {
+      "prediction": "ne sam on",
+      "reference": "ne samo on"
+    },
+    {
+      "prediction": "0 ne ne",
+      "reference": "0 ne ne"
+    },
+    {
+      "prediction": "moglo bi srati cedaj",
+      "reference": "moglo bi se reci da je"
+    },
+    {
+      "prediction": "sad ovdje se ne",
+      "reference": "sada vise ne"
+    },
+    {
+      "prediction": "tako je to",
+      "reference": "tako je to"
+    },
+    {
+      "prediction": "medjutim mnoga kljucna pitanja ostavim na resu",
+      "reference": "medutim mnoga kljucna pitanja ostaju neresena"
+    },
+    {
+      "prediction": "ja tebi",
+      "reference": "i ja tebi"
+    },
+    {
+      "prediction": "i od njega",
+      "reference": "i od njega"
+    },
+    {
+      "prediction": "i ne mozemo",
+      "reference": "i ne mozemo"
+    },
+    {
+      "prediction": "a i ovde",
+      "reference": "a i ovde"
+    },
+    {
+      "prediction": "sta je sveo",
+      "reference": "sta je sve ovo"
+    },
+    {
+      "prediction": "dissidenti su bili slaman",
+      "reference": "disidenti su bili slamani ."
+    },
+    {
+      "prediction": "pili smo na selu za weekend kod rodak",
+      "reference": "bili smo na selu za vikend kod rodaka"
+    },
+    {
+      "prediction": "za jedan minut",
+      "reference": "za jedan minut"
+    },
+    {
+      "prediction": "to je bilo",
+      "reference": "to je bilo"
+    },
+    {
+      "prediction": "anatebi",
+      "reference": "a na tebi"
+    },
+    {
+      "prediction": "to si beauty",
+      "reference": "to si bio ti"
+    },
+    {
+      "prediction": "ova ne moze",
+      "reference": "ova ne moze"
+    },
+    {
+      "prediction": "istrga se nastavlja",
+      "reference": "istraga se nastavlja"
+    },
+    {
+      "prediction": "ja ne mogu be steve",
+      "reference": "ja ne mogu bez tebe"
+    },
+    {
+      "prediction": "i posle toga",
+      "reference": "i posle toga"
+    },
+    {
+      "prediction": "zmok je nema naukje",
+      "reference": "bez muke nema nauke"
+    },
+    {
+      "prediction": "ja tebi",
+      "reference": "i ja tebi"
+    },
+    {
+      "prediction": "kaj je to",
+      "reference": "koja je to"
+    },
+    {
+      "prediction": "uredi oci",
+      "reference": "uvredio si me"
+    },
+    {
+      "prediction": "sve oko tebi",
+      "reference": "sve oko tebe"
+    },
+    {
+      "prediction": "zornevi bilo bolje",
+      "reference": "zar ne bi bilo bolje"
+    },
+    {
+      "prediction": "to vas da vam prijatelju",
+      "reference": "dobar dan prijatelju"
+    },
+    {
+      "prediction": "na dobrosti",
+      "reference": "ma dobro si"
+    },
+    {
+      "prediction": "ja to kazem",
+      "reference": "ja to kazem"
+    },
+    {
+      "prediction": "hvala na pitac",
+      "reference": "hvala na pitanju"
+    },
+    {
+      "prediction": "ne dosed",
+      "reference": "nije do sad"
+    },
+    {
+      "prediction": "nije bilo vis",
+      "reference": "nije bilo vise"
+    },
+    {
+      "prediction": "woe zem",
+      "reference": "u ovoj zemlji"
+    },
+    {
+      "prediction": "sta ako se prognoza pokaze pogresan",
+      "reference": "sta ako se prognoza pokaze pogresnom"
+    },
+    {
+      "prediction": "u razni mobilicima",
+      "reference": "u raznim oblicima"
+    },
+    {
+      "prediction": "mozem vas sedite",
+      "reference": "molim vas sedite"
+    },
+    {
+      "prediction": "medicinske sestre za viniakci",
+      "reference": "medicinske sestre daju injekcije"
+    },
+    {
+      "prediction": "i zves to je bilo jenom ctvrtak prozije kompleks newsletter",
+      "reference": "izvestaj objavljen u cetvrtak pruzio je kompleksniju sliku"
+    },
+    {
+      "prediction": "a to je sve",
+      "reference": "a to je sve"
+    },
+    {
+      "prediction": "vitamen",
+      "reference": "vi to meni"
+    },
+    {
+      "prediction": "ne brinite gospodine",
+      "reference": "ne brinite gospodine"
+    },
+    {
+      "prediction": "kako je tu",
+      "reference": "kako je tu"
+    },
+    {
+      "prediction": "tony citi",
+      "reference": "to nisi ti"
+    },
+    {
+      "prediction": "i sto kazu",
+      "reference": "i sto kazu"
+    },
+    {
+      "prediction": "vojsku je predstavljio njegov zamenik",
+      "reference": "vojsku je predstavljao njegov zamenik"
+    },
+    {
+      "prediction": "a zasto je",
+      "reference": "a zasto je"
+    },
+    {
+      "prediction": "na zakon odavcijima je da pokrenu promene",
+      "reference": "na zakonodavcima je da pokrenu promene"
+    },
+    {
+      "prediction": "stvari svrsen",
+      "reference": "stvar je svrsena"
+    },
+    {
+      "prediction": "mastaj",
+      "reference": "ma sta je"
+    },
+    {
+      "prediction": "nije tako vazno",
+      "reference": "nije tako vazno"
+    },
+    {
+      "prediction": "ohohoh",
+      "reference": "000"
+    },
+    {
+      "prediction": "i to kako",
+      "reference": "i to kako"
+    },
+    {
+      "prediction": "0 da ti",
+      "reference": "0 da ti"
+    },
+    {
+      "prediction": "ovo je vrlo vrlo promet na oblast",
+      "reference": "ovo je vrlo vrlo prometna oblast ."
+    },
+    {
+      "prediction": "vlade nas pod kreda",
+      "reference": "vlada nas potkrada"
+    },
+    {
+      "prediction": "grcka okoncava zatvorenost u prijevoznickom sektoru",
+      "reference": "grcka okoncava zatvorenost u prijevoznickom sektoru"
+    },
+    {
+      "prediction": "ne znam sto",
+      "reference": "ne znam sto"
+    },
+    {
+      "prediction": "da zbog toga",
+      "reference": "da zbog toga"
+    },
+    {
+      "prediction": "isto vrijedi za druzene tokom skolskih odmora",
+      "reference": "isto vrijedi i za druzenje tokom skolskih odmora"
+    },
+    {
+      "prediction": "to ostini je drugo djel",
+      "reference": "to se nije dogodilo"
+    },
+    {
+      "prediction": "na njime",
+      "reference": "na njima je"
+    },
+    {
+      "prediction": "rekel smoda",
+      "reference": "rekli smo da"
+    },
+    {
+      "prediction": "pa dobro da",
+      "reference": "pa dobro da"
+    },
+    {
+      "prediction": "to je velika manifestacija za cije ili region",
+      "reference": "to je velika manifestacija za cijeli region"
+    },
+    {
+      "prediction": "kao sto treba",
+      "reference": "kao sto treba"
+    },
+    {
+      "prediction": "0 pasta",
+      "reference": "0 pa sta"
+    },
+    {
+      "prediction": "onda recite mi",
+      "reference": "onda recite mi"
+    },
+    {
+      "prediction": "sta je lo",
+      "reference": "sta je ovo"
+    },
+    {
+      "prediction": "nije nemalo",
+      "reference": "nije ni malo"
+    },
+    {
+      "prediction": "jedno od njih",
+      "reference": "jedna od njih"
+    },
+    {
+      "prediction": "kut sam sam",
+      "reference": "kad sam sam"
+    },
+    {
+      "prediction": "i kako je",
+      "reference": "i kako je"
+    },
+    {
+      "prediction": "to je druga knjiga ovog autor",
+      "reference": "to je druga knjiga ovog autora"
+    },
+    {
+      "prediction": "a kakosam",
+      "reference": "a kako sam"
+    },
+    {
+      "prediction": "sve sto mogu",
+      "reference": "sve sto mogu"
+    },
+    {
+      "prediction": "ako je to",
+      "reference": "ako je to"
+    },
+    {
+      "prediction": "amokla je",
+      "reference": "a mogla je"
+    },
+    {
+      "prediction": "znas sto je to",
+      "reference": "znas sta je to"
+    },
+    {
+      "prediction": "mek i od njih",
+      "reference": "neki od njih"
+    },
+    {
+      "prediction": "strateg je kontroverzna",
+      "reference": "strategija je kontroverzna"
+    },
+    {
+      "prediction": "samo ne znam",
+      "reference": "samo ne znam"
+    },
+    {
+      "prediction": "samnom",
+      "reference": "i sa mnom"
+    },
+    {
+      "prediction": "sada je prekazno za to",
+      "reference": "sada je prekasno za to"
+    },
+    {
+      "prediction": "a koja je",
+      "reference": "a koja je"
+    },
+    {
+      "prediction": "mozemo da idemo na novi izbare sutra",
+      "reference": "mozemo da idemo na nove izbore sutra"
+    },
+    {
+      "prediction": "vistim na takvi stvari",
+      "reference": "mislim na takve stvari"
+    },
+    {
+      "prediction": "svijedne",
+      "reference": "sve jedno je"
+    },
+    {
+      "prediction": "nije nam dakle jos poznato gde leze i koliko je staro",
+      "reference": "nije nam dakle jos poznato gde lezi i koliko je stara"
+    },
+    {
+      "prediction": "to je to je vas",
+      "reference": "da ti objasnim"
+    },
+    {
+      "prediction": "bozemo prosti",
+      "reference": "boze me prosti"
+    },
+    {
+      "prediction": "sedi molim te",
+      "reference": "sedi molim te"
+    },
+    {
+      "prediction": "severni i juzni",
+      "reference": "severni i juzni"
+    },
+    {
+      "prediction": "u isto vreme",
+      "reference": "u isto vreme"
+    },
+    {
+      "prediction": "u drugom veku kamenoga doba covek jos je neko kresao sljumak",
+      "reference": "u drugom veku kamenoga doba covek je jos jednako kresao sljunak"
+    },
+    {
+      "prediction": "nikon ne moze garantovati da nema rizika",
+      "reference": "niko ne moze garantovati da nema rizika"
+    },
+    {
+      "prediction": "ja vam kazem",
+      "reference": "ja vam kazem"
+    },
+    {
+      "prediction": "dalis pao",
+      "reference": "da li spava"
+    },
+    {
+      "prediction": "to je mala brojka",
+      "reference": "to je mala brojka"
+    },
+    {
+      "prediction": "do njegova smrti",
+      "reference": "do njegove smrti"
+    },
+    {
+      "prediction": "kako ne bi bilo",
+      "reference": "kako ne bi bilo"
+    },
+    {
+      "prediction": "sto te zadrzala",
+      "reference": "sto te zadrzava"
+    },
+    {
+      "prediction": "0 ali bih",
+      "reference": "0 ali bih"
+    },
+    {
+      "prediction": "anije tako",
+      "reference": "a nije tako"
+    },
+    {
+      "prediction": "i timen",
+      "reference": "i ti meni"
+    },
+    {
+      "prediction": "zaraziku od",
+      "reference": "za razliku od"
+    },
+    {
+      "prediction": "astasam",
+      "reference": "a sta sam"
+    },
+    {
+      "prediction": "nije bilo pravo",
+      "reference": "nije bilo pravo"
+    },
+    {
+      "prediction": "i moja je",
+      "reference": "i moja je"
+    },
+    {
+      "prediction": "wopa domena regioni maju spuno rezervi",
+      "reference": "u oba domena region ima jos puno rezervi"
+    },
+    {
+      "prediction": "nioski kojnje",
+      "reference": "nilski konj"
+    },
+    {
+      "prediction": "vrlo lepo vrlo lepo",
+      "reference": "vrlo lepo vrlo lepo"
+    },
+    {
+      "prediction": "kavisvi",
+      "reference": "kao i svi"
+    },
+    {
+      "prediction": "tu je mnogo",
+      "reference": "to je mnogo"
+    },
+    {
+      "prediction": "to je to",
+      "reference": "to je to"
+    },
+    {
+      "prediction": "banga kaze da je dugan koliko",
+      "reference": "banka kaze da dugujem koliko"
+    },
+    {
+      "prediction": "taj lepa",
+      "reference": "ta je lepa"
+    },
+    {
+      "prediction": "s mjomi",
+      "reference": "s njom je"
+    },
+    {
+      "prediction": "krcka nema mnogo iskustva sa fundamentalistickim terorizmom",
+      "reference": "grcka nema mnogo iskustva sa fundamentalistickim terorizmom"
+    },
+    {
+      "prediction": "najzam sta",
+      "reference": "ne znam sta"
+    },
+    {
+      "prediction": "da na treba",
+      "reference": "da ne treba"
+    },
+    {
+      "prediction": "sta je da",
+      "reference": "sta je da"
+    },
+    {
+      "prediction": "solun skim i junarun i fijunski festival",
+      "reference": "solunski medunarodni filmski festival"
+    },
+    {
+      "prediction": "hadi hadi napolje",
+      "reference": "hajde hajde napolje"
+    },
+    {
+      "prediction": "pa jeste tako",
+      "reference": "pa jeste tako"
+    },
+    {
+      "prediction": "i moja smnoga",
+      "reference": "ima jos mnogo"
+    },
+    {
+      "prediction": "zanekul ko dana",
+      "reference": "za nekoliko dana"
+    },
+    {
+      "prediction": "zemlja c 3",
+      "reference": "zemlja se tresla"
+    },
+    {
+      "prediction": "pasta je",
+      "reference": "pa sta je"
+    },
+    {
+      "prediction": "nebili",
+      "reference": "ne bi li"
+    },
+    {
+      "prediction": "e pa ne moj",
+      "reference": "e pa nemoj"
+    },
+    {
+      "prediction": "ne znas",
+      "reference": "ne zna se"
+    },
+    {
+      "prediction": "a da tol",
+      "reference": "a da to"
+    },
+    {
+      "prediction": "to si danas menja",
+      "reference": "to se danas menja"
+    },
+    {
+      "prediction": "tito mislis",
+      "reference": "ti to mislis"
+    },
+    {
+      "prediction": "niko ne zna",
+      "reference": "niko ne zna"
+    },
+    {
+      "prediction": "kako si mogla tako",
+      "reference": "kako si mogla tako"
+    },
+    {
+      "prediction": "a je li",
+      "reference": "a je li"
+    },
+    {
+      "prediction": "morabitirata",
+      "reference": "mora biti rata"
+    },
+    {
+      "prediction": "takavion",
+      "reference": "takav je on"
+    },
+    {
+      "prediction": "on je jedini kandidat",
+      "reference": "on je jedini kandidat"
+    },
+    {
+      "prediction": "ja ne razumim",
+      "reference": "ja ne razumem"
+    },
+    {
+      "prediction": "zas to ne mora",
+      "reference": "zasto ne moze"
+    },
+    {
+      "prediction": "nedami",
+      "reference": "ne da mi"
+    },
+    {
+      "prediction": "med ju tim nije bas sve tako lak",
+      "reference": "medutim nije bas sve tako lako"
+    },
+    {
+      "prediction": "on iznam",
+      "reference": "0 ne znam"
+    },
+    {
+      "prediction": "oslobacene svih obduzbi",
+      "reference": "osloboden je svih optuzbi"
+    },
+    {
+      "prediction": "prosto ne moze",
+      "reference": "prosto ne moze"
+    },
+    {
+      "prediction": "kako je jemu",
+      "reference": "kako je njemu"
+    },
+    {
+      "prediction": "000",
+      "reference": "000"
+    },
+    {
+      "prediction": "ne to je",
+      "reference": "ne to je"
+    },
+    {
+      "prediction": "i bolje je",
+      "reference": "i bolje je"
+    },
+    {
+      "prediction": "top i bilo",
+      "reference": "to bi bilo"
+    },
+    {
+      "prediction": "sve isva",
+      "reference": "sve i sva"
+    },
+    {
+      "prediction": "i osgore",
+      "reference": "i jos gore"
+    },
+    {
+      "prediction": "sta je vama",
+      "reference": "sta je vama"
+    },
+    {
+      "prediction": "vi ne razumete",
+      "reference": "vi ne razumete"
+    },
+    {
+      "prediction": "\u043f\u043e\u043a\u0430\u0436\u0435\u043c \u0438 \u043a\u0430\u043d\u043e\u043d\u0438\u043a\u0443 \u0447\u0442\u043e \u0441\u0435\u0433 \u043e\u043f\u0438\u043b\u0430 \u0458\u0443\u0440\u0447\u043e",
+      "reference": "pokazi mi knnjigu sto si kupila juce"
+    },
+    {
+      "prediction": "on je mudrosovo",
+      "reference": "on je mudra osoba"
+    },
+    {
+      "prediction": "sedi molim te",
+      "reference": "sedi molim te"
+    },
+    {
+      "prediction": "sta je brate",
+      "reference": "sta je brate"
+    },
+    {
+      "prediction": "sve do sada",
+      "reference": "sve do sada"
+    },
+    {
+      "prediction": "i strahaj utoku",
+      "reference": "istraga je u toku"
+    },
+    {
+      "prediction": "rodjasis",
+      "reference": "rodio si se"
+    },
+    {
+      "prediction": "kako je reagovalo lokalnost na umnistvo na ove policajce",
+      "reference": "kako je reagovalo lokalno stanovnistvo na ove policajce"
+    },
+    {
+      "prediction": "mi kao par",
+      "reference": "mi kao par"
+    },
+    {
+      "prediction": "is done all done",
+      "reference": "iz dana u dan"
+    },
+    {
+      "prediction": "ja sam gotova",
+      "reference": "ja sam gotova"
+    },
+    {
+      "prediction": "turci umnogo me zavise od ruskog i ramskog kas",
+      "reference": "turci umnogome zavise od ruskog i iranskog gasa"
+    },
+    {
+      "prediction": "postalo je opasno",
+      "reference": "postalo je opasno"
+    },
+    {
+      "prediction": "niskim",
+      "reference": "ni s kim"
+    },
+    {
+      "prediction": "pute vi su nam bilo i raznecitivi",
+      "reference": "putevi su nam bili razliciti"
+    },
+    {
+      "prediction": "0 jesili",
+      "reference": "0 jesi li"
+    },
+    {
+      "prediction": "sto je sada",
+      "reference": "sto je sada"
+    },
+    {
+      "prediction": "a vi ste",
+      "reference": "a vi ste"
+    },
+    {
+      "prediction": "a zasto si",
+      "reference": "a zasto si"
+    },
+    {
+      "prediction": "to je na ikore",
+      "reference": "to je najgore"
+    },
+    {
+      "prediction": "tako procesci meduti muziti vremena",
+      "reference": "takav proces ce medutim uzeti vremena"
+    },
+    {
+      "prediction": "vlasti su bruzosvatili da nas je lako podijeliti",
+      "reference": "vlasti su brzo shvatile da nas je lako podijeliti"
+    },
+    {
+      "prediction": "plavi su napokon licili na sebe",
+      "reference": "plavi su napokon licili na sebe"
+    },
+    {
+      "prediction": "vatrogastna sluzba ulaze nadljudski napore",
+      "reference": "vatrogasna sluzba ulaze nadljudske napore"
+    },
+    {
+      "prediction": "kippa nesm bi ti izuzet k",
+      "reference": "kipar ne sme biti izuzetak"
+    },
+    {
+      "prediction": "kao sto kaze",
+      "reference": "kao sto kaze"
+    },
+    {
+      "prediction": "tako stvari stoje",
+      "reference": "tako stvari stoje"
+    },
+    {
+      "prediction": "struske veceri pojezije",
+      "reference": "struske veceri poezije"
+    },
+    {
+      "prediction": "ali ne mogu",
+      "reference": "ali ne mogu"
+    },
+    {
+      "prediction": "tati kazem sta",
+      "reference": "da ti kazem sta"
+    },
+    {
+      "prediction": "drugi prioritet dodavio on bit cu na predivanje ekonomije",
+      "reference": "drugi prioritet dodao je on bice unapredivanje ekonomije"
+    },
+    {
+      "prediction": "ja to ne mogu",
+      "reference": "ja to ne mogu"
+    },
+    {
+      "prediction": "kako je je",
+      "reference": "kako joj je"
+    },
+    {
+      "prediction": "ne jas",
+      "reference": "ne ja sam"
+    },
+    {
+      "prediction": "i usve",
+      "reference": "i u sve"
+    },
+    {
+      "prediction": "protest odklanje inflacije prakticno vec uspesno zarasno",
+      "reference": "proces otklanjanja inflacije je prakticno vec uspesno zavrsen"
+    },
+    {
+      "prediction": "i kako je",
+      "reference": "i kako je"
+    },
+    {
+      "prediction": "janela zvonem",
+      "reference": "ja ne razumem"
+    },
+    {
+      "prediction": "isti zlocen i pocinjeni su i nad nasim narodom",
+      "reference": "isti zlocini pocinjeni su i nad nasim narodom"
+    },
+    {
+      "prediction": "takoce zelimo da zaposnimo proces privatizacije",
+      "reference": "takode zelimo da zapocnemo proces privatizacije"
+    },
+    {
+      "prediction": "sto je tada",
+      "reference": "sto je tada"
+    },
+    {
+      "prediction": "zaljuljen u nju",
+      "reference": "zaljubljen u nju"
+    },
+    {
+      "prediction": "to ne mogu",
+      "reference": "to ne mogu"
+    },
+    {
+      "prediction": "dva prolaznika su kako se izvestava povrdena",
+      "reference": "dva prolaznika su kako se izvestava povredena"
+    },
+    {
+      "prediction": "sredstvo ce biti dodeljene srateskim sektorima albanjske privdede",
+      "reference": "sredstva ce biti dodeljena strateskim sektorima albanske privrede"
+    },
+    {
+      "prediction": "hvala lavanko spadine",
+      "reference": "hvala vam gospodine"
+    },
+    {
+      "prediction": "visi ih je",
+      "reference": "vise ih je"
+    },
+    {
+      "prediction": "vera i nada",
+      "reference": "vera i nada"
+    },
+    {
+      "prediction": "evo zasto",
+      "reference": "evo zasto"
+    },
+    {
+      "prediction": "dokom vremena ta oblast je promijenila",
+      "reference": "tokom vremena ta oblast se promijenila"
+    },
+    {
+      "prediction": "ne",
+      "reference": "ne"
+    },
+    {
+      "prediction": "ito tamo",
+      "reference": "i to tamo"
+    },
+    {
+      "prediction": "je li dobro",
+      "reference": "je li dobro"
+    },
+    {
+      "prediction": "ja sam mi",
+      "reference": "ja sam mi"
+    },
+    {
+      "prediction": "a za gospadina",
+      "reference": "a za gospodina"
+    },
+    {
+      "prediction": "ne znam sto je",
+      "reference": "ne znam sta je"
+    },
+    {
+      "prediction": "bratek desi",
+      "reference": "brate gde si"
+    },
+    {
+      "prediction": "to ste hte li",
+      "reference": "to ste hteli"
+    },
+    {
+      "prediction": "0 da jeste",
+      "reference": "0 da jeste"
+    },
+    {
+      "prediction": "dragoveme dobro govor i albanski",
+      "reference": "drago veoma dobro govori albanski"
+    },
+    {
+      "prediction": "zasto bih se dotio",
+      "reference": "zasto bih se ljutio"
+    },
+    {
+      "prediction": "kosta mi ja",
+      "reference": "ko sam ja"
+    },
+    {
+      "prediction": "u celom svetu",
+      "reference": "u celom svetu"
+    },
+    {
+      "prediction": "vladavinu zakona",
+      "reference": "vladavinu zakona"
+    },
+    {
+      "prediction": "zasto ne mene",
+      "reference": "zasto ne mene"
+    },
+    {
+      "prediction": "sta se mora dvijem",
+      "reference": "sto sam uradio"
+    },
+    {
+      "prediction": "to je bio najtezideo",
+      "reference": "to je bio najtezi deo"
+    },
+    {
+      "prediction": "zasto nebi",
+      "reference": "zasto ne bi"
+    },
+    {
+      "prediction": "ne znam da",
+      "reference": "ne znam da"
+    },
+    {
+      "prediction": "kvo je samja",
+      "reference": "koje sam ja"
+    },
+    {
+      "prediction": "jesem lip",
+      "reference": "ja sam lep"
+    },
+    {
+      "prediction": "ne ne ja",
+      "reference": "ne ne ja"
+    },
+    {
+      "prediction": "p",
+      "reference": "prvi put vidim"
+    },
+    {
+      "prediction": "zatne vidi",
+      "reference": "zar ne vidi"
+    },
+    {
+      "prediction": "ne znam dali",
+      "reference": "ne znam da li"
+    },
+    {
+      "prediction": "on je sve",
+      "reference": "on je sve"
+    },
+    {
+      "prediction": "britanski policajac koji je voze automobil nije povredjeno",
+      "reference": "britanski policajac koji je vozio automobil nije povreden"
+    },
+    {
+      "prediction": "kompanije smanjuju troskove i odpustaju radnike",
+      "reference": "kompanije smanjuju troskove i otpustaju radnike"
+    },
+    {
+      "prediction": "ja otac",
+      "reference": "i ja otac"
+    },
+    {
+      "prediction": "i aleto",
+      "reference": "je li to"
+    },
+    {
+      "prediction": "i to je",
+      "reference": "i tu je"
+    },
+    {
+      "prediction": "kako se dokaze",
+      "reference": "kako se to kaze"
+    },
+    {
+      "prediction": "majko moj amila",
+      "reference": "majko moja mila"
+    },
+    {
+      "prediction": "a ti ne",
+      "reference": "a ti ne"
+    },
+    {
+      "prediction": "nijatepi",
+      "reference": "ni ja tebi"
+    },
+    {
+      "prediction": "to si ti vratio",
+      "reference": "to si ti uradio"
+    },
+    {
+      "prediction": "i ti da",
+      "reference": "i ti da"
+    },
+    {
+      "prediction": "u pomoci paok",
+      "reference": "upomoc pauk"
+    },
+    {
+      "prediction": "to se ne odnosi samo na pojedinci",
+      "reference": "to se ne odnosi samo na pojedince"
+    },
+    {
+      "prediction": "dan posle poraza",
+      "reference": "dan posle poraza"
+    },
+    {
+      "prediction": "neda no dnif",
+      "reference": "ni jedan od njih"
+    },
+    {
+      "prediction": "da za ti",
+      "reference": "da za ti"
+    },
+    {
+      "prediction": "reclubis",
+      "reference": "reklo bi se"
+    },
+    {
+      "prediction": "duboko zalim zbog nasilja koje je upelezilo izbore",
+      "reference": "duboko zalim zbog nasilja koje je obelezilo izbore"
+    },
+    {
+      "prediction": "u tim godinama",
+      "reference": "u tim godinama"
+    },
+    {
+      "prediction": "astasi u radio",
+      "reference": "a sta si uradio"
+    },
+    {
+      "prediction": "tako ce sam probao medovacu",
+      "reference": "takode sam probao medovacu"
+    },
+    {
+      "prediction": "nekativ",
+      "reference": "neka ti je"
+    },
+    {
+      "prediction": "zasto zane nemaju brakove",
+      "reference": "zasto zene nemaju brkove"
+    },
+    {
+      "prediction": "ali je pakne",
+      "reference": "ali ipak ne"
+    },
+    {
+      "prediction": "i samo jednom",
+      "reference": "i samo jednom"
+    },
+    {
+      "prediction": "jos nije poznat",
+      "reference": "jos nije poznat"
+    },
+    {
+      "prediction": "zvanicne rezultati se ocekuju u punelje kumice",
+      "reference": "zvanicni rezultati se ocekuju u ponedeljak uvece"
+    },
+    {
+      "prediction": "ne razumim to",
+      "reference": "ne razumem to"
+    },
+    {
+      "prediction": "perva je konumska",
+      "reference": "prva je ekonomska"
+    },
+    {
+      "prediction": "bolje i kad me go nikad di",
+      "reference": "bolje ikad nego nikad"
+    },
+    {
+      "prediction": "grano je znano",
+      "reference": "rano je znam"
+    },
+    {
+      "prediction": "vi se mnide",
+      "reference": "vise ne ide"
+    },
+    {
+      "prediction": "to je na",
+      "reference": "to je na"
+    },
+    {
+      "prediction": "toti",
+      "reference": "to ti je"
+    },
+    {
+      "prediction": "da dno je",
+      "reference": "na dnu je"
+    },
+    {
+      "prediction": "parlament podrsava ovu zakonodavnu promen",
+      "reference": "parlament podrzava ovu zakonodavnu promenu"
+    },
+    {
+      "prediction": "nemam sto drugo je da vam kaze",
+      "reference": "nemam sta drugo da vam kazem"
+    },
+    {
+      "prediction": "neko liko zemalja ostvarilo je veliki skoku naprijed",
+      "reference": "nekoliko zemalja ostvarilo je veliki skok unaprijed"
+    },
+    {
+      "prediction": "to vam kaze",
+      "reference": "to vam kaze"
+    },
+    {
+      "prediction": "a jesili",
+      "reference": "a jesi li"
+    },
+    {
+      "prediction": "pa sta dradimo",
+      "reference": "pa sta da radimo"
+    },
+    {
+      "prediction": "u sobatu smo isli 0 zalaske vrt",
+      "reference": "u subotu smo isli u zooloski vrt"
+    },
+    {
+      "prediction": "tosa desilo",
+      "reference": "to se desilo"
+    },
+    {
+      "prediction": "nasa filosofija",
+      "reference": "nasa filozofija"
+    },
+    {
+      "prediction": "jako ih volim",
+      "reference": "jako ih volim"
+    },
+    {
+      "prediction": "malim vas sto je",
+      "reference": "molim vas sta"
+    },
+    {
+      "prediction": "ne samo prvrame no",
+      "reference": "ne samo privremeno"
+    },
+    {
+      "prediction": "on je tvoje",
+      "reference": "on je tvoj"
+    },
+    {
+      "prediction": "visce ne moze",
+      "reference": "vise ne moze"
+    },
+    {
+      "prediction": "to je sustina demokratije",
+      "reference": "to je sustina demokratije"
+    },
+    {
+      "prediction": "kao i zena",
+      "reference": "kao i zena"
+    },
+    {
+      "prediction": "ne znas sta",
+      "reference": "ne znas sta"
+    },
+    {
+      "prediction": "zemlja se trestla pucala je srozavala se i izdizala",
+      "reference": "zemlja se tresla pucala je srozavala se i izdizala"
+    },
+    {
+      "prediction": "godino dana",
+      "reference": "u godinu dana"
+    },
+    {
+      "prediction": "bicu ukupnu 30 radiotehnichar",
+      "reference": "bice ukupno trideset radio tehnicara"
+    },
+    {
+      "prediction": "dalida",
+      "reference": "da li da"
+    },
+    {
+      "prediction": "nisa kim",
+      "reference": "ni s kim"
+    },
+    {
+      "prediction": "cilje da su stanu i kompjuterska pismunosta stanu nista",
+      "reference": "cilj je da se ustanovi kompjuterska pismenost stanovnistva"
+    },
+    {
+      "prediction": "to je glavno",
+      "reference": "to je glavno"
+    },
+    {
+      "prediction": "evropskog filmskog festivala",
+      "reference": "evropskog filmskog festivala"
+    },
+    {
+      "prediction": "ianisa",
+      "reference": "e ja nisam"
+    },
+    {
+      "prediction": "ne avljus",
+      "reference": "ne javljaju se"
+    },
+    {
+      "prediction": "0 to nije lista",
+      "reference": "0 to nije nista"
+    },
+    {
+      "prediction": "znate kako je",
+      "reference": "znate kako je"
+    },
+    {
+      "prediction": "ja zelim",
+      "reference": "i ja zelim"
+    },
+    {
+      "prediction": "ja to ne mogu",
+      "reference": "ja to ne mogu"
+    },
+    {
+      "prediction": "ja to nadmijam",
+      "reference": "jedan od njih"
+    },
+    {
+      "prediction": "0 boze ne",
+      "reference": "0 boze ne"
+    },
+    {
+      "prediction": "to je pizza nje",
+      "reference": "to je pitanje"
+    },
+    {
+      "prediction": "prvo je bilo da se rasprodati sije li stadija",
+      "reference": "prva je bila da se rasproda cijeli stadion"
+    },
+    {
+      "prediction": "kao sto smo",
+      "reference": "kao sto smo"
+    },
+    {
+      "prediction": "ne kazem ja",
+      "reference": "ne kazem ja"
+    },
+    {
+      "prediction": "sta on misli",
+      "reference": "sta on misli"
+    },
+    {
+      "prediction": "e luki vrat",
+      "reference": "eno ti vrata"
+    },
+    {
+      "prediction": "ali ne mogu je to",
+      "reference": "ali ne mogu ja to"
+    },
+    {
+      "prediction": "u to vrejme",
+      "reference": "u to vreme"
+    },
+    {
+      "prediction": "pustime posti",
+      "reference": "pusti me pusti"
+    },
+    {
+      "prediction": "to je vas",
+      "reference": "to je vas"
+    },
+    {
+      "prediction": "svi bez razliki",
+      "reference": "svi bez razlike"
+    },
+    {
+      "prediction": "zanjoje",
+      "reference": "za nju je"
+    },
+    {
+      "prediction": "a tu iznas",
+      "reference": "a ti znas"
+    },
+    {
+      "prediction": "to je isti princip",
+      "reference": "to je isti princip"
+    },
+    {
+      "prediction": "a tu su",
+      "reference": "a tu su"
+    },
+    {
+      "prediction": "kako tito",
+      "reference": "kako ti to"
+    },
+    {
+      "prediction": "hajde prozi rogu",
+      "reference": "hajde pruzi ruku"
+    },
+    {
+      "prediction": "dobro ja",
+      "reference": "dobro je a"
+    },
+    {
+      "prediction": "na zadnju rata",
+      "reference": "na zadnja vrata"
+    },
+    {
+      "prediction": "te sita",
+      "reference": "ti si ta"
+    },
+    {
+      "prediction": "vjios kako",
+      "reference": "i jos kako"
+    },
+    {
+      "prediction": "to su te",
+      "reference": "to su te"
+    },
+    {
+      "prediction": "ne znam sta je",
+      "reference": "ne znam sta je"
+    },
+    {
+      "prediction": "pa je sad",
+      "reference": "pa i sad"
+    },
+    {
+      "prediction": "avo sad",
+      "reference": "a ovo sad"
+    },
+    {
+      "prediction": "10 fira klavir",
+      "reference": "on svira klavir"
+    },
+    {
+      "prediction": "i jos jedan",
+      "reference": "i jos jedan"
+    },
+    {
+      "prediction": "ne bi bilo",
+      "reference": "ne bi bilo"
+    },
+    {
+      "prediction": "ne i kus taj",
+      "reference": "nego sta je"
+    },
+    {
+      "prediction": "to je kljucno pitanje",
+      "reference": "to je kljucno pitanje"
+    },
+    {
+      "prediction": "da dje dobro ka",
+      "reference": "dalje od ovoga"
+    },
+    {
+      "prediction": "iseliti",
+      "reference": "je si li ti"
+    },
+    {
+      "prediction": "to je istina",
+      "reference": "to je istina"
+    },
+    {
+      "prediction": "i skim",
+      "reference": "i s kim"
+    },
+    {
+      "prediction": "mojim tine",
+      "reference": "molim te ne"
+    },
+    {
+      "prediction": "festival tnije",
+      "reference": "festival knjige"
+    },
+    {
+      "prediction": "izrazavam svoje najduge i najskrenije sa ucestjeporodicama zrtava",
+      "reference": "izrazavam svoje najdublje i najiskrenije saucesce porodicama zrtava"
+    },
+    {
+      "prediction": "eto je",
+      "reference": "e to je"
+    },
+    {
+      "prediction": "da ne preteroje",
+      "reference": "da ne preterujem"
+    },
+    {
+      "prediction": "sta ima novo",
+      "reference": "sta ima novo"
+    },
+    {
+      "prediction": "a sto bih",
+      "reference": "a sto bih"
+    },
+    {
+      "prediction": "a da je tako",
+      "reference": "a da je tako"
+    },
+    {
+      "prediction": "0 namajer",
+      "reference": "0 nama je"
+    },
+    {
+      "prediction": "gladni smog",
+      "reference": "gladni smo"
+    },
+    {
+      "prediction": "jedan 0 njegoj i telokranitelje poginu",
+      "reference": "jedan od njegovih telohranitelja je poginuo"
+    },
+    {
+      "prediction": "mere vesbejnosti",
+      "reference": "mere bezbednosti"
+    },
+    {
+      "prediction": "i ne moze",
+      "reference": "i ne moze"
+    },
+    {
+      "prediction": "infrastruktura se mora drasticno popraviti",
+      "reference": "infrastruktura se mora drasticno popraviti"
+    },
+    {
+      "prediction": "ustanite molim vas",
+      "reference": "ustanite molim vas"
+    },
+    {
+      "prediction": "sima bio sin jednog ako cijash",
+      "reference": "sima je bio sin jednoga kocijasa"
+    },
+    {
+      "prediction": "odniga je",
+      "reference": "od njega je"
+    },
+    {
+      "prediction": "molim da se odnep",
+      "reference": "molim da sednem"
+    },
+    {
+      "prediction": "to si ti",
+      "reference": "to si ti"
+    },
+    {
+      "prediction": "znaci docete do prenosa sristava",
+      "reference": "znaci doci ce do prenosa sredstava"
+    },
+    {
+      "prediction": "znas li sta",
+      "reference": "znas li sta"
+    },
+    {
+      "prediction": "to nece biti lako",
+      "reference": "to nece biti lako"
+    },
+    {
+      "prediction": "ona je biva",
+      "reference": "ona je bila"
+    },
+    {
+      "prediction": "ne govorim",
+      "reference": "ne govori mi"
+    },
+    {
+      "prediction": "a pc",
+      "reference": "a ti si"
+    },
+    {
+      "prediction": "sta zi jevo",
+      "reference": "sta je zivo"
+    },
+    {
+      "prediction": "asvi ovih",
+      "reference": "a svi ovi"
+    },
+    {
+      "prediction": "i mi smo",
+      "reference": "i mi smo"
+    },
+    {
+      "prediction": "i demonipt",
+      "reference": "edi molim te"
+    },
+    {
+      "prediction": "jedni od drugih",
+      "reference": "jedni od drugih"
+    },
+    {
+      "prediction": "to negovori",
+      "reference": "to ne govori"
+    },
+    {
+      "prediction": "on je moj",
+      "reference": "on je moj"
+    },
+    {
+      "prediction": "do sada obecanja su ostala samo obecanja",
+      "reference": "do sada obecanja su ostala samo obecanja"
+    },
+    {
+      "prediction": "u to koji potragashiram zemlje",
+      "reference": "u toku je potraga sirom zemlje"
+    },
+    {
+      "prediction": "koja su to",
+      "reference": "koja su to"
+    },
+    {
+      "prediction": "i ti si",
+      "reference": "i ti si"
+    },
+    {
+      "prediction": "dale ko dobale",
+      "reference": "daleko od obale"
+    },
+    {
+      "prediction": "a viste",
+      "reference": "a vi ste"
+    },
+    {
+      "prediction": "sta stoju imenu",
+      "reference": "sta stoji u imenu"
+    },
+    {
+      "prediction": "to sam ktela",
+      "reference": "to sam htela"
+    },
+    {
+      "prediction": "sta zaradimo",
+      "reference": "sta da radimo"
+    },
+    {
+      "prediction": "da da kako mora biti",
+      "reference": "da tako mora biti"
+    },
+    {
+      "prediction": "0 kao sto",
+      "reference": "0 kao sto"
+    },
+    {
+      "prediction": "0 hi desed",
+      "reference": "0 hajde sad"
+    },
+    {
+      "prediction": "nije titata sta klorjezec",
+      "reference": "nije ti tata staklorezac"
+    },
+    {
+      "prediction": "i oteroje",
+      "reference": "i oterao je"
+    },
+    {
+      "prediction": "iz tvoj husta",
+      "reference": "iz tvojih usta"
+    },
+    {
+      "prediction": "zemlje regiona su potencijanih kandidati za pridruzivanje",
+      "reference": "zemlje regiona su potencijalni kandidati za pridruzivanje"
+    },
+    {
+      "prediction": "jan aznam",
+      "reference": "ja ne znam"
+    },
+    {
+      "prediction": "merno i tiho",
+      "reference": "mirno i tiho"
+    },
+    {
+      "prediction": "znaci su zloslutni",
+      "reference": "znaci su zloslutni"
+    },
+    {
+      "prediction": "sala za skoro svaki koncert je raspel",
+      "reference": "sala za skoro svaki koncert je rasprodata"
+    },
+    {
+      "prediction": "0 je gosp",
+      "reference": "ovo je gosp"
+    },
+    {
+      "prediction": "to mu je",
+      "reference": "to mu je"
+    },
+    {
+      "prediction": "otc",
+      "reference": "0 ti si"
+    },
+    {
+      "prediction": "to je sad",
+      "reference": "to je sad"
+    },
+    {
+      "prediction": "0 ja imam",
+      "reference": "0 ja imam"
+    },
+    {
+      "prediction": "samo nemoj da gledas dole",
+      "reference": "samo nemoj da gledas dole"
+    },
+    {
+      "prediction": "da sam ja",
+      "reference": "da sam ja"
+    },
+    {
+      "prediction": "dalaj ko toga",
+      "reference": "daleko od toga"
+    },
+    {
+      "prediction": "\u0432\u0438\u0434\u0438\u0448 \u043a\u0430\u043a\u043e \u044f",
+      "reference": "vidis kako je"
+    },
+    {
+      "prediction": "to ne ide",
+      "reference": "to ne ide"
+    },
+    {
+      "prediction": "tvarditi debiji",
+      "reference": "tvrditi da bi ."
+    },
+    {
+      "prediction": "zamyku vreme",
+      "reference": "za neko vreme"
+    },
+    {
+      "prediction": "to on je dovoljno",
+      "reference": "to nije dovoljno"
+    },
+    {
+      "prediction": "policijska istraga i utoku",
+      "reference": "policijska istraga je u toku"
+    },
+    {
+      "prediction": "e ne moze",
+      "reference": "e ne moze"
+    },
+    {
+      "prediction": "ucinit cemo sve dosaradzijem",
+      "reference": "ucinicemo sve da saradujemo"
+    },
+    {
+      "prediction": "a ste i boj nekada zaposljava 4 ljudi",
+      "reference": "astibo je nekada zaposljavao cetiri hiljade ljudi"
+    },
+    {
+      "prediction": "kako je to sladko",
+      "reference": "kako je to slatko"
+    },
+    {
+      "prediction": "janem ono",
+      "reference": "ja ne mogu"
+    },
+    {
+      "prediction": "e to moze",
+      "reference": "e to moze"
+    },
+    {
+      "prediction": "0 ovo ovde",
+      "reference": "0 ovo ovde"
+    },
+    {
+      "prediction": "dobro je a",
+      "reference": "dobro je a"
+    },
+    {
+      "prediction": "velika vam hvala",
+      "reference": "velika vam hvala"
+    },
+    {
+      "prediction": "ne ima nikakvih ostataka",
+      "reference": "nema nikakvih ostataka"
+    },
+    {
+      "prediction": "verovatno ne",
+      "reference": "verovatno ne"
+    },
+    {
+      "prediction": "kao sto si ti",
+      "reference": "kao sto si ti"
+    },
+    {
+      "prediction": "i to dost",
+      "reference": "i to dosta"
+    },
+    {
+      "prediction": "medutim izazove su ogrom",
+      "reference": "medutim izazovi su ogromni"
+    },
+    {
+      "prediction": "a to nije tako",
+      "reference": "a to nije tako"
+    },
+    {
+      "prediction": "ja se svoj",
+      "reference": "ja sam svoj"
+    },
+    {
+      "prediction": "vi ne zna",
+      "reference": "vi ne znate"
+    },
+    {
+      "prediction": "i to funkcionis",
+      "reference": "i to funkcionise"
+    },
+    {
+      "prediction": "sta je prvo",
+      "reference": "sta je prvo"
+    },
+    {
+      "prediction": "abili",
+      "reference": "a bi li"
+    },
+    {
+      "prediction": "premijere je takode nave opitanje rada na crno",
+      "reference": "premijer je takode naveo pitanje rada na crno"
+    },
+    {
+      "prediction": "ne hava novih prijezloga po pitanju nazio",
+      "reference": "nema novih prijedloga po pitanju naziva"
+    },
+    {
+      "prediction": "tot i",
+      "reference": "to ti je"
+    },
+    {
+      "prediction": "evo nam ne kujde",
+      "reference": "evo nam neko ide"
+    },
+    {
+      "prediction": "0 ne mogu",
+      "reference": "0 ne mogu"
+    },
+    {
+      "prediction": "ako nece zlo od tebe bezi ti od zla",
+      "reference": "ako nece zlo od tebe bezi ti od zla"
+    },
+    {
+      "prediction": "sto nije dosao",
+      "reference": "sto nije dosao"
+    },
+    {
+      "prediction": "0 samo to",
+      "reference": "0 samo to"
+    },
+    {
+      "prediction": "0 je ti",
+      "reference": "0 i ti"
+    },
+    {
+      "prediction": "koja te djel prije",
+      "reference": "koja ti je dioptrija"
+    },
+    {
+      "prediction": "ne mozes ti",
+      "reference": "ne mozes ti"
+    },
+    {
+      "prediction": "ne znas kako",
+      "reference": "ne znas kako"
+    },
+    {
+      "prediction": "bash kao nije notac",
+      "reference": "bas kao ni njen otac"
+    },
+    {
+      "prediction": "2 tinedere su ubijena dok je cetvor rajnjena",
+      "reference": "dva tinejdzera su ubijena dok je cetvoro ranjeno"
+    },
+    {
+      "prediction": "pokakusmo",
+      "reference": "pa kako smo"
+    },
+    {
+      "prediction": "vi ne mislite",
+      "reference": "vi ne mislite"
+    },
+    {
+      "prediction": "depome da ne",
+      "reference": "dabome da ne"
+    },
+    {
+      "prediction": "da su svi",
+      "reference": "da su svi"
+    },
+    {
+      "prediction": "makako do",
+      "reference": "ma kako to"
+    },
+    {
+      "prediction": "bi ojo",
+      "reference": "bio je on"
+    },
+    {
+      "prediction": "sto je sada",
+      "reference": "sto je sada"
+    },
+    {
+      "prediction": "oleg kome",
+      "reference": "koliko mu je"
+    },
+    {
+      "prediction": "ne imam potrebe za paniku",
+      "reference": "nema potrebe za paniku"
+    },
+    {
+      "prediction": "vuk dlaku mejnja ali cudni kada",
+      "reference": "vuk dlaku menja ali cud nikada"
+    },
+    {
+      "prediction": "fisimoja",
+      "reference": "ti si moja"
+    },
+    {
+      "prediction": "ali se ju historijski imvrmenima desavalo",
+      "reference": "ali se i u istoriskim vremenima desavalo"
+    },
+    {
+      "prediction": "da te pitam",
+      "reference": "da te pitam"
+    },
+    {
+      "prediction": "nije dugo trela",
+      "reference": "nije dugo trajalo"
+    },
+    {
+      "prediction": "na ovoj tabli",
+      "reference": "na ovoj tabli"
+    },
+    {
+      "prediction": "vrata od sobbe",
+      "reference": "vrata od sobe"
+    },
+    {
+      "prediction": "tu je remuc",
+      "reference": "to je nemoguce"
+    },
+    {
+      "prediction": "ali ona ne",
+      "reference": "ali ona ne"
+    },
+    {
+      "prediction": "hadi dobudaj mojoj osjetvoreni",
+      "reference": "hajde da budemo jos otvoreniji"
+    },
+    {
+      "prediction": "godde bio",
+      "reference": "gde je bio"
+    },
+    {
+      "prediction": "to nije malo",
+      "reference": "to nije malo"
+    },
+    {
+      "prediction": "jos je dan meset",
+      "reference": "jos jedan mesec"
+    },
+    {
+      "prediction": "mi sigurno necemo tolerirati za uvijek",
+      "reference": "mi ih sigurno necemo tolerirati zauvijek"
+    },
+    {
+      "prediction": "of the cod men",
+      "reference": "ovde kod mene"
+    },
+    {
+      "prediction": "konebi",
+      "reference": "ko ne bi"
+    },
+    {
+      "prediction": "ne bi moh go",
+      "reference": "ne bi mogao"
+    },
+    {
+      "prediction": "bio sam prijatno iznanacen",
+      "reference": "bio sam prijatno iznenaden"
+    },
+    {
+      "prediction": "0 ali bih",
+      "reference": "0 ali bih"
+    },
+    {
+      "prediction": "jasa mja",
+      "reference": "ja sam ja"
+    },
+    {
+      "prediction": "oto je mi",
+      "reference": "otac mi je"
+    },
+    {
+      "prediction": "kad se uzme na one",
+      "reference": "kada se uzme na"
+    },
+    {
+      "prediction": "molim te sedi",
+      "reference": "molim te sedi"
+    },
+    {
+      "prediction": "a ne nikako",
+      "reference": "a ne nikako"
+    },
+    {
+      "prediction": "u dolini delavara",
+      "reference": "u dolini delavara"
+    },
+    {
+      "prediction": "tako stvari ovdje funkcionisu",
+      "reference": "tako stvari ovde funkcionisu"
+    },
+    {
+      "prediction": "okruzentafim biljem zivotinja ma anastenja na zemlji",
+      "reference": "okruzen takvim biljem i zivotinjama a nastanjen na zemlji"
+    },
+    {
+      "prediction": "halitine",
+      "reference": "ali ti ne"
+    },
+    {
+      "prediction": "ah tako je",
+      "reference": "a tako je"
+    },
+    {
+      "prediction": "ce sta njedaj pogresi",
+      "reference": "svestan je da je pogresio"
+    },
+    {
+      "prediction": "odrzao sam to obicanje",
+      "reference": "odrzao sam to obecanje"
+    },
+    {
+      "prediction": "vol 0 bih te zna",
+      "reference": "voleo bih da znam"
+    },
+    {
+      "prediction": "as te kazete",
+      "reference": "a sta kazete"
+    },
+    {
+      "prediction": "jos jos jos",
+      "reference": "jos jos jos"
+    },
+    {
+      "prediction": "sta nam savjetuje",
+      "reference": "sta nam savetujete"
+    },
+    {
+      "prediction": "ne dolazim",
+      "reference": "ne dolazi mi"
+    },
+    {
+      "prediction": "sta cijeno",
+      "reference": "sta ce nam"
+    },
+    {
+      "prediction": "kamo je svi",
+      "reference": "kao i svi"
+    },
+    {
+      "prediction": "pa vahona je",
+      "reference": "pa ona je"
+    },
+    {
+      "prediction": "mani je istina",
+      "reference": "ma nije istina"
+    },
+    {
+      "prediction": "ne kamo bude",
+      "reference": "neka mu bude"
+    },
+    {
+      "prediction": "manije istina",
+      "reference": "ma nije istina"
+    },
+    {
+      "prediction": "poslik godirunana",
+      "reference": "posle godinu dana"
+    },
+    {
+      "prediction": "kad bis mogla",
+      "reference": "kad bih mogla"
+    },
+    {
+      "prediction": "ovo je veliki korak",
+      "reference": "ovo je veliki korak"
+    },
+    {
+      "prediction": "iz moji husta",
+      "reference": "iz mojih usta"
+    },
+    {
+      "prediction": "starto zna",
+      "reference": "a sta to zna"
+    },
+    {
+      "prediction": "ono slav",
+      "reference": "ona je slaba"
+    },
+    {
+      "prediction": "da sto je",
+      "reference": "da sto je"
+    },
+    {
+      "prediction": "ja samovek",
+      "reference": "ja sam uvek"
+    },
+    {
+      "prediction": "koliko je hima",
+      "reference": "koliko ih ima"
+    },
+    {
+      "prediction": "ime morsis",
+      "reference": "i ne mozes"
+    },
+    {
+      "prediction": "ako je potrebno",
+      "reference": "ako je potrebno"
+    },
+    {
+      "prediction": "na slajmo je ucestvali vise od hiljadu kompani",
+      "reference": "na sajmu je ucestvovalo vise od hiljadu kompanija"
+    },
+    {
+      "prediction": "ne znas sto je to",
+      "reference": "ne znas sta je to"
+    },
+    {
+      "prediction": "neko vreme poslatoga",
+      "reference": "neko vreme posle toga"
+    },
+    {
+      "prediction": "u 7 noja merici",
+      "reference": "u severnoj americi"
+    },
+    {
+      "prediction": "jasnam da je",
+      "reference": "ja znam da je"
+    },
+    {
+      "prediction": "dcsam",
+      "reference": "ti si sam"
+    },
+    {
+      "prediction": "a nemoj",
+      "reference": "a nema ih"
+    },
+    {
+      "prediction": "a i ti",
+      "reference": "a i ti"
+    },
+    {
+      "prediction": "vrletesko",
+      "reference": "vrlo je tesko"
+    },
+    {
+      "prediction": "dojene sognivo",
+      "reference": "to je nesumnjivo"
+    },
+    {
+      "prediction": "da si ne ponobi",
+      "reference": "da se ne ponovi"
+    },
+    {
+      "prediction": "to je vise",
+      "reference": "to je vise"
+    },
+    {
+      "prediction": "ali nijene",
+      "reference": "ali nije ne"
+    },
+    {
+      "prediction": "do supervi koraci",
+      "reference": "to su prvi koraci"
+    },
+    {
+      "prediction": "0 moze moze",
+      "reference": "0 moze moze"
+    },
+    {
+      "prediction": "ne razumem to",
+      "reference": "ne razumem to"
+    },
+    {
+      "prediction": "to vam gori",
+      "reference": "to vam govori"
+    },
+    {
+      "prediction": "vise ne mogu da je zdrzim",
+      "reference": "vise ne mogu da izdrzim"
+    },
+    {
+      "prediction": "molim tene",
+      "reference": "molim te ne"
+    },
+    {
+      "prediction": "to je sad",
+      "reference": "to je sad"
+    },
+    {
+      "prediction": "a tonije",
+      "reference": "a to nije"
+    },
+    {
+      "prediction": "pa sta mislite",
+      "reference": "pa sta mislite"
+    },
+    {
+      "prediction": "ko zna gde",
+      "reference": "ko zna gde"
+    },
+    {
+      "prediction": "i tako je",
+      "reference": "i tako je"
+    },
+    {
+      "prediction": "dugu rocnu postma trenoznacuje ovo spora zuma biti mnogo veci",
+      "reference": "dugorocno posmatrano znacaj ovog sporazuma bice mnogo veci"
+    },
+    {
+      "prediction": "i tako je",
+      "reference": "i tako je"
+    },
+    {
+      "prediction": "ali to se promenila",
+      "reference": "ali to se promenilo"
+    },
+    {
+      "prediction": "evok te",
+      "reference": "evo gde je"
+    },
+    {
+      "prediction": "oste je medutim jos izazva",
+      "reference": "ostaje medutim jos izazova"
+    },
+    {
+      "prediction": "me znako",
+      "reference": "ne zna ko"
+    },
+    {
+      "prediction": "0 ne mozes",
+      "reference": "0 ne mozes"
+    },
+    {
+      "prediction": "i kozna",
+      "reference": "i ko zna"
+    },
+    {
+      "prediction": "odismo ima lirat",
+      "reference": "ovde smo imali rat"
+    },
+    {
+      "prediction": "0 i jos nasto",
+      "reference": "0 i jos nesto"
+    },
+    {
+      "prediction": "tosa muradio",
+      "reference": "to sam uradio"
+    },
+    {
+      "prediction": "visi ne vidim",
+      "reference": "vise ne vidim"
+    },
+    {
+      "prediction": "gurevski odmah postavio nove ministra",
+      "reference": "gruevski je odmah postavio nove ministre"
+    },
+    {
+      "prediction": "dici sam",
+      "reference": "ti si sam"
+    },
+    {
+      "prediction": "aoni",
+      "reference": "a on nije"
+    },
+    {
+      "prediction": "to ja sto",
+      "reference": "to je jasno"
+    },
+    {
+      "prediction": "0 boze moj",
+      "reference": "0 boze moj"
+    },
+    {
+      "prediction": "misija je podjedina u cetiri od jedka ili stupa",
+      "reference": "misija je podijeljena u cetiri odjeljka ili stuba"
+    },
+    {
+      "prediction": "africa cernic continent",
+      "reference": "afrika crni kontinent"
+    },
+    {
+      "prediction": "70 odsto onoga sto privatizujemo odlazi strategijskih investitorima",
+      "reference": "sedamdeset odsto onoga sto privatizujemo odlazi strateskim investitorima"
+    },
+    {
+      "prediction": "na pustime",
+      "reference": "ma pusti me"
+    },
+    {
+      "prediction": "te pet",
+      "reference": "to je pet"
+    },
+    {
+      "prediction": "stada on kaze",
+      "reference": "sta da vam kazem"
+    },
+    {
+      "prediction": "a to radis",
+      "reference": "a to radis"
+    },
+    {
+      "prediction": "i vol om",
+      "reference": "i u ovom"
+    },
+    {
+      "prediction": "to su ljudi",
+      "reference": "to su ljudi"
+    },
+    {
+      "prediction": "to bi posluzilo kao signal smatrao eksperti",
+      "reference": "to bi posluzilo kao signal smatraju eksperti"
+    },
+    {
+      "prediction": "pa evo je",
+      "reference": "pa evo je"
+    },
+    {
+      "prediction": "pa to je on",
+      "reference": "pa to je on"
+    },
+    {
+      "prediction": "nogo prednogo",
+      "reference": "nogu pred nogu"
+    },
+    {
+      "prediction": "da cross proozor",
+      "reference": "da kroz prozor"
+    },
+    {
+      "prediction": "drugi se mogu svrstati u nekoliko kategorija",
+      "reference": "drugi se mogu svrstati u nekoliko kategorija"
+    },
+    {
+      "prediction": "sve je uredo",
+      "reference": "sve je u redu"
+    },
+    {
+      "prediction": "recite modimos",
+      "reference": "recite molim vas"
+    },
+    {
+      "prediction": "a posle toga",
+      "reference": "a posle toga"
+    },
+    {
+      "prediction": "da li sam zabrunt",
+      "reference": "da li sam zabrinut"
+    },
+    {
+      "prediction": "isto je ono",
+      "reference": "isto i ona"
+    },
+    {
+      "prediction": "amoglubim",
+      "reference": "a moglo bi"
+    },
+    {
+      "prediction": "ne di ne",
+      "reference": "ne ti ne"
+    },
+    {
+      "prediction": "sta vi misli to tome",
+      "reference": "sta vi mislite 0 tome"
+    },
+    {
+      "prediction": "futbol koje smo igrali bio je los",
+      "reference": "fudbal koji smo igrali bio je los"
+    },
+    {
+      "prediction": "da i da",
+      "reference": "da i da"
+    },
+    {
+      "prediction": "ili ne moze",
+      "reference": "ili ne moze"
+    },
+    {
+      "prediction": "sta se promenilo",
+      "reference": "sta se promenilo"
+    },
+    {
+      "prediction": "bogu mi nis",
+      "reference": "boga mi nisam"
+    },
+    {
+      "prediction": "tako je malim",
+      "reference": "tako je malen"
+    },
+    {
+      "prediction": "i te se sam",
+      "reference": "i ti si sam"
+    },
+    {
+      "prediction": "da na zemlja",
+      "reference": "da na zemlji"
+    },
+    {
+      "prediction": "akazimi",
+      "reference": "pa kazi mi"
+    },
+    {
+      "prediction": "i li pro konje",
+      "reference": "ili preko nje"
+    },
+    {
+      "prediction": "i strazivaci kazem da ta cut jednostavno povecava problem",
+      "reference": "istrazivaci kazu da ta cutnja jednostavno povecava problem"
+    },
+    {
+      "prediction": "da je zovem",
+      "reference": "da je zovem"
+    },
+    {
+      "prediction": "ali sta znam",
+      "reference": "ali sta znam"
+    },
+    {
+      "prediction": "ne verujem to",
+      "reference": "ne verujem to"
+    },
+    {
+      "prediction": "to ja vole",
+      "reference": "to ja volim"
+    },
+    {
+      "prediction": "da kao sto",
+      "reference": "da kao sto"
+    },
+    {
+      "prediction": "nemoze nemoze",
+      "reference": "ne moze ne moze"
+    },
+    {
+      "prediction": "znam ja",
+      "reference": "znam i ja"
+    },
+    {
+      "prediction": "a od dat lisu",
+      "reference": "a odakle su"
+    },
+    {
+      "prediction": "znalo sam da",
+      "reference": "znala sam da"
+    },
+    {
+      "prediction": "vidim da je tako",
+      "reference": "vidim da je tako"
+    },
+    {
+      "prediction": "zbog tada je ono teskoj pozici",
+      "reference": "zbog toga je on u teskoj poziciji"
+    },
+    {
+      "prediction": "a viste",
+      "reference": "a vi ste"
+    },
+    {
+      "prediction": "i koji je",
+      "reference": "i koji je"
+    },
+    {
+      "prediction": "eto to me je u glavnom rukuvodilo kada sam se odapisemo u knjigu",
+      "reference": "eto to me je uglavnom rukovodilo kada sam seo da pisem ovu knjigu"
+    },
+    {
+      "prediction": "saupsteno do petak nece biti nastave",
+      "reference": "saopsteno je da u petak nece biti nastave"
+    },
+    {
+      "prediction": "oda vidim",
+      "reference": "0 da vidim"
+    },
+    {
+      "prediction": "pa dobro dobro",
+      "reference": "pa dobro dobro"
+    },
+    {
+      "prediction": "pa i ne moze",
+      "reference": "pa i ne moze"
+    },
+    {
+      "prediction": "da je tako",
+      "reference": "da je tako"
+    },
+    {
+      "prediction": "izvrsenje budzeta ove godine mora biti strogo kontrolisano",
+      "reference": "izvrsenje budzeta ove godine mora biti strogo kontrolisano"
+    },
+    {
+      "prediction": "i sadasom sretnoho zenin",
+      "reference": "i sada sam sretno ozenjen"
+    },
+    {
+      "prediction": "oda bi",
+      "reference": "0 da bi"
+    },
+    {
+      "prediction": "iasa",
+      "reference": "i ja sam"
+    },
+    {
+      "prediction": "d kako si",
+      "reference": "bi kako si"
+    },
+    {
+      "prediction": "dalije",
+      "reference": "da li je"
+    },
+    {
+      "prediction": "sto se biti",
+      "reference": "sto se vidi"
+    },
+    {
+      "prediction": "serija is ja ene",
+      "reference": "serija je sjajna"
+    },
+    {
+      "prediction": "to se ne mozu",
+      "reference": "to se ne moze"
+    },
+    {
+      "prediction": "zder smo strojali",
+      "reference": "s desne strane"
+    },
+    {
+      "prediction": "tako sam mislio",
+      "reference": "tako sam mislio"
+    },
+    {
+      "prediction": "nek a bude tako",
+      "reference": "neka bude tako"
+    },
+    {
+      "prediction": "toso velike",
+      "reference": "to su velike"
+    },
+    {
+      "prediction": "koje za",
+      "reference": "ko je za"
+    },
+    {
+      "prediction": "zartinevo lis",
+      "reference": "zar ti ne volis"
+    },
+    {
+      "prediction": "sta se to",
+      "reference": "sta se to"
+    },
+    {
+      "prediction": "oni jos uvijek idu na odmore ali ne kao ranije",
+      "reference": "oni jos uvijek idu na odmore ali ne kao ranije"
+    },
+    {
+      "prediction": "dalisu",
+      "reference": "da li su"
+    },
+    {
+      "prediction": "od kada",
+      "reference": "a od kada"
+    },
+    {
+      "prediction": "vise ne znam sta je",
+      "reference": "vise ne znam sta je"
+    },
+    {
+      "prediction": "i gdje si",
+      "reference": "i gde si"
+    },
+    {
+      "prediction": "ajanezdem",
+      "reference": "a ja ne znam"
+    },
+    {
+      "prediction": "ja vas molim",
+      "reference": "ja vas molim"
+    },
+    {
+      "prediction": "koje vas stavo tome",
+      "reference": "koji je vas stav 0 tome"
+    },
+    {
+      "prediction": "pato istina",
+      "reference": "pa to je istina"
+    },
+    {
+      "prediction": "znasli zasto",
+      "reference": "znas li zasto"
+    },
+    {
+      "prediction": "jos jedan iz zove i povoljsanje energetske efikastnosti",
+      "reference": "jos jedan izazov je i poboljsanje energetske efikasnosti"
+    },
+    {
+      "prediction": "ja nisim to",
+      "reference": "ja nisam to"
+    },
+    {
+      "prediction": "da moja djeca",
+      "reference": "da moja deca"
+    },
+    {
+      "prediction": "barem ljudi vise ne putaju jedni na drugi",
+      "reference": "barem ljudi vise ne pucaju jedni na druge"
+    },
+    {
+      "prediction": "gde je to do",
+      "reference": "gde je dno"
+    },
+    {
+      "prediction": "da vas volim",
+      "reference": "da vas volim"
+    },
+    {
+      "prediction": "visaneznam",
+      "reference": "vise ne znam"
+    },
+    {
+      "prediction": "nastabilo",
+      "reference": "ma sta bilo"
+    },
+    {
+      "prediction": "odoveti",
+      "reference": "0 da vidim"
+    },
+    {
+      "prediction": "i usrenoj",
+      "reference": "i u srednjoj"
+    },
+    {
+      "prediction": "sama sportska nadmetanja prosa su ne smetana",
+      "reference": "sama sportska nadmetanja prosla su nesmetano"
+    },
+    {
+      "prediction": "jerio opasno",
+      "reference": "jer je opasno"
+    },
+    {
+      "prediction": "pozijan sve da se usprotive terrorizmu",
+      "reference": "pozivam sve da se usprotive terorizmu"
+    },
+    {
+      "prediction": "sto su ljudi",
+      "reference": "sto su ljudi"
+    },
+    {
+      "prediction": "a vreme prolesi",
+      "reference": "a vreme prolazi"
+    },
+    {
+      "prediction": "ijasam",
+      "reference": "i ja sam"
+    },
+    {
+      "prediction": "nova ugradu",
+      "reference": "nova u gradu"
+    },
+    {
+      "prediction": "nije nicudo",
+      "reference": "nije ni cudo"
+    },
+    {
+      "prediction": "stravno jesu",
+      "reference": "stravno jesu"
+    },
+    {
+      "prediction": "sa ime boga",
+      "reference": "za ime boga"
+    },
+    {
+      "prediction": "nikada rani nisu imas lovda",
+      "reference": "nikada ranije nisam bila ovde"
+    },
+    {
+      "prediction": "to ona su vije ku jedinju je u svim okolnosti",
+      "reference": "to nas uvijek ujedinjuje u svim okolnostima"
+    },
+    {
+      "prediction": "ne znam sto",
+      "reference": "ne znam sto"
+    },
+    {
+      "prediction": "prenego stodasa",
+      "reference": "pre nego sto odes"
+    },
+    {
+      "prediction": "pa kupijosam",
+      "reference": "pa kupio sam"
+    },
+    {
+      "prediction": "razumese",
+      "reference": "razume se ne"
+    },
+    {
+      "prediction": "sto mi je",
+      "reference": "sto mi je"
+    },
+    {
+      "prediction": "ako te nesto puno boli zove hitnu pomoc",
+      "reference": "ako te nesto puno boli zovi hitnu pomoc"
+    },
+    {
+      "prediction": "dona primer",
+      "reference": "to na primer"
+    },
+    {
+      "prediction": "sta treba da radim",
+      "reference": "sta treba da radim"
+    },
+    {
+      "prediction": "tct",
+      "reference": "ti si ti"
+    },
+    {
+      "prediction": "to sti",
+      "reference": "to si ti"
+    },
+    {
+      "prediction": "0 to si ti",
+      "reference": "0 to si ti"
+    },
+    {
+      "prediction": "da u tome",
+      "reference": "da u tome"
+    },
+    {
+      "prediction": "samo tri minuta",
+      "reference": "samo tri minuta"
+    },
+    {
+      "prediction": "moro da je",
+      "reference": "mora da je"
+    },
+    {
+      "prediction": "hako se to uvijek i desiji naso najbolje djeca odlasi",
+      "reference": "kako se to uvijek i desi nasa najbolja djeca odlaze"
+    },
+    {
+      "prediction": "srski politicar i crongvoresko opozicijo preferiraju prvu",
+      "reference": "srpski politicari i crnogorska opozicija preferiraju prvu"
+    },
+    {
+      "prediction": "to je pravi",
+      "reference": "to je pravi"
+    },
+    {
+      "prediction": "dojav svara",
+      "reference": "to je sve"
+    },
+    {
+      "prediction": "cerve na peskovite glina za cigle",
+      "reference": "crvena peskovita glina za cigle"
+    },
+    {
+      "prediction": "znak deje",
+      "reference": "zna gde je"
+    },
+    {
+      "prediction": "je vasa briga",
+      "reference": "je vasa briga"
+    },
+    {
+      "prediction": "snima",
+      "reference": "s njima je"
+    },
+    {
+      "prediction": "ne znas kakom je",
+      "reference": "ne znas kako mi je"
+    },
+    {
+      "prediction": "daliposto i pozitivan trend ka demogratizaciji",
+      "reference": "da li postoji pozitivan trend ka demokratizaciji"
+    },
+    {
+      "prediction": "arecimi",
+      "reference": "a reci mi"
+    },
+    {
+      "prediction": "dakle sta je",
+      "reference": "dakle sta je"
+    },
+    {
+      "prediction": "to mi se ne dogade cisto",
+      "reference": "to mi se ne dogada cesto"
+    },
+    {
+      "prediction": "a presto bi",
+      "reference": "a prestao bi"
+    },
+    {
+      "prediction": "to predan gospodine",
+      "reference": "dobar dan gospodine"
+    },
+    {
+      "prediction": "sto nemozes",
+      "reference": "sto ne mozes"
+    },
+    {
+      "prediction": "akadne",
+      "reference": "a kad nije"
+    },
+    {
+      "prediction": "nije ostalo mnogo",
+      "reference": "nije ostalo mnogo"
+    },
+    {
+      "prediction": "to je vrlobola",
+      "reference": "to je vrlo bolno"
+    },
+    {
+      "prediction": "aj pre toga",
+      "reference": "a i pre toga"
+    },
+    {
+      "prediction": "u skoroce obom ambientu biti dodati i kompijuteri",
+      "reference": "uskoro ce ovom ambijentu biti dodati i kompjuteri"
+    },
+    {
+      "prediction": "svi smo mi",
+      "reference": "svi smo mi"
+    },
+    {
+      "prediction": "one suna je vice",
+      "reference": "one su najvece"
+    },
+    {
+      "prediction": "ko on da zna",
+      "reference": "ko onda zna"
+    },
+    {
+      "prediction": "ne volem te",
+      "reference": "ne volim te"
+    },
+    {
+      "prediction": "ko je natakao volu rogovi",
+      "reference": "ko je natakao volu rogove"
+    },
+    {
+      "prediction": "ja su prenos",
+      "reference": "ja sam princ"
+    },
+    {
+      "prediction": "e da to",
+      "reference": "e da to"
+    },
+    {
+      "prediction": "odmorite se malo",
+      "reference": "odmorite se malo"
+    },
+    {
+      "prediction": "i nezda",
+      "reference": "i ne znam"
+    },
+    {
+      "prediction": "jeste bogami",
+      "reference": "jeste boga mi"
+    },
+    {
+      "prediction": "on ima je",
+      "reference": "u njemu je"
+    },
+    {
+      "prediction": "no istine",
+      "reference": "no istina je"
+    },
+    {
+      "prediction": "a zanje vrata",
+      "reference": "a zadnja vrata"
+    },
+    {
+      "prediction": "dose desi",
+      "reference": "to se desi"
+    },
+    {
+      "prediction": "naravno da je",
+      "reference": "naravno da je"
+    },
+    {
+      "prediction": "zasto su ga ubile",
+      "reference": "zasto su ga ubili"
+    },
+    {
+      "prediction": "machom su zamerke kozmeticke prirode i neremete samu vozdu",
+      "reference": "mahom su zamerke kozmeticke prirode i ne remete samu voznju"
+    },
+    {
+      "prediction": "sta toradi",
+      "reference": "sta to radi"
+    },
+    {
+      "prediction": "yes amri",
+      "reference": "i jesam li"
+    },
+    {
+      "prediction": "istaj",
+      "reference": "i sta je"
+    },
+    {
+      "prediction": "pa je nasto",
+      "reference": "pa je nesto"
+    },
+    {
+      "prediction": "dajme pitas",
+      "reference": "da me pitas"
+    },
+    {
+      "prediction": "onje moje",
+      "reference": "u njemu je"
+    },
+    {
+      "prediction": "isvel",
+      "reference": "i sve ovo"
+    },
+    {
+      "prediction": "balkan vise nije velika pretnja bezbednosti",
+      "reference": "balkan vise nije velika pretnja bezbednosti"
+    },
+    {
+      "prediction": "bezika krenade",
+      "reference": "bez ikakve nade"
+    },
+    {
+      "prediction": "miran sam",
+      "reference": "miran sam"
+    },
+    {
+      "prediction": "za to sto je",
+      "reference": "zato sto je"
+    },
+    {
+      "prediction": "gde je sloga tu je i pobjede",
+      "reference": "gde je sloga tu je i pobeda"
+    },
+    {
+      "prediction": "i metvisu",
+      "reference": "i mrtvi su"
+    },
+    {
+      "prediction": "a zasto ste",
+      "reference": "a zasto ste"
+    },
+    {
+      "prediction": "0 to si ti",
+      "reference": "0 to si ti"
+    },
+    {
+      "prediction": "od svih dana",
+      "reference": "od svih dana"
+    },
+    {
+      "prediction": "u jezerve",
+      "reference": "u jezeru je"
+    },
+    {
+      "prediction": "to je uvama me",
+      "reference": "to je u ovome"
+    },
+    {
+      "prediction": "ipak to nije nemoguca misije",
+      "reference": "ipak to nije nemoguca misija"
+    },
+    {
+      "prediction": "za tome",
+      "reference": "za to ne"
+    },
+    {
+      "prediction": "u svoj sada",
+      "reference": "u svojoj sobi"
+    },
+    {
+      "prediction": "ito je",
+      "reference": "i to je"
+    },
+    {
+      "prediction": "njako jadine si",
+      "reference": "njegov jedini sin"
+    },
+    {
+      "prediction": "ja i ona",
+      "reference": "ja i ona"
+    },
+    {
+      "prediction": "u svakog doba",
+      "reference": "u svako doba"
+    },
+    {
+      "prediction": "istog dana izabranje za predsednika predsednislo",
+      "reference": "istog dana izabran je za predsednika predsednistva"
+    },
+    {
+      "prediction": "ja si da je upam tio",
+      "reference": "jesi li je upamtio"
+    },
+    {
+      "prediction": "sto je kod",
+      "reference": "sto je kod"
+    },
+    {
+      "prediction": "daniel",
+      "reference": "da nije ovo"
+    },
+    {
+      "prediction": "na primer ja",
+      "reference": "na primer ja"
+    },
+    {
+      "prediction": "bavili su se",
+      "reference": "bavili su se"
+    },
+    {
+      "prediction": "on je sluso",
+      "reference": "on je slusao"
+    },
+    {
+      "prediction": "jesam bila",
+      "reference": "ja sam bila"
+    },
+    {
+      "prediction": "i osnesto",
+      "reference": "i jos nesto"
+    },
+    {
+      "prediction": "u nasoj sobi",
+      "reference": "u nasoj sobi"
+    },
+    {
+      "prediction": "na primari ja",
+      "reference": "na primer ja"
+    },
+    {
+      "prediction": "patakue",
+      "reference": "pa tako je"
+    },
+    {
+      "prediction": "zemlje nase ima dakle vrlo dugo treno istorije",
+      "reference": "zemlja nasa ima dakle vrlo dugotrajnu istoriju"
+    },
+    {
+      "prediction": "koja favorit",
+      "reference": "ko je favorit"
+    },
+    {
+      "prediction": "11",
+      "reference": "i levo i desno"
+    },
+    {
+      "prediction": "policija vodistra",
+      "reference": "policija vodi istragu"
+    },
+    {
+      "prediction": "po cjavi dan",
+      "reference": "po celi dan"
+    },
+    {
+      "prediction": "i to reste dogoze",
+      "reference": "i turisti dolaze"
+    },
+    {
+      "prediction": "razlozi svi asmi",
+      "reference": "razlozi su jasni"
+    },
+    {
+      "prediction": "s nadjevanja lekisom energijom konacno je normalizovan",
+      "reference": "snabdevanje elektricnom energijom konacno je normalizovano"
+    },
+    {
+      "prediction": "znas taj",
+      "reference": "znas sta je"
+    },
+    {
+      "prediction": "premjerke prihvatila njegu ostavku",
+      "reference": "premijerka je prihvatila njegovu ostavku"
+    },
+    {
+      "prediction": "vrlo lekpo vrlo lekpo",
+      "reference": "vrlo lepo vrlo lepo"
+    },
+    {
+      "prediction": "i jedno zene",
+      "reference": "i jedna zena"
+    },
+    {
+      "prediction": "my own",
+      "reference": "ma i on"
+    },
+    {
+      "prediction": "nisu mnija",
+      "reference": "nisam ni ja"
+    },
+    {
+      "prediction": "sta vi to govorite",
+      "reference": "sta vi to govorite"
+    },
+    {
+      "prediction": "znanja koja je steceno pod pritiskom ne moze su duho odrecati",
+      "reference": "znanje koje je steceno pod pritiskom ne moze ce y duhu odrzati"
+    },
+    {
+      "prediction": "ako jasuto",
+      "reference": "a koja su to"
+    },
+    {
+      "prediction": "0 sto je to",
+      "reference": "0 sta je to"
+    },
+    {
+      "prediction": "sta je uzrok tome",
+      "reference": "sta je uzrok tome"
+    },
+    {
+      "prediction": "to je pitta",
+      "reference": "to je pita"
+    },
+    {
+      "prediction": "\u0430 \u0438\u0441\u0442\u0438\u043d\u043d\u043e\u0435",
+      "reference": "a istina je"
+    },
+    {
+      "prediction": "nekas i brago sloven",
+      "reference": "neka si blagosloven"
+    },
+    {
+      "prediction": "ti ne znas",
+      "reference": "ti ne znas"
+    },
+    {
+      "prediction": "i za nas",
+      "reference": "i za nas"
+    },
+    {
+      "prediction": "a onda niste",
+      "reference": "a onda nista"
+    },
+    {
+      "prediction": "ionje",
+      "reference": "i on je"
+    },
+    {
+      "prediction": "to ne kaze",
+      "reference": "to ne kazem"
+    },
+    {
+      "prediction": "nekro tih reformi nece biti ni malo laki",
+      "reference": "neke od tih reformi nece biti nimalo lake"
+    },
+    {
+      "prediction": "iokko meni",
+      "reference": "i oko mene"
+    },
+    {
+      "prediction": "bilej velik",
+      "reference": "bila je velika"
+    },
+    {
+      "prediction": "bulatovice kako se navadi osloboden svih obtuzbi",
+      "reference": "bulatovic je kako se navodi osloboden svih optuzbi"
+    },
+    {
+      "prediction": "da on je",
+      "reference": "da on je"
+    },
+    {
+      "prediction": "vi ste povedili",
+      "reference": "vi ste pobedili"
+    },
+    {
+      "prediction": "manavi",
+      "reference": "ma ne vi"
+    },
+    {
+      "prediction": "i pa k 0 je no agodina",
+      "reference": "ipak je nova godina"
+    },
+    {
+      "prediction": "nanimas",
+      "reference": "na njima sam"
+    },
+    {
+      "prediction": "ahove",
+      "reference": "a ovo je"
+    },
+    {
+      "prediction": "sabur je traja od tri dali",
+      "reference": "sabor je trajao tri dana"
+    },
+    {
+      "prediction": "ubast sem",
+      "reference": "u basti sam"
+    },
+    {
+      "prediction": "ako ga ima",
+      "reference": "a koga ima"
+    },
+    {
+      "prediction": "ja sam mi",
+      "reference": "ja sam mi"
+    },
+    {
+      "prediction": "ne znas kako",
+      "reference": "ne znas kako"
+    },
+    {
+      "prediction": "ja to znam",
+      "reference": "ja to znam"
+    },
+    {
+      "prediction": "0 on yet",
+      "reference": "0 on je"
+    },
+    {
+      "prediction": "moram vam priznati",
+      "reference": "moram vam priznati"
+    },
+    {
+      "prediction": "sada je na njih red",
+      "reference": "sada je na njih red"
+    },
+    {
+      "prediction": "to je ka",
+      "reference": "to je ka"
+    },
+    {
+      "prediction": "bide si brate",
+      "reference": "gde si brate"
+    },
+    {
+      "prediction": "izvinite zbro nase ponashanje",
+      "reference": "izvinite zbog naseg ponasanja"
+    },
+    {
+      "prediction": "ime samo jedno",
+      "reference": "ima samo jedno"
+    },
+    {
+      "prediction": "i nemovo",
+      "reference": "i ne mogu"
+    },
+    {
+      "prediction": "pa ne moze",
+      "reference": "pa ne moze"
+    },
+    {
+      "prediction": "beresajte kod zje prizno i doprinu s opozicije",
+      "reference": "berisa je takode priznao i doprinos opozicije"
+    },
+    {
+      "prediction": "sve je vrlo halitica",
+      "reference": "sve je vrlo haoticno"
+    },
+    {
+      "prediction": "da znam jo",
+      "reference": "da znam i ja"
+    },
+    {
+      "prediction": "opada",
+      "reference": "0 pa da"
+    },
+    {
+      "prediction": "konasi",
+      "reference": "ko nas je"
+    },
+    {
+      "prediction": "sve dalje i dalje",
+      "reference": "sve dalje i dalje"
+    },
+    {
+      "prediction": "e panema",
+      "reference": "e pa nema"
+    },
+    {
+      "prediction": "akuto",
+      "reference": "a ko je to"
+    },
+    {
+      "prediction": "da se odmorem",
+      "reference": "da se odmorim"
+    },
+    {
+      "prediction": "itonessa",
+      "reference": "i to ne sam"
+    },
+    {
+      "prediction": "sta vam bi",
+      "reference": "sta vam bi"
+    },
+    {
+      "prediction": "to je neve robotno",
+      "reference": "to je neverovatno"
+    },
+    {
+      "prediction": "\u0430 \u043e\u043d \u0438 \u043f\u0440\u0435\u0442\u0435\u043d",
+      "reference": "a on je prijatelj"
+    },
+    {
+      "prediction": "evo vde",
+      "reference": "evo ovde je"
+    },
+    {
+      "prediction": "u ispo vreme",
+      "reference": "u isto vreme"
+    },
+    {
+      "prediction": "on je vlasti pozvao da ona prijede u slove rada",
+      "reference": "on je vlasti pozvao da unaprijede uslove rada"
+    },
+    {
+      "prediction": "to ne moze biti to",
+      "reference": "to ne moze biti to"
+    },
+    {
+      "prediction": "to je ta",
+      "reference": "to je ta"
+    },
+    {
+      "prediction": "posle nekoliko dana",
+      "reference": "posle nekoliko dana"
+    },
+    {
+      "prediction": "a u ovome",
+      "reference": "a u ovome"
+    },
+    {
+      "prediction": "0 ne moze",
+      "reference": "0 ne moze"
+    },
+    {
+      "prediction": "kako mi stojes jusir",
+      "reference": "kako mi stoji sesir"
+    },
+    {
+      "prediction": "ne kamu bude",
+      "reference": "neka mu bude"
+    },
+    {
+      "prediction": "hvala na pitanju",
+      "reference": "hvala na pitanju"
+    },
+    {
+      "prediction": "u tom slucaju moraju se pojaviti novi kandidati",
+      "reference": "u tom slucaju moraju se pojaviti novi kandidati"
+    },
+    {
+      "prediction": "mi je tako velika",
+      "reference": "nije tako velik"
+    },
+    {
+      "prediction": "da se uda",
+      "reference": "da se uda"
+    },
+    {
+      "prediction": "mora biti rat",
+      "reference": "mora biti rata"
+    },
+    {
+      "prediction": "sto my",
+      "reference": "sto mu je"
+    },
+    {
+      "prediction": "ja sam go",
+      "reference": "ja sam go"
+    },
+    {
+      "prediction": "ti ne znas",
+      "reference": "ti ne znas"
+    },
+    {
+      "prediction": "a ti sta",
+      "reference": "a ti sta"
+    },
+    {
+      "prediction": "i ko si",
+      "reference": "i ko si"
+    },
+    {
+      "prediction": "izbuk toga",
+      "reference": "i zbog toga"
+    },
+    {
+      "prediction": "scheme",
+      "reference": "i s kim"
+    },
+    {
+      "prediction": "ti nebi",
+      "reference": "ti ne bi"
+    },
+    {
+      "prediction": "ide cela porodica i da se idu",
+      "reference": "ide cela porodica i deca idu"
+    },
+    {
+      "prediction": "treba da budi",
+      "reference": "treba da bude"
+    },
+    {
+      "prediction": "ao nije",
+      "reference": "a on nije"
+    },
+    {
+      "prediction": "to je voda",
+      "reference": "to je voda"
+    },
+    {
+      "prediction": "smiluj mi se",
+      "reference": "smiluj mi se"
+    },
+    {
+      "prediction": "tribunal obavlja svoj postav",
+      "reference": "tribunal obavlja svoj posao"
+    },
+    {
+      "prediction": "ola big toe",
+      "reference": "voleo bih da"
+    },
+    {
+      "prediction": "tos stari",
+      "reference": "to su stari"
+    },
+    {
+      "prediction": "ko je dama",
+      "reference": "ko je dama"
+    },
+    {
+      "prediction": "e pa ne mojt",
+      "reference": "e pa nemojte"
+    },
+    {
+      "prediction": "0 tats mi",
+      "reference": "otac mi je"
+    },
+    {
+      "prediction": "samo da vas vidim",
+      "reference": "samo da vas vidim"
+    },
+    {
+      "prediction": "gde sam stava",
+      "reference": "gde sam stao"
+    },
+    {
+      "prediction": "ima i to",
+      "reference": "ima i to"
+    },
+    {
+      "prediction": "a sto ne",
+      "reference": "a sto ne"
+    },
+    {
+      "prediction": "to je u njem",
+      "reference": "to je u njemu"
+    },
+    {
+      "prediction": "prosto ne mogu",
+      "reference": "prosto ne mogu"
+    },
+    {
+      "prediction": "a v deleanovo nasljenika mora da postavi vlada",
+      "reference": "ardeleanovog naslednika mora da postavi vlada"
+    },
+    {
+      "prediction": "sta je to",
+      "reference": "sto je to"
+    },
+    {
+      "prediction": "0 sto je to",
+      "reference": "0 sto je to"
+    },
+    {
+      "prediction": "medzutim ksada je tajstvu biogrzen",
+      "reference": "medutim sada je i taj stub je ugrozen"
+    },
+    {
+      "prediction": "0 da bar",
+      "reference": "0 da bar"
+    },
+    {
+      "prediction": "samo da vidite",
+      "reference": "samo da vidite"
+    },
+    {
+      "prediction": "da jer se odmah",
+      "reference": "da jos jedno"
+    },
+    {
+      "prediction": "nije to sve",
+      "reference": "nije to sve"
+    },
+    {
+      "prediction": "iakar",
+      "reference": "i ja kazem"
+    },
+    {
+      "prediction": "hjan ne razumim",
+      "reference": "ja ne razumem"
+    },
+    {
+      "prediction": "ako si",
+      "reference": "a ko si"
+    },
+    {
+      "prediction": "epanel",
+      "reference": "e pa ne"
+    },
+    {
+      "prediction": "a ja ne razumim zasto",
+      "reference": "a ja ne razumem zasto"
+    },
+    {
+      "prediction": "prozeme robku",
+      "reference": "pruzi mu ruku"
+    },
+    {
+      "prediction": "mestaj",
+      "reference": "ma sta je"
+    },
+    {
+      "prediction": "iplakulizim",
+      "reference": "i plakala sam"
+    },
+    {
+      "prediction": "iz moj husta",
+      "reference": "iz mojih usta"
+    },
+    {
+      "prediction": "za 5 minuta",
+      "reference": "za pet minuta"
+    },
+    {
+      "prediction": "ovo su dobro esti",
+      "reference": "ovo su dobre vesti"
+    },
+    {
+      "prediction": "asevrati",
+      "reference": "pa se vrati"
+    },
+    {
+      "prediction": "i tvoj sin",
+      "reference": "i tvoj sin"
+    },
+    {
+      "prediction": "vozganije negira tvrdnjoj tome",
+      "reference": "vosganijan negira tvrdnje 0 tome"
+    },
+    {
+      "prediction": "to visnije sport",
+      "reference": "to vise nije sport"
+    },
+    {
+      "prediction": "veruemuto",
+      "reference": "verujem u to"
+    },
+    {
+      "prediction": "srednjevje kovnog festivala",
+      "reference": "srednjovekovnog festivala"
+    },
+    {
+      "prediction": "razumem",
+      "reference": "razumemo"
+    },
+    {
+      "prediction": "kako bes je ono",
+      "reference": "kako bese ono"
+    },
+    {
+      "prediction": "i to meni",
+      "reference": "i to meni"
+    },
+    {
+      "prediction": "bunite predvadnici",
+      "reference": "budite predvodnici"
+    },
+    {
+      "prediction": "nije dan od njih",
+      "reference": "ni jedan od njih"
+    },
+    {
+      "prediction": "takva tendencija medutim ima i losu stranu",
+      "reference": "takva tendencija medutim ima i losu stranu"
+    },
+    {
+      "prediction": "kako to mislite",
+      "reference": "kako to mislite"
+    },
+    {
+      "prediction": "hrvatska je vec dobila status kandidata zacvonstvu",
+      "reference": "hrvatska je vec dobila status kandidata za clanstvo"
+    },
+    {
+      "prediction": "i ali to ono",
+      "reference": "je li to on"
+    },
+    {
+      "prediction": "moze biti on",
+      "reference": "moze biti on"
+    },
+    {
+      "prediction": "on radio",
+      "reference": "on radi ovo"
+    },
+    {
+      "prediction": "pato je on",
+      "reference": "pa to je on"
+    },
+    {
+      "prediction": "huzna mi ja",
+      "reference": "a znam i ja"
+    },
+    {
+      "prediction": "i siliti pri sebi",
+      "reference": "jesi li ti pri sebi"
+    },
+    {
+      "prediction": "tim situacijama se jednostavno upravlja i traju zaovek",
+      "reference": "tim situacijama se jednostavno upravlja i traju zauvek ."
+    },
+    {
+      "prediction": "niko nema to pravo",
+      "reference": "niko nema to pravo"
+    },
+    {
+      "prediction": "to zahteva dosta pos",
+      "reference": "to zahteva dosta posla"
+    },
+    {
+      "prediction": "ani je trebalo",
+      "reference": "a nije trebalo"
+    },
+    {
+      "prediction": "sanse za tako nesto su slabe",
+      "reference": "sanse za tako nesto su slabe"
+    },
+    {
+      "prediction": "ne znam za to",
+      "reference": "ne znam za to"
+    },
+    {
+      "prediction": "oste ti ljube",
+      "reference": "oseti ljubav"
+    },
+    {
+      "prediction": "ja se takvom izhodu nada",
+      "reference": "ja se takvom ishodu nadam"
+    },
+    {
+      "prediction": "bez brige sve sredin",
+      "reference": "bez brige sve je sredeno"
+    },
+    {
+      "prediction": "ne bih mogla",
+      "reference": "ne bih mogla"
+    },
+    {
+      "prediction": "drugi se ne slaze sa njim",
+      "reference": "drugi se ne slaze sa njim"
+    },
+    {
+      "prediction": "kako je plan da se te prepreke prevazicu",
+      "reference": "kakav je plan da se te prepreke prevazidu"
+    },
+    {
+      "prediction": "on ne prezim",
+      "reference": "on je prijatelj"
+    },
+    {
+      "prediction": "sta je na umije",
+      "reference": "sta je naumio"
+    },
+    {
+      "prediction": "tisni moja",
+      "reference": "ti si moja"
+    },
+    {
+      "prediction": "istina je da",
+      "reference": "istina je da"
+    },
+    {
+      "prediction": "ne znam bas da li je toliko sat je bilo",
+      "reference": "ne znam bas da li je toliko sati bilo"
+    },
+    {
+      "prediction": "nemogu ja to",
+      "reference": "ne mogu ja to"
+    },
+    {
+      "prediction": "on je uglado svetlostane",
+      "reference": "on je ugledao svetlost dana"
+    },
+    {
+      "prediction": "0 boze moj",
+      "reference": "0 boze moj"
+    },
+    {
+      "prediction": "epo dobra",
+      "reference": "e pa dobro"
+    },
+    {
+      "prediction": "mam olim vas",
+      "reference": "ma molim vas"
+    },
+    {
+      "prediction": "to sam radio",
+      "reference": "to sam uradio"
+    },
+    {
+      "prediction": "pasta mi se ish",
+      "reference": "pa sta mislis"
+    },
+    {
+      "prediction": "stomuje",
+      "reference": "sta mu je"
+    },
+    {
+      "prediction": "kjeli ksta",
+      "reference": "je li sta"
+    },
+    {
+      "prediction": "i odnos drugi",
+      "reference": "jedno s drugim"
+    },
+    {
+      "prediction": "u belgradu je bojkot",
+      "reference": "u beogradu je bojkot"
+    },
+    {
+      "prediction": "do etako",
+      "reference": "to je tako"
+    },
+    {
+      "prediction": "kaze sjuci",
+      "reference": "kaze da se ljuti"
+    },
+    {
+      "prediction": "srecen sam sto te vidim dobro nam dosao",
+      "reference": "srecan sam sto te vidim dobro nam dosao"
+    },
+    {
+      "prediction": "kao sto je to",
+      "reference": "kao sto je to"
+    },
+    {
+      "prediction": "to je sve",
+      "reference": "to je sve"
+    },
+    {
+      "prediction": "0 ne ne",
+      "reference": "0 ne ne"
+    },
+    {
+      "prediction": "zaboravi nasve",
+      "reference": "zaboravi na sve"
+    },
+    {
+      "prediction": "do sada je vec prezivjela i jedan podogacak put od preko 6 km",
+      "reference": "do sada je vec prezivela jedan podugacak put od preko sest hiljada kilometara"
+    },
+    {
+      "prediction": "ne ljudim se",
+      "reference": "ne ljutim se"
+    },
+    {
+      "prediction": "0 ali ima",
+      "reference": "0 ali ima"
+    },
+    {
+      "prediction": "reci i meni",
+      "reference": "reci i meni"
+    },
+    {
+      "prediction": "25",
+      "reference": "dvadeset i pet"
+    },
+    {
+      "prediction": "boli se osjecen se gotovinu u dzep",
+      "reference": "bolje se osecam sa gotovinom u dzepu"
+    },
+    {
+      "prediction": "a to radi",
+      "reference": "a to radi"
+    },
+    {
+      "prediction": "zasto nebi",
+      "reference": "zasto ne bi"
+    },
+    {
+      "prediction": "vrosim tozem",
+      "reference": "vrlo sam tuzan"
+    },
+    {
+      "prediction": "ja znam sta je",
+      "reference": "ja znam sta je"
+    },
+    {
+      "prediction": "koliko je starak",
+      "reference": "koliko je stara"
+    },
+    {
+      "prediction": "0 da jest",
+      "reference": "0 da jest"
+    },
+    {
+      "prediction": "da ti objasnim",
+      "reference": "da ti objasnim"
+    },
+    {
+      "prediction": "malo po malo",
+      "reference": "malo po malo"
+    },
+    {
+      "prediction": "nemogu da ga gledam",
+      "reference": "ne mogu da ga gledam"
+    },
+    {
+      "prediction": "gde je ostavio",
+      "reference": "gde je ostavio"
+    },
+    {
+      "prediction": "proslo ponedljeljka jako je padalo cijeli dan",
+      "reference": "proslog ponedjeljka jako je padalo cijeli dan"
+    },
+    {
+      "prediction": "alitisi",
+      "reference": "ali ti si"
+    },
+    {
+      "prediction": "porodeca njegove su progjeniji",
+      "reference": "porodica njegove supruge nije"
+    },
+    {
+      "prediction": "koga nema",
+      "reference": "ko ga nema"
+    },
+    {
+      "prediction": "zapozivajte okom noci ukljucene telefonska sekretarice",
+      "reference": "za pozive tokom noci ukljucena je telefonska sekretarica"
+    },
+    {
+      "prediction": "dana svise niko ne sumnjao u veliku stara ostljudskog roda",
+      "reference": "danas vise niko ne sumnja u veliku starost ljudskog roda"
+    },
+    {
+      "prediction": "osta si u radio",
+      "reference": "pa sta si uradio"
+    },
+    {
+      "prediction": "kazes da je",
+      "reference": "kazes da je"
+    },
+    {
+      "prediction": "u celom svetu",
+      "reference": "u celom svetu"
+    },
+    {
+      "prediction": "medu obicnijim gradjenima reakcije su pomesan",
+      "reference": "medu obicnim gradanima reakcije su pomesane"
+    },
+    {
+      "prediction": "ajao",
+      "reference": "a ja ovo"
+    },
+    {
+      "prediction": "\u0430 \u0442\u0438 \u0438\u0437\u043d\u0430\u0448",
+      "reference": "a ti znas"
+    },
+    {
+      "prediction": "ma nezna",
+      "reference": "ma ne znam"
+    },
+    {
+      "prediction": "to je da",
+      "reference": "to je da"
+    },
+    {
+      "prediction": "za diplomatiju su potrebni stepljenje i vrijeme",
+      "reference": "za diplomatiju su potrebni strpljenje i vrijeme"
+    },
+    {
+      "prediction": "i ja sam",
+      "reference": "i ja sam"
+    },
+    {
+      "prediction": "nego koje",
+      "reference": "nego ko je"
+    },
+    {
+      "prediction": "\u043f\u043b\u0430\u0448\u0438\u043c \u0441\u0430\u0432\u0438\u0441\u0446\u0438\u043d\u0430",
+      "reference": "plasim se visine"
+    },
+    {
+      "prediction": "obile",
+      "reference": "0 bilo je"
+    },
+    {
+      "prediction": "a on ne",
+      "reference": "a on ne"
+    },
+    {
+      "prediction": "niste sami na ovom putu",
+      "reference": "niste sami na ovom putu"
+    },
+    {
+      "prediction": "znam i to",
+      "reference": "znam i to"
+    },
+    {
+      "prediction": "lepo smo se provjeli",
+      "reference": "lepo smo se proveli"
+    },
+    {
+      "prediction": "a to je on",
+      "reference": "a to je on"
+    },
+    {
+      "prediction": "i na kraju",
+      "reference": "i na kraju"
+    },
+    {
+      "prediction": "jasa mlep",
+      "reference": "ja sam lep"
+    },
+    {
+      "prediction": "to je pi",
+      "reference": "to je pi"
+    },
+    {
+      "prediction": "iman punerug",
+      "reference": "imam pune ruke"
+    },
+    {
+      "prediction": "obe strane u zastoji odbijev da ustuknu",
+      "reference": "obe strane u zastoju odbijaju da ustuknu"
+    },
+    {
+      "prediction": "aj tvoj",
+      "reference": "a i tvoj"
+    },
+    {
+      "prediction": "zlucaju odgovlacen 7 godina",
+      "reference": "slucaj je odugovlacen sedam godina"
+    },
+    {
+      "prediction": "za nekoliko dana",
+      "reference": "za nekoliko dana"
+    },
+    {
+      "prediction": "0 i tih",
+      "reference": "0 i ti"
+    },
+    {
+      "prediction": "i biloj oreme",
+      "reference": "i bilo je vreme"
+    },
+    {
+      "prediction": "prene gosto ode",
+      "reference": "pre nego sto ode"
+    },
+    {
+      "prediction": "ja mislim da uopsta nema smisla pisati predgovor autobiografiji",
+      "reference": "ja mislim da uopste nema smisla pisati predgovor autobiografiji"
+    },
+    {
+      "prediction": "molim te sedi",
+      "reference": "molim te sedi"
+    },
+    {
+      "prediction": "pozavim i doktor",
+      "reference": "pozovi mi doktora"
+    },
+    {
+      "prediction": "imonija",
+      "reference": "i on je"
+    },
+    {
+      "prediction": "vlada je obavila slicom zamenu martu",
+      "reference": "vlada je obavila slicnu zamenu u martu"
+    },
+    {
+      "prediction": "pa sto doradim",
+      "reference": "pa sta da radimo"
+    },
+    {
+      "prediction": "dalise",
+      "reference": "da li se"
+    },
+    {
+      "prediction": "ovdek od mene",
+      "reference": "ovde kod mene"
+    },
+    {
+      "prediction": "bojska je mijutim uvrlo kontroverznoj pozici",
+      "reference": "vojska je medutim u vrlo kontroverznoj poziciji"
+    }
+  ]
+}
