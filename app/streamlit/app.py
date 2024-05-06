@@ -29,8 +29,8 @@ def transcribe(
     audio_dataset = Dataset.from_dict({"audio": [audio_file]}).cast_column(
         "audio", Audio(sampling_rate=WHISPER_SAMPLE_RATE)
     )
+    print("STARTING TO TRANSCRIBE")
     audio = audio_dataset[0]["audio"]
-    print("AUDIO:", audio)
     input_features = feature_extractor(
         audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
     ).input_features
@@ -144,7 +144,9 @@ def set_up_streamlit_app(
 
 
 def set_up_whisper(
-    model_ckpt_location: str, lora_ckpt_location: Optional[str] = None
+    base_model_location: str,
+    model_ckpt_location: str,
+    lora_ckpt_location: Optional[str] = None,
 ) -> Tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperFeatureExtractor]:
     print("LOADING WHISPER MODEL FROM", model_ckpt_location)
     model = WhisperForConditionalGeneration.from_pretrained(model_ckpt_location)
@@ -152,8 +154,9 @@ def set_up_whisper(
         print("LOADING WHISPER LORA CKPT FROM", lora_ckpt_location)
         model = PeftModel.from_pretrained(model, lora_ckpt_location)
 
-    processor = WhisperProcessor.from_pretrained(model_ckpt_location)
-    feature_extractor = WhisperFeatureExtractor.from_pretrained(model_ckpt_location)
+    print("LOADING WHISPER UTILS FROM", base_model_location)
+    processor = WhisperProcessor.from_pretrained(base_model_location)
+    feature_extractor = WhisperFeatureExtractor.from_pretrained(base_model_location)
     model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
         language="sr", task="transcribe"
     )
@@ -167,7 +170,13 @@ if __name__ == "__main__":
         "--model_ckpt_location",
         type=str,
         required=True,
-        help="Checkpoint of whisper model to train",
+        help="Checkpoint of whisper model to run",
+    )
+    parser.add_argument(
+        "--base_model_location",
+        type=str,
+        required=True,
+        help="Checkpoint of whisper model utils",
     )
     parser.add_argument(
         "--lora_ckpt_location",
@@ -177,6 +186,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     model, processor, feature_extractor = set_up_whisper(
+        base_model_location=args.base_model_location,
         model_ckpt_location=args.model_ckpt_location,
         lora_ckpt_location=args.lora_ckpt_location,
     )
