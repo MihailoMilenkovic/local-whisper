@@ -2,7 +2,7 @@
 
 
 # Default values
-model_size="tiny"
+model_size="large"
 use_lora="true"
 
 # Parse command-line arguments
@@ -93,4 +93,5 @@ python train.py \
     --per_device_eval_batch_size $per_device_batch_size \
     --eval_steps 500
 
+    # --training_quantization_num_bits 8 \
     # --num_train_epochs 2  \
