@@ -14,6 +14,7 @@ from transformers import (
     Seq2SeqTrainingArguments,
     WhisperProcessor,
     WhisperForConditionalGeneration,
+    WhisperConfig
 )
 from transformers import (
     Seq2SeqTrainer,
@@ -38,6 +39,7 @@ class FinetuneArguments:
     model_path: str = field()
     use_peft: bool = field(default=False)
     training_quantization_num_bits: int = field(default=16)
+    max_seq_len: int = field(default=448)
 
 
 @dataclass
@@ -215,12 +217,20 @@ def main():
         finetune_args.training_quantization_num_bits
     )
     print("Load model")
+    #TODO: check if we need to do extra training for the untrained positions
+    #TODO: check what the seq len should be here, but we should allow it to be longer in some cases
+    model_config = WhisperConfig.from_pretrained(finetune_args.model_path)
+    model_config.max_target_positions = finetune_args.max_seq_len
+    print("training using max seq len:",finetune_args.max_seq_len)
+    
     model = WhisperForConditionalGeneration.from_pretrained(
         finetune_args.model_path,
+        config=model_config,
         quantization_config=quantization_config,
+        ignore_mismatched_sizes=True
     )
     model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
-        language="sr", task="transcribe"
+        task="transcribe" #language="sr", 
     )
     model.config.suppress_tokens = []
     callbacks = []
@@ -246,6 +256,7 @@ def main():
         "labels"
     ]  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
     training_args.remove_unused_columns = False  # same reason as above
+    training_args.generation_config = None
     # training_args = Seq2SeqTrainingArguments(
     #     output_dir=training_args.output_dir,
     #     per_device_train_batch_size=8,
