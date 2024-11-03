@@ -110,11 +110,13 @@ def prepare_dataset(batch):
     ).input_features[0]
     # encode target text to label ids
     batch["labels"] = tokenizer(batch["sentence"]).input_ids
+    print("BATCH LABELS",batch["labels"])
     # NOTE: alternative way to create input features here
     # batch["test_input_features"] = processor(
     #     audio["array"], sampling_rate=audio["sampling_rate"], return_tensors="pt"
     # ).input_features
-    batch["test_reference"] = processor.tokenizer._normalize(batch["sentence"])
+    # batch["test_reference"] = processor.tokenizer._normalize(batch["sentence"])
+    batch["test_reference"] = batch["sentence"]
     return batch
 
 def create_custom_dataset(input_folder:str)->Tuple[datasets.Dataset,datasets.Dataset]:

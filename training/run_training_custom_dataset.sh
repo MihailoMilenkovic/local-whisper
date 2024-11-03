@@ -3,7 +3,9 @@
 # Default values
 model_size="tiny"
 use_lora="true"
+lora_rank=128
 dataset_path="./datasets"  # Default dataset path
+eval="true"
 
 # Parse command-line arguments
 while [[ $# -gt 0 ]]; do
@@ -36,7 +38,7 @@ echo "dataset_path: $dataset_path"
 
 model_save_folder=$(dirname "$(realpath "$0")")/models
 
-effective_batch_size=16
+effective_batch_size=1
 
 case $model_size in
   "tiny") per_device_batch_size=1 ;;
@@ -77,7 +79,7 @@ python train.py \
     --eval_dataset_path $eval_dataset_path \
     --use_peft $use_lora \
     --peft_mode lora \
-    --lora_rank 16   \
+    --lora_rank $lora_rank   \
     --learning_rate 2e-4 \
     --fp16 \
     --logging_steps 10 \
@@ -86,11 +88,24 @@ python train.py \
     --save_steps 500  \
     --per_device_train_batch_size $per_device_batch_size \
     --gradient_accumulation_steps $gradient_accumulation_steps \
-    --num_train_epochs 3  \
+    --num_train_epochs 50  \
     --evaluation_strategy "steps" \
     --per_device_eval_batch_size $per_device_batch_size \
-    --eval_steps 500 \
+    --eval_steps 20 \
     --max_seq_len 4096
 
     # --training_quantization_num_bits 8 \
     # --num_train_epochs 2  \
+
+trained_model_path=$save_path
+base_model_location=openai/whisper-$model_size
+eval_save_path=./eval_results/$model_size-trained_lora-$dataset_name.json
+
+#TODO: use eval instead of train, currently testing by overfitting
+if [ "$eval" = "true" ]; then
+    python eval.py \
+    --model_ckpt_location $trained_model_path \
+    --dataset_location $train_dataset_path \
+    --eval_save_path $eval_save_path \
+    --base_model_location $base_model_location
+fi

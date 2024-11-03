@@ -6,7 +6,7 @@ import os
 import concurrent
 from tqdm import tqdm
 import datasets
-from transformers import WhisperForConditionalGeneration, WhisperProcessor
+from transformers import WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer
 from peft import PeftModel
 from evaluate import load
 import torch
@@ -65,20 +65,24 @@ def pad_input_ids(examples, tokenizer):
 
 def get_prediction(batch, bsz):
     input_features = batch["input_features"].to(device)
+    print("MODEL TRAIN INPUT FEATURES",input_features)
     with torch.no_grad():
         predicted_ids = glob_model.generate(input_features)
-    transcripts = glob_processor.tokenizer.batch_decode(predicted_ids)
-    predictions = [glob_processor.tokenizer._normalize(t) for t in transcripts]
-    return predictions
+    transcripts = glob_processor.tokenizer.batch_decode(predicted_ids,skip_special_tokens=True)
+    #predictions = [glob_processor.tokenizer._normalize(t) for t in transcripts]
+    #return predictions
+    return transcripts
 
 
 def get_eval_info(
-    model, processor, dataset, per_device_batch_size: Optional[int] = 8
+    model, processor, tokenizer, dataset, per_device_batch_size: Optional[int] = 8
 ) -> EvalResults:
     global glob_model
     global glob_processor
+    global glob_tokenizer
     glob_model = model
     glob_processor = processor
+    glob_tokenizer = tokenizer
     res = EvalResults(samples=[], word_error_rate=None)
     # dataset = dataset.map(
     #     pad_input_ids, batched=True, fn_kwargs={"tokenizer": processor.tokenizer}
@@ -88,9 +92,10 @@ def get_eval_info(
         dataset, batch_size=per_device_batch_size, shuffle=False
     )
 
+
     for batch in tqdm(data_loader, "Computing word error rate"):
         predictions = get_prediction(batch, bsz=per_device_batch_size)
-        references = batch["test_reference"]
+        references = batch["test_reference"] #tokenizer.decode(batch["labels"],skip_special_tokens=True)
         res.samples.extend(
             (
                 [
@@ -142,8 +147,10 @@ if __name__ == "__main__":
         args.model_ckpt_location, device_map="auto"
     )
     processor = WhisperProcessor.from_pretrained(args.base_model_location)
+    tokenizer = WhisperTokenizer.from_pretrained(args.base_model_location)
     model.config.forced_decoder_ids = processor.get_decoder_prompt_ids(
-        language="sr", task="transcribe"
+        # language="sr", task="transcribe"
+        task="transcribe"
     )
     model = model.to(device)
     if args.lora_ckpt_location:
@@ -156,8 +163,7 @@ if __name__ == "__main__":
     )
     print("Model location:", args.model_ckpt_location)
     print("Model original location:", args.base_model_location)
-    print("Dataset first entry:", dataset[0])
-    res = get_eval_info(model, processor, dataset, args.per_device_batch_size)
+    res = get_eval_info(model, processor, tokenizer, dataset, args.per_device_batch_size)
     print("Model WER:", res.word_error_rate)
     print("Saving results to:", args.eval_save_path)
     res.to_json(args.eval_save_path)

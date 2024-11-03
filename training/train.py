@@ -163,7 +163,7 @@ def get_model_quantization_config(training_quantization_num_bits: int):
 # TODO: check model size should change here or if this shouldn't be global...
 processor = WhisperProcessor.from_pretrained(
     "openai/whisper-small",
-    language="sr",
+    # language="sr",
     task="transcribe",
 )
 metric = evaluate.load("wer")
@@ -222,7 +222,6 @@ def main():
     model_config = WhisperConfig.from_pretrained(finetune_args.model_path)
     model_config.max_target_positions = finetune_args.max_seq_len
     print("training using max seq len:",finetune_args.max_seq_len)
-    
     model = WhisperForConditionalGeneration.from_pretrained(
         finetune_args.model_path,
         config=model_config,
@@ -256,7 +255,11 @@ def main():
         "labels"
     ]  # required as the PeftModel forward doesn't have the signature of the wrapped model's forward
     training_args.remove_unused_columns = False  # same reason as above
-    training_args.generation_config = None
+    #NOTE: arguments below needed for running evals
+    training_args.generation_config = model.generation_config
+    training_args.generation_max_length = model.generation_config.max_length
+    training_args.generation_num_beams = None
+    training_args.predict_with_generate = True
     # training_args = Seq2SeqTrainingArguments(
     #     output_dir=training_args.output_dir,
     #     per_device_train_batch_size=8,
@@ -264,7 +267,7 @@ def main():
     #     learning_rate=1e-3,
     #     warmup_steps=50,
     #     num_train_epochs=3,
-    #     evaluation_strategy=,
+    #     evaluation_strategy="steps",
     #     fp16=True,
     #     per_device_eval_batch_size=8,
     #     generation_max_length=128,
